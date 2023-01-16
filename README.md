@@ -33,3 +33,66 @@ The power from genset can be either in interval 0.2P_max - 0.9P_max or exactly 0
 The framwork used in this case study is Pupl, to solve a mixed intger linear 
 programming problem toguether with first the built-in solver: CBCو and then with 
 a commercial sover: Gurobi.
+
+
+
+
+
+Project's case usage.
+====================
+
+this particular case is initially specefic for the offshore shipping industry as 
+they are the most transportation fuel consuming and needing some sort of solutions to use fuel 
+optimally in their trips. However this is not only exlusive to this sector, it 
+can be easily extended to other sectors as long as the purpose is to optimize energy
+usage and energy hybridization.
+
+
+
+
+
+Project's environment.
+======================
+
+Using Conda environnment manager: 
+
+. You create a new environment aside of the root, and called somthing
+  recognisable, we named here as Energy_Optim, we have used here python version 3.9.7. to do so you tape: 
+ 
+	- $ conda create --HYH_model python=3.9.7
+
+. Activate the environment by taping :
+  
+	- $ conda activate --HYH_model.
+
+
+ 
+
+
+Project's installations.
+======================
+
+
+Pulp modler.
+------------
+
+. In order to install Pulp modler pacjakges we use the command : 
+
+	- $ conda install -c forge-pulp. 
+
+. Then you can test the availble packages after installation using the commands: 
+
+	- $ conda search -c forge-pulp. 
+	- $ conda list
+
+
+Gurobi Solver. 
+-------------
+
+. To install Gurobi solver packages, we use the command:
+	- $ conda install -c gurobi gurobi.  
+
+. Then you can test the availble packages after installation using the commands: 
+
+	- $ conda search -c gurobi gurobi. 
+	- $ conda list
