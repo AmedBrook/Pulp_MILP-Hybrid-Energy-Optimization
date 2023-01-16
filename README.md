@@ -3,55 +3,33 @@ HYH
 
 MILP Hybrid Energy Optimization 
 
-Project Organization
-------------
 
-    ├── LICENSE
-    ├── Makefile           <- Makefile with commands like `make data` or `make train`
-    ├── README.md          <- The top-level README for developers using this project.
-    ├── data
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
-    │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
-    │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
-    │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
-    │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-    │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
-    │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
-    │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
-    │   │
-    │   ├── data           <- Scripts to download or generate data
-    │   │   └── make_dataset.py
-    │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
-    │   │
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
-    │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │       └── visualize.py
-    │
-    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
+Project's title.
+=================
 
 
---------
+Fuel minimization: MILP model with semi-continuous power supply and battery logic.
 
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+
+
+Project's description and context. 
+===============================
+
+
+The project aims to explore the possibility of integrating 
+energy storage faciltities within the shipping industry marcket. 
+In this application we simulate one possible solution on how to
+synchronize fuel based gensets with a battery storage system
+alonge side with energy optimization to reduce energy cost throughout 
+the trip journey. The whole project is build based on an optimization 
+mathimatical model and uses MILP (mixed intiger linrear programing) 
+methodes to solve optimaly the problem.   
+
+In this Python notebook script we simulate an application used to optimize
+fuel consumption for vessels using one genset to produce the energy one 
+and one batter to store and realese to excess of that energy when needed in 
+a hybrid mode.
+The power from genset can be either in interval 0.2P_max - 0.9P_max or exactly 0.
+The framwork used in this case study is Pupl, to solve a mixed intger linear 
+programming problem toguether with first the built-in solver: CBCو and then with 
+a commercial sover: Gurobi.
