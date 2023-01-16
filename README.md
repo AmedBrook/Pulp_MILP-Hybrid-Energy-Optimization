@@ -23,7 +23,7 @@ synchronize fuel based gensets with a battery storage system
 alonge side with energy optimization to reduce energy cost throughout 
 the trip journey. The whole project is build based on an optimization 
 mathimatical model and uses MILP (mixed intiger linrear programing) 
-methodes to solve optimaly the problem.   
+methodes to solve optimaly the problem.  
 
 In this Python notebook script we simulate an application used to optimize
 fuel consumption for vessels using one genset to produce the energy one 
