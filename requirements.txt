@@ -17,4 +17,4 @@ pathlib2
 gurobipy==10.0.0
 PuLP==2.7.0
 matplotlib==3.2.2
-numpy==1.21.6
+numpy==1.21.6 
