@@ -24,7 +24,4 @@ def Load_window (val11, val12, val13, val21, val22, val23, val31, val32, val33, 
 #Function testing.
 
 
-test=Load_window (200,200,10,400,400,10,600,600,10,600,200,30,0,10,20,30)
-print(test)
-sum = sum(test[k] for k in range(60))
-print('sum = ',sum)
+Load_window (200,200,10,400,400,10,600,600,10,600,200,30,0,10,20,30)
