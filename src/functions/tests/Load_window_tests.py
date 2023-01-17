@@ -7,7 +7,7 @@ from Load_window import Load_window
 
 class TestLoad(unittest.TestCase):
 
-    def test_load_bounds(self):
+    def test_load_frame(self):
         """
         Test that it makes the load frame along the 60 time steps
         """
@@ -15,7 +15,7 @@ class TestLoad(unittest.TestCase):
         sum = sum(Loadframe[k] for k in range(60))
         self.assertEqual(sum, 24000.0)
 
-    def test_list_fraction(self):
+    def test_load_bounds(self):
 
         P_A_max = 1000
         """
