@@ -1,12 +1,13 @@
 from setuptools import setup
 
 setup(
+    
     name='HYH',
     version='0.1.0',
-    author='Ahmed Mabrouk'
+    author='Ahmed Mabrouk',
     description='MILP Hybrid Energy Optimization ',
-    url='https://github.com/AmedBrook/Pulp_MILP-Hybrid-Energy-Optimization'
-    author_email='Ahmed.Mabrouk@novia.fi'
+    url='https://github.com/AmedBrook/Pulp_MILP-Hybrid-Energy-Optimization',
+    author_email='Ahmed.Mabrouk@novia.fi',
     license='MIT',
     packages=find_packages(),
     install_requires=[ # those are the requirements for the project packages.
