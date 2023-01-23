@@ -72,14 +72,22 @@ else
 	@echo ">>> New virtualenv created. Activate with:\nworkon $(PROJECT_NAME)"
 endif
 
-## Test python environment is setup correctly
+## Test python and pulp environment is setup correctly
 test_environment:
 	$(PYTHON_INTERPRETER) test_environment.py
 
 #################################################################################
-# PROJECT RULES                                                                 #
+# PROJECT TESTS                                                                 #
 #################################################################################
 
+Fuel_consumption: 
+	$(PYTHON_INTERPRETER) src/functions/Fuel_consumption_tests.py
+
+List_Extraction: 
+	$(PYTHON_INTERPRETER) src/functions/List_Extraction_tests.py
+
+Load_window: 
+	$(PYTHON_INTERPRETER) src/functions/load_window_tests.py
 
 
 #################################################################################
@@ -103,6 +111,7 @@ test_environment:
 # 	* print line
 # Separate expressions are necessary because labels cannot be delimited by
 # semicolon; see <http://stackoverflow.com/a/11799865/1968>
+
 .PHONY: help
 help:
 	@echo "$$(tput bold)Available rules:$$(tput sgr0)"
