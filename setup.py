@@ -4,7 +4,7 @@ setup(
     
     name='HYH',
     version='0.1.0',
-    author='Ahmed Mabrouk',
+    authors='Ahmed Mabrouk / Johan Westö / Ray Pörn',
     description='MILP Hybrid Energy Optimization ',
     url='https://github.com/AmedBrook/Pulp_MILP-Hybrid-Energy-Optimization',
     author_email='Ahmed.Mabrouk@novia.fi',
