@@ -2,7 +2,7 @@
 
 import unittest
 
-from Fuel_consumption import fuelCon
+from fuel_consumption import fuelCon
 
 
 class TestfuelCon(unittest.TestCase):

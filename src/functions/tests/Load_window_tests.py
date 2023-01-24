@@ -2,7 +2,7 @@
 
 import unittest
 
-from Load_window import Load_window
+from load_window import Load_window
 
 
 class TestLoad(unittest.TestCase):
