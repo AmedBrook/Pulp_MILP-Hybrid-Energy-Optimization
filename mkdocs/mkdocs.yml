@@ -1,0 +1,6 @@
+site_name: HYH-Novia
+site_url: https://hyh-novia.fi/
+nav: 
+    - Home: index.md
+    - About: about.md
+theme: readthedocs
