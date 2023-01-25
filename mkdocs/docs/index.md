@@ -1,4 +1,4 @@
-# Welcome to HYH-Novia
+# Welcome to Pulp-MILP Hybrid Energy Optimization
 
 For full project materials visit [https://github.com/AmedBrook/Pulp_MILP-Hybrid-Energy-Optimization](https://github.com/AmedBrook/Pulp_MILP-Hybrid-Energy-Optimization).
 
