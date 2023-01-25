@@ -1,11 +1,10 @@
-.PHONY: clean data lint requirements sync_data_to_s3 sync_data_from_s3
+.PHONY: clean data lint requirements test_environment fuel_consumption list_extraction load_window
 
 #################################################################################
 # GLOBALS                                                                       #
 #################################################################################
 
 PROJECT_DIR := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
-BUCKET = [OPTIONAL] your-bucket-for-syncing-data (do not include 's3://')
 PROFILE = default
 PROJECT_NAME = HYH
 PYTHON_INTERPRETER = python
@@ -21,7 +20,7 @@ endif
 #################################################################################
 
 ## Install Python Dependencies
-requirements: test_environment
+requirements: setup
 	$(PYTHON_INTERPRETER) -m pip install -U pip setuptools wheel
 	$(PYTHON_INTERPRETER) -m pip install -r requirements.txt
 
@@ -37,22 +36,6 @@ clean:
 ## Lint using flake8
 lint:
 	flake8 src
-
-## Upload Data to S3
-sync_data_to_s3:
-ifeq (default,$(PROFILE))
-	aws s3 sync data/ s3://$(BUCKET)/data/
-else
-	aws s3 sync data/ s3://$(BUCKET)/data/ --profile $(PROFILE)
-endif
-
-## Download Data from S3
-sync_data_from_s3:
-ifeq (default,$(PROFILE))
-	aws s3 sync s3://$(BUCKET)/data/ data/
-else
-	aws s3 sync s3://$(BUCKET)/data/ data/ --profile $(PROFILE)
-endif
 
 ## Set up python interpreter environment
 create_environment:
@@ -76,22 +59,26 @@ endif
 test_environment:
 	$(PYTHON_INTERPRETER) test_environment.py
 
+## Set up the project via Setuptools
+setup: 
+	$(PYTHON_INTERPRETER) setup.py
+
 #################################################################################
 # PROJECT TESTS                                                                 #
 #################################################################################
 
-Fuel_consumption: 
-	$(PYTHON_INTERPRETER) src/functions/Fuel_consumption_tests.py
+fuel_consumption: 
+	$(PYTHON_INTERPRETER) src/functions/fuel_consumption_tests.py
 
-List_Extraction: 
-	$(PYTHON_INTERPRETER) src/functions/List_Extraction_tests.py
+list_extraction: 
+	$(PYTHON_INTERPRETER) src/functions/list_Extraction_tests.py
 
-Load_window: 
+load_window: 
 	$(PYTHON_INTERPRETER) src/functions/load_window_tests.py
 
 
 #################################################################################
-# Self Documenting Commands                                                     #
+# SELF DOCUMENTTING COMMANDS                                                   #
 #################################################################################
 
 .DEFAULT_GOAL := help
