@@ -1,6 +1,11 @@
 site_name: HYH
 site_url: https://hyh.fi/
+
 nav: 
     - Project description and context.: Project description and context.md
     - Getting started.: index.md
+    - 'Project study case': 
+        - 1Gen-1Bat: Project study case.md
+        
+
 theme: readthedocs
