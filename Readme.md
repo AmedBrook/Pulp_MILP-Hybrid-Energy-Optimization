@@ -65,7 +65,7 @@ Project's installations.
 ======================
 
 
-Pulp modler.
+PuLP.
 ------------
 
 . In order to install Pulp modler pacjakges we use the command : 
@@ -78,7 +78,7 @@ Pulp modler.
 	- $ conda list
 
 
-Gurobi Solver. 
+Gurobi. 
 -------------
 
 . To install Gurobi solver packages, we use the command:
@@ -92,7 +92,7 @@ Gurobi Solver.
 
 
 
-mkdocs 
+Mkdocs 
 ------
 
 . To install mkdocs : 
