@@ -92,7 +92,7 @@ Gurobi.
 
 
 
-Mkdocs 
+Mkdocs. 
 ------
 
 . To install mkdocs : 
@@ -114,7 +114,7 @@ Mkdocs
 
 
 
-Mathjax 
+Mathjax. 
 -------
 Mathjax is a Javascript library that can display mathimatical notations in the browser using LaTex or other. 
 In order to integarate Mathjax within Mkdocs do the following: 
