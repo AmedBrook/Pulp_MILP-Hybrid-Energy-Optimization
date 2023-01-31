@@ -88,3 +88,51 @@ Gurobi Solver.
 
 	- $ conda search -c gurobi gurobi. 
 	- $ conda list
+
+
+
+mkdocs 
+------
+
+. To install mkdocs : 
+	- $ pip install mkdocs
+
+. To create new mkdocs project : 
+	- $ python -m mkdocs new [name of the project]
+
+. To preview your documentation, you need to locate in the docs directory created with the last command and then run: 
+	- $ python -m mkdocs serve 
+	- to the preview Then browse within the output https address returned with command, 
+
+	for more guidance on mkdocs see https://www.mkdocs.org/user-guide/
+
+
+
+
+Mathjax 
+-------
+. Mathjax is a Javascript library that can display mathimatical notations in the browser using LaTex or other. 
+In order to integarate Mathjax within Mkdocs do the following: 
+
+. Install pymdown-extensions: 
+	- $ pip install pymdown-extensions
+
+. Within your mkdocs folder create the following: 
+          docs
+		    |___ javascripts
+            |     |___ mathjax.js
+			|
+
+
+. Add the following script in the configuration file mkdocs.yml 
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+
+
+
+
+	
