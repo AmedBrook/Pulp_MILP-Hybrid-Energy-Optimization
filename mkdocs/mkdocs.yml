@@ -10,7 +10,7 @@ nav:
         - Problem Parameters.: parameters.md
         - Problem LP variables.: lp_vars.md
         - Problem LP constraints.: lp_cstrs.md
-        - Objective function.: obj_func.md
+        - Optimization objective.: obj_func.md
 
 markdown_extensions:
     - toc:
