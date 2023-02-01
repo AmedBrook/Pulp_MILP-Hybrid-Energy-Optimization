@@ -131,7 +131,7 @@ In order to integarate Mathjax within Mkdocs do the following:
 			|
 
 
-. Add the following script in the configuration file mkdocs.yml 
+. Add the following script lines in the configuration file 'mkdocs.yml' 
 
 extra_javascript:
   - javascripts/mathjax.js
