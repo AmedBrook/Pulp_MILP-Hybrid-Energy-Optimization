@@ -76,7 +76,7 @@ Using Anaconda package index :
 
 Using Python package index (Pypi) : 
 
-	- $ pip install pulp. 
+	- $ python -m pip install pulp. 
 
 
 Gurobi. 
@@ -90,7 +90,7 @@ Using Anaconda package index :
 
 Using Python package index (Pypi) : 
 
-	- $ pip install gurobipy. 
+	- $ python -m pip install gurobipy. 
 
 
 Mkdocs. 
@@ -98,7 +98,7 @@ Mkdocs.
 
 . To install mkdocs (Pypi): 
 	
-	- $ pip install mkdocs
+	- $ python -m pip install mkdocs
 
 . To create new mkdocs project : 
 	
@@ -122,7 +122,7 @@ In order to integarate Mathjax within Mkdocs do the following:
 
 . Install pymdown-extensions (Pypi): 
 	
-	- $ pip install pymdown-extensions
+	- $ python -m pip install pymdown-extensions
 
 . Within your mkdocs folder create the following: 
 
