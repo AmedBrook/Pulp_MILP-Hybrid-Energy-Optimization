@@ -46,7 +46,7 @@ usage and energy hybridization.
 Project's environment.
 ======================
 
-Using Conda environnment manager: 
+Using Anaconda environnment manager: 
 
 . You create a new environment aside of the root, and called somthing
   recognisable, we named here as Energy_Optim, we have used here python version 3.9.7. to do so you tape: 
@@ -61,7 +61,7 @@ Using Conda environnment manager:
  
 
 
-Project's installations.
+Packages' installations.
 ======================
 
 
