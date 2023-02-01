@@ -110,7 +110,7 @@ Mkdocs.
 	
 . To preview the documentation then browse within the output https address returned by the last command.
 
-for more guidance on mkdocs, see [here](https://www.mkdocs.org/user-guide/).
+For more guidance on mkdocs, see [here](https://www.mkdocs.org/user-guide/).
 
 
 
