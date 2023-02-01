@@ -70,32 +70,33 @@ PuLP.
 
 . In order to install Pulp modler pacjakges we use the command : 
 
+Using Anaconda package index :
+
 	- $ conda install -c forge-pulp. 
 
-. Then you can test the availble packages after installation using the commands: 
+Using Python package index (Pypi) : 
 
-	- $ conda search -c forge-pulp. 
-	- $ conda list
+	- $ pip install pulp. 
 
 
 Gurobi. 
 -------------
 
-. To install Gurobi solver packages, we use the command:
+. To install Gurobi solver packages, we use the commands:
+
+Using Anaconda package index :
 	
 	- $ conda install -c gurobi gurobi.  
 
-. Then you can test the availble packages after installation using the commands: 
+Using Python package index (Pypi) : 
 
-	- $ conda search -c gurobi gurobi. 
-	- $ conda list
-
+	- $ pip install gurobipy. 
 
 
 Mkdocs. 
 ------
 
-. To install mkdocs : 
+. To install mkdocs (Pypi): 
 	
 	- $ pip install mkdocs
 
@@ -119,7 +120,7 @@ Mathjax.
 Mathjax is a Javascript library that can display mathimatical notations in the browser using LaTex or other. 
 In order to integarate Mathjax within Mkdocs do the following: 
 
-. Install pymdown-extensions: 
+. Install pymdown-extensions (Pypi): 
 	
 	- $ pip install pymdown-extensions
 
