@@ -108,9 +108,9 @@ Mkdocs.
 	
 	- $ python -m mkdocs serve 
 	
-. To the preview Then browse within the output https address returned with command, 
+. To preview the documentation then browse within the output https address returned by the last command.
 
-	for more guidance on mkdocs see https://www.mkdocs.org/user-guide/
+for more guidance on mkdocs, see [here](https://www.mkdocs.org/user-guide/).
 
 
 
