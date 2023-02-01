@@ -1,5 +1,6 @@
 ## HYH quick guide.
 
+$\newline$ 
 ### Optimization variable. 
 
 the optimization variable is the variable that will host problem solving results, it is created via the command ```LpProblem()```. Inside the parenthesis we can assign a name for the optimization problem beeing solved as well as defining which type the problem is. whether is a maximization or minmization ('LpMaximize' for maximization or 'LpMinimize' for minimization problem). 
@@ -10,12 +11,14 @@ In our case it is Minimization problem, therfore to create our optimization prob
  Optim = LpProblem('Energy_Opt',LpMinimize)
 ```
 
-
+$\newline$ 
 ### Decision variables. 
+
 
 ###### LpVariable(). 
 Creating decsion variables is easy as using the command ```LpVariable()```, inside the parenthesis we can give it a name, and setting the variable min and max bounds admissible for that paticular decision variable.
 note : it's important to set carfully the bounds otherwise it can easily leads to an infeasable problem within the solving process.  
+
 
 ###### LpVariable.dicts().
 In our case, each decision variable is descritisized depending to load window vector steps, they will contain as much points as the number of steps : dem(LpVaraible) = dem(V_steps). Based on this approach it's convinent to set our decision variable points as key-values pair in a dictionnary. To create a dictionary decision variable we use the command ``LpVariable.dicts()``, inside the parenthesise we can define the LpVariable lower and upper bounds type using ``LowBound`` and ``upBound``, the ``cat`` argument can be used to define the LpVariable type as well. 
@@ -35,7 +38,9 @@ Y_from_bat = LpVariable.dicts("Y_from_bat", V_steps, lowBound=0, upBound=1, cat 
 Y = LpVariable.dicts("Y", V_steps, lowBound=0, upBound=1, cat = LpInteger) # Genset selecter : work ==> Y=1, Not work ==> Y=0. 
 ```
 
-#### Setting up the objective function.
+
+$\newline$ 
+### Setting up the objective function.
 
 To set up the objective function of the problem, the ``lpSum`` function is used along side with the optimization variable created ``Optim``, so it can be formulated as : ``Optim += lpSum (Expression) ``. the ``+=`` operator is used to update the Optim variable after each solving itteration. Note: the Objective function must be included first before the constraints are made, outherwise, it will just be interpreted as a constraint by the solver. 
 
@@ -46,7 +51,8 @@ Optim += lpSum (FC + L_added_cost), "objective function Minimization fuel oil co
 ```
 
 
-#### Setting up problem constraints. 
+$\newline$ 
+### Setting up problem constraints. 
 
 Constraints are expressed using the same command used for setting up the objective function, that's why the objective fucntion should be included first. 
 
@@ -92,8 +98,16 @@ Optim += Q_bat[V_steps[-1]] == Q_final
 ```
 
 
+$\newline$ 
+### Solving the problem. 
 
+After constructing the problem with the different steps, now we can solve it using the command, and store the results in a variable. something like : 
 
+```
+result = Optim.solve() 
+```
+Note that inside the parenthesis you can specify the solver you want to use, if nothing is specified then the defaut solver is used which is CBC solver. However, in our case we are using the Gurobi solver, therfore, we can call it as follow : 
 
-#### solving the problem. 
-
+```
+result = Optim.solve(GUROBI())
+```

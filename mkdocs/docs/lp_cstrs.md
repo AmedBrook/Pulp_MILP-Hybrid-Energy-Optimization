@@ -14,13 +14,18 @@ Linear programming constraints (LP constraints) are the rules that gouverne the 
 
 - Power split:   $\hspace{3.9cm}P_{k\;} =P_k^{\mathrm{load}} {+\;P}_k^{\mathrm{toBat}}\hspace{4.5cm}$   $k=1,\dots ,n$
 
+
+$\newline$ 
+
+- Charge balance:  $\hspace{3.15cm}Q_k =Q_{k-1} +\eta^{\mathrm{toBat}} \cdot \;P_k^{\mathrm{toBat}} \Delta t-\;P_k^{\mathrm{fromBat}} \Delta t\hspace{0.3cm}$   
+
 - Charge balance (initial):   $\hspace{1.8cm}Q_0 =Q_{\mathrm{init}}\hspace{4.3cm}$  
 
-- Charge balance:  $\hspace{2cm}Q_k =Q_{k-1} +\eta^{\mathrm{toBat}} \cdot \;P_k^{\mathrm{toBat}} \Delta t-\;P_k^{\mathrm{fromBat}} \Delta t\hspace{0.3cm}$     $k=1,\dots ,n$ 
 
 
-- Charge balance (final):     $\hspace{2cm}Q_n =Q_{\mathrm{final}}\hspace{3cm}$   
+- Charge balance (final):     $\hspace{2cm}Q_n =Q_{\mathrm{final}}\hspace{6.3cm}$    $k=1,\dots ,n$
 
+$\newline$ 
 
 - Logical conditions on genset: $\hspace{0.8cm}P_{k\;} \le {0\ldotp 9P}_{\mathrm{max}\;} {\cdot y}_k\hspace{4.8cm}$    $k=1,\dots ,n$ 
 
@@ -28,7 +33,7 @@ Linear programming constraints (LP constraints) are the rules that gouverne the 
 - (0 or in 0.2P_max - 0.9Pmax):  $\hspace{0.8cm}P_{k\;} \le {0\ldotp 2P}_{\mathrm{max}\;} {\cdot y}_k\hspace{4.7cm}$    $k=1,\dots ,n$
 
 
-
+$\newline$ 
 
 - Logical conditions on battery:   $\hspace{0.8cm}y_k^{\mathrm{toBat}} +y_{k\;}^{\mathrm{fromBat}} \le 1\hspace{4.3cm}$     $k=1,\dots ,n$  
 $\newline$     
@@ -36,5 +41,8 @@ $\hspace{6.2cm}P_k^{\mathrm{toBat}} \le 0\ldotp 9P_{\mathrm{max}} {\cdot y}_k^{\
 
 
 $\hspace{6.9cm}P_k^{\mathrm{fromBat}} \le 0\ldotp 9P_{\mathrm{max}} {\cdot \;y}_k^{\mathrm{fromBat}}\hspace{2.6cm}$  $k=1,\dots ,n$ 
+
+
+$\newline$ 
 
 - Constraints for linearization of objective:  $\hspace{0.5cm}z_k \ge y_k -y_{k-1}\hspace{3.6cm}$ $k=2,\dots ,n$

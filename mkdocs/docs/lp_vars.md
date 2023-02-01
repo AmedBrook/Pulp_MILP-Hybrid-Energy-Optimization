@@ -1,13 +1,13 @@
 Problem LP variables
 ====================
 
-#### Linear programming variables
+#### Linear programming variables.
 
-Linear programing varaibles (Lp varaibles for short), are the variables that will host the calculation optimzation process values for each physical quantities used along this problem. Those LP variable are used later on to fotmulate the problem constraints (See. LP constraints). 
+Linear programing variables (Lp varaibles for short), are the decision variables that will host the calculation optimzation process values for each physical quantities used along this problem. Those LP variable are used later on to fotmulate the problem constraints (See. LP constraints). 
 
 
 
-#### Set of linear programming variables:
+#### Set of linear programming variables.
 
 
 $Q_{\mathrm{bat}} \hspace{1cm}$ : Maximal energy charge stored in battery (kWh).
@@ -31,17 +31,17 @@ $Y_{\mathrm{from_bat}} \hspace{0.7cm}$ : Maximal energy charge stored in battery
 $Y \hspace{1.6cm}$ : Maximal energy charge stored in battery (kWh).
 
 
-#### Variables' lower and upper bounds:
+#### Variables' lower and upper bounds.
 
-- $\hspace{1cm}0\ldotp 2Q_{\mathrm{max}} \le Q_k \le Q_{\mathrm{max}}\hspace{5.5cm}$ $k=0,\ldotp \ldotp \ldotp ,n$ 
-- $\hspace{1cm}0\le P_k \le 0\ldotp 9P_{\mathrm{max}}\hspace{6.5cm}$  $k=1,\ldotp \ldotp \ldotp ,n$    
+- $\hspace{1cm}0\ldotp 2.Q_{\mathrm{max}} \le Q_k \le Q_{\mathrm{max}}\hspace{5.5cm}$ $k=0,\ldotp \ldotp \ldotp ,n$ 
+- $\hspace{1cm}0\le P_k \le 0\ldotp 9.P_{\mathrm{max}}\hspace{6.5cm}$  $k=1,\ldotp \ldotp \ldotp ,n$    
  
-- $\hspace{1cm}0\le P_k^{\mathrm{to_Bat}} ,P_k^{\mathrm{from_Bat}} \le {0\ldotp 9P}_{\mathrm{max}}\hspace{4cm}$ $k=1,\ldotp \ldotp \ldotp ,n$ 
+- $\hspace{1cm}0\le P_k^{\mathrm{to_Bat}} ,P_k^{\mathrm{from_Bat}} \le {0\ldotp 9.P}_{\mathrm{max}}\hspace{4cm}$ $k=1,\ldotp \ldotp \ldotp ,n$ 
 
 
 - $\hspace{1cm}0\le z_k \le 1\hspace{8.1cm}$  $k=2,\ldotp \ldotp \ldotp ,n$
 
-#### Variables' types: 
+#### Variables' types.
 
 - Continuous : $\hspace{2cm}Q_k,P_k^{\mathrm{to_Bat}} ,P_k^{\mathrm{from_Bat}} ,z_k$ 
 
