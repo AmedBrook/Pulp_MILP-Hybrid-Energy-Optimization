@@ -16,6 +16,8 @@ nav:
         - Contributor guide.: contr_gd.md
     - About: 
         - Authors.: authors.md
+        - Changelog.: chng_log.md
+
 
 markdown_extensions:
     - toc:
