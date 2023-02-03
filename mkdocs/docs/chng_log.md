@@ -12,7 +12,7 @@
    * Adapting suitable width for the bargraphs.
    * Setting up environment variables for Gurobi licence secret keys.
    
-#### Version 0.1.5 :
+#### Version 0.1.5 
  
 
    * Importing 'sys' module and addiing the python 'environment cell' to keep track of the 
@@ -53,7 +53,7 @@
      definition.
    * Printing out the constraints status using the command 'Optim.variables'
       
-#### Version 0.1.4 : 
+#### Version 0.1.4  
 
 
    * Installing and testing out Pulp module and its packages
@@ -64,7 +64,7 @@
 
 Tests
 
-#### Version 0.2.0 :
+#### Version 0.2.0 
    
    * Scaling down the the model to 3 time steps for testing purposes
    * Adopting Gurobi solver instead of Pulp's bilt in solver (CBC solver). 
