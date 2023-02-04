@@ -2,7 +2,7 @@
 
 #### Version 0.2.1.
    
-    Date: 21-12-2022.
+    Date: 21.12.2022.
    * Re-scaling up the model to `60` time steps for an implementation to the full  
      time frame. 
    * Adopting `dt=1` instead of `2/3`.
@@ -12,9 +12,52 @@
    * Adapting suitable width for the bargraphs.
    * Setting up environment variables for Gurobi licence secret keys.
    
+#### Version 0.2.0.
+   
+    Date: 27.11.2022.
+   * Scaling down the the model to 3 time steps for testing purposes
+   * Adopting Gurobi solver instead of Pulp's bilt in solver (CBC solver). 
+   * Setting up a Gurobi licence container. 
+   * Using different set of load profil scenarios `L` insted of a fixed load vector. 
+   * Dispensing of the 'merge_dictionaries' function. 
+   * Introducing a fuel consumption function `fuelCon` instead of using fixed values of 
+     slope and intercept of the fule consumtion caracteristic.
+   * formulating the `a_j`, `b_j` and maxFC values function of the fuelCon function.
+   * Introducing the `V_steps_z` vector specificaly for the `Z` LPvaraiable.
+   * Introducion the `V_steps` vector in the paramters section instead of setting-up 
+     decision variables section.
+   * Adopting the `FC_A` LPvariable instead of the `SFOC_A`
+   * Visulizing the different returned values of the LPvariables outputs. 
+   * Changing the name of the `P_bat` to `P_From_bat` for power transfered from the battery 
+     to the load.
+   * Changing the name of the `Z_k_j` to `Z` for Aditional cost fuel oil consumption. 
+   * Adopting a lower bound of zero value for the `P_A`, `P_A_load`, `P_From_bat` and 
+     `P_A_to_bat` LPvariables instead of `0,2*P_A_max`. 
+   * Changing the `Y_to_bat` and `Y_to_bat` cat to LpVaraiables as `LPinteger` rather than 
+     `LpBinary`. 
+   * Adding the `Y` LpVaraible (controlling the on-off logic of the genset).  
+   * Dispensing of the outer for loops in the objective function formulation.
+   * Dispensing of the `FC_k_j` variable in the objective function formulation. 
+   * Adopting the `K_j_start` as scaler in the objective fucntion rather than dictionnary. 
+   * Dispensing of the `lpSum` method in formulating power requirement constraint.
+   * Dispensing of the `merge_dicitionaries` function in formulating power requirements 
+     constraint. 
+   * Adopting the battery transfer efficiency rate `eff_from_bat` in formulating   
+     formulating 
+     power requirements constraint.
+   * Replacing the specific fuel oil consumption constraint by the Fuel consumption 
+     constraint. 
+   * Adopting If statment to reformulate the battery charge logics, 
+   * Fixing the logic about the charge balance state doesn't depend on the privious 
+     value of charge and power `Optim += Q_bat[k] == Q_bat[k-1] + eff_to_bat*P_A_to_bat[k]*dt - P_From_bat[k]*dt`. 
+   * Adding the battery charging logical constraints. 
+   * Adopting the final step battery charge logic out of the nested if statement and out of 
+     the for outer for loop. 
+
+
 #### Version 0.1.5.
  
-
+    Date: 29.10.2022.
    * Importing `sys` module and addiing the python 'environment cell' to keep track of the 
      python version. 
    * Dispensing of the `CPLEX` solver and adopting the built in solver `CBC`. 
@@ -54,55 +97,15 @@
       
 #### Version 0.1.4.
 
-
-   * Installing and testing out Pulp module and its packages
+    Date: 18.09.2022.
+   * Installing and testing out Pulp module and its packages.
    * First formulation of the fuel minimization problem.
    * Structuring an Optimization problem using the PulP modeler. 
    * Trying out to print the returned values stored in the LP variables. 
    
 
-Tests
 
-#### Version 0.2.0.
-   
-   * Scaling down the the model to 3 time steps for testing purposes
-   * Adopting Gurobi solver instead of Pulp's bilt in solver (CBC solver). 
-   * Setting up a Gurobi licence container. 
-   * Using different set of load profil scenarios `L` insted of a fixed load vector. 
-   * Dispensing of the 'merge_dictionaries' function. 
-   * Introducing a fuel consumption function `fuelCon` instead of using fixed values of 
-     slope and intercept of the fule consumtion caracteristic.
-   * formulating the `a_j`, `b_j` and maxFC values function of the fuelCon function.
-   * Introducing the `V_steps_z` vector specificaly for the `Z` LPvaraiable.
-   * Introducion the `V_steps` vector in the paramters section instead of setting-up 
-     decision variables section.
-   * Adopting the `FC_A` LPvariable instead of the `SFOC_A`
-   * Visulizing the different returned values of the LPvariables outputs. 
-   * Changing the name of the `P_bat` to `P_From_bat` for power transfered from the battery 
-     to the load.
-   * Changing the name of the `Z_k_j` to `Z` for Aditional cost fuel oil consumption. 
-   * Adopting a lower bound of zero value for the `P_A`, `P_A_load`, `P_From_bat` and 
-     `P_A_to_bat` LPvariables instead of `0,2*P_A_max`. 
-   * Changing the `Y_to_bat` and `Y_to_bat` cat to LpVaraiables as `LPinteger` rather than 
-     `LpBinary`. 
-   * Adding the `Y` LpVaraible (controlling the on-off logic of the genset).  
-   * Dispensing of the outer for loops in the objective function formulation.
-   * Dispensing of the `FC_k_j` variable in the objective function formulation. 
-   * Adopting the `K_j_start` as scaler in the objective fucntion rather than dictionnary. 
-   * Dispensing of the `lpSum` method in formulating power requirement constraint.
-   * Dispensing of the `merge_dicitionaries` function in formulating power requirements 
-     constraint. 
-   * Adopting the battery transfer efficiency rate `eff_from_bat` in formulating   
-     formulating 
-     power requirements constraint.
-   * Replacing the specific fuel oil consumption constraint by the Fuel consumption 
-     constraint. 
-   * Adopting If statment to reformulate the battery charge logics, 
-   * Fixing the logic about the charge balance state doesn't depend on the privious 
-     value of charge and power `Optim += Q_bat[k] == Q_bat[k-1] + eff_to_bat*P_A_to_bat[k]*dt - P_From_bat[k]*dt`. 
-   * Adding the battery charging logical constraints. 
-   * Adopting the final step battery charge logic out of the nested if statement and out of 
-     the for outer for loop. 
+
    
    
    
