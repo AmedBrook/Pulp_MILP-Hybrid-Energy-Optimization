@@ -22,7 +22,7 @@ This is a guide on how to contrubute to HYH.
 
 On top of having python installed, we will be using git and the command line. Also, we assume you have a github account and know how to fork a project. We will use plain git through the command line but feel free to use the git client of your choice.
 
-### Forking HYH.
+### Forking the project.
 You can follow the github guides to fork a project: [here](https://docs.github.com/en/get-started/quickstart/contributing-to-projects) and also [here](https://docs.github.com/en/get-started/quickstart/fork-a-repo).
 
 You need a github account to fork a github project. It’s free.
@@ -45,7 +45,7 @@ $ make
 ```
 It will test your python environment and the PuLP packages as well as installing the required dependancies if not already installed.
 
-### Creating a test.
+### Creating a test file.
 When you fix an issue in pulp or add a functionality, you should add a test to the repository. For this you should do the following: 
 
  - Go to src/functions/ folder and add a new method.
