@@ -2,7 +2,7 @@
 
 This is a guide on how to contrubute to HYH.
 
-#### Contribution steps :
+#### Contribution steps.
 
 1. Fork the repo.
 
