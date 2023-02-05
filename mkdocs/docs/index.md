@@ -33,8 +33,8 @@ For full project materials visit [https://github.com/AmedBrook/Pulp_MILP-Hybrid-
 
     
     data/
-        exteranl/
-        interinm/
+        external/
+        interim/
         processed/
         raw/
         .gitkeepg
