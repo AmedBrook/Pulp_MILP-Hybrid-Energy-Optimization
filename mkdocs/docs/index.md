@@ -38,13 +38,6 @@ For full project materials visit [https://github.com/AmedBrook/Pulp_MILP-Hybrid-
         processed/
         raw/
         .gitkeep
-    docs/
-        commands.rst
-        conf.py
-        getting-started.rst
-        index.rst
-        make.bat
-        ...
     mkdocs/
         docs/
         site/
