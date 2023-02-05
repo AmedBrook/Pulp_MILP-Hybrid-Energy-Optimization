@@ -5,4 +5,4 @@
 - Ray Pörn, Ph.D., Principal Lecturer, Novia.
 - Ahmed Mabrouk, Ch.Eng., R&D Project Assistant, Novia.
 
-Web site : [Novia University of Applied Sciences.](https://www.novia.fi/)
+Web site : [Intelligent Systems Institute, Novia UAS.](https://www.novia.fi/en/intelligentsystems/)
