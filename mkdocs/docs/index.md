@@ -37,10 +37,16 @@ For full project materials visit [https://github.com/AmedBrook/Pulp_MILP-Hybrid-
         interinm/
         processed/
         raw/
-        .gitkeep
+        .gitkeepg
     mkdocs/
         docs/
+            img/
+            javascripts/
+                        mathjax.js
+            ...
         site/
+            ...
+        mkdocs.yml
     models/
         .gitkeep
     notebooks/
