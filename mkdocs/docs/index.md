@@ -1,6 +1,6 @@
 # PuLP-MILP Hybrid Energy Optimization. 
 
-For full project materials visit [https://github.com/AmedBrook/Pulp_MILP-Hybrid-Energy-Optimization](https://github.com/AmedBrook/Pulp_MILP-Hybrid-Energy-Optimization).
+For full source project : [https://github.com/AmedBrook/Pulp_MILP-Hybrid-Energy-Optimization](https://github.com/AmedBrook/Pulp_MILP-Hybrid-Energy-Optimization).
 
 
 ## Commands:
