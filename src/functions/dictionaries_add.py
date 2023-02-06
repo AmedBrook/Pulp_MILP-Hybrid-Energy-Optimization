@@ -1,5 +1,5 @@
 
-#Function to add two dictionaries
+# Function to add two dictionaries
 
 def merge_dictionaries_1_2(dict1, dict2):
     merged_dictionary_1_2 = {}
@@ -19,7 +19,7 @@ def merge_dictionaries_1_2(dict1, dict2):
     return merged_dictionary_1_2
 
 
-#Testing the function 
+# Testing the function
 
 dict1 = {'key1': 1, 'key2': 2, 'key3': 3}
 dict2 = {'key1': 10, 'key2': 20, 'key3': 30}
