@@ -1,6 +1,17 @@
-# testing Load_window function 
+# testing Load_window function
 
 import unittest
+import sys
+import os
+from dotenv import load_dotenv
+
+
+load_dotenv()
+wpath = os.getenv(r'wpath')
+ppath = os.getenv(r'ppath')
+
+sys.path.append(os.path.abspath(os.path.join(ppath)))
+sys.path.append(os.path.abspath(os.path.join(wpath)))
 
 from load_window import Load_window
 
@@ -11,7 +22,15 @@ class TestLoad(unittest.TestCase):
         """
         Test that it makes the load frame along the 60 time steps
         """
-        Loadframe = Load_window (200,200,10,400,400,10,600,600,10,600,200,30,0,10,20,30)
+        Loadframe = Load_window(
+
+         200, 200, 10,
+         400, 400, 10,
+         600, 600, 10,
+         600, 200, 30,
+         0, 10, 20, 30
+         )
+
         res = sum(Loadframe[k] for k in range(60))
         self.assertEqual(res, 24000.0)
 
@@ -19,17 +38,25 @@ class TestLoad(unittest.TestCase):
 
         P_A_max = 1000
         """
-        Test that it respects genset's low and max bounds 
+        Test that it respects genset's low and max bounds
         """
-        Loadframe = Load_window (200,200,10,400,400,10,600,600,10,600,200,30,0,10,20,30)
+        Loadframe = Load_window(
+
+         200, 200, 10,
+         400, 400, 10,
+         600, 600, 10,
+         600, 200, 30,
+         0, 10, 20, 30)
+
         res = sum(Loadframe[k] for k in range(60))
         Power_max_limit = P_A_max*60*0.9
         power_low_limit = 0
 
-        if res <= Power_max_limit and res >= power_low_limit: 
+        if res <= Power_max_limit and res >= power_low_limit:
             Power_check = 1
 
         self.assertEqual(Power_check, 1)
+
 
 if __name__ == '__main__':
     unittest.main()
