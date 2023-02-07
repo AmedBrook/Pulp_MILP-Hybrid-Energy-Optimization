@@ -1,19 +1,7 @@
 # testing Load_window function
 
 import unittest
-import sys
-import os
-from dotenv import load_dotenv
-
-
-load_dotenv()
-wpath = os.getenv(r'wpath')
-ppath = os.getenv(r'ppath')
-
-sys.path.append(os.path.abspath(os.path.join(ppath)))
-sys.path.append(os.path.abspath(os.path.join(wpath)))
-
-from load_window import Load_window
+import functions
 
 
 class TestLoad(unittest.TestCase):
@@ -22,7 +10,7 @@ class TestLoad(unittest.TestCase):
         """
         Test that it makes the load frame along the 60 time steps
         """
-        Loadframe = Load_window(
+        Loadframe = functions.Load_window(
 
          200, 200, 10,
          400, 400, 10,
@@ -40,7 +28,7 @@ class TestLoad(unittest.TestCase):
         """
         Test that it respects genset's low and max bounds
         """
-        Loadframe = Load_window(
+        Loadframe = functions.Load_window(
 
          200, 200, 10,
          400, 400, 10,

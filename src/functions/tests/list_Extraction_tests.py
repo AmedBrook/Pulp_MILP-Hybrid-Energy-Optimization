@@ -1,20 +1,7 @@
 # testing routine for List_Extraction function
 
 import unittest
-import sys
-import os
-from dotenv import load_dotenv
-
-
-load_dotenv()
-wpath = os.getenv(r'wpath')
-ppath = os.getenv(r'ppath')
-
-sys.path.append(os.path.abspath(os.path.join(ppath)))
-sys.path.append(os.path.abspath(os.path.join(wpath)))
-
-
-from list_extraction import list_extract
+import functions
 
 
 class list_extract_test(unittest.TestCase):
@@ -31,7 +18,7 @@ class list_extract_test(unittest.TestCase):
         n = len(t)  # number of time steps.
         V_steps = [x for x in range(0, n)]  # Time steps vector.
 
-        list_extract(
+        functions.list_extract(
             'FC_A_', 'P_A_', 'P_A_load_',
             'P_A_to_bat_', 'P_From_bat_',
             'Q_bat_', 'Y_', 'Y_from_bat_',
