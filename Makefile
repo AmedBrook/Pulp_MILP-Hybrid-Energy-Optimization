@@ -71,7 +71,7 @@ fuel_consumption:
 	$(PYTHON_INTERPRETER) src/functions/fuel_consumption_tests.py
 
 list_extraction: 
-	$(PYTHON_INTERPRETER) src/functions/list_Extraction_tests.py
+	$(PYTHON_INTERPRETER) src/functions/list_extraction_tests.py
 
 load_window: 
 	$(PYTHON_INTERPRETER) src/functions/load_window_tests.py
