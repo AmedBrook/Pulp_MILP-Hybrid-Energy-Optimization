@@ -21,8 +21,7 @@ endif
 
 ## Install Python Dependencies
 requirements: setup
-	$(PYTHON_INTERPRETER) -m pip install -U pip setuptools wheel
-	$(PYTHON_INTERPRETER) -m pip install -r requirements.txt
+	$(PYTHON_INTERPRETER) -m pip install -e .
 
 ## Make Dataset
 data: requirements
@@ -35,7 +34,7 @@ clean:
 
 ## Lint using flake8
 lint:
-	flake8 src
+	flake8 src/functions
 
 ## Set up python interpreter environment
 create_environment:
