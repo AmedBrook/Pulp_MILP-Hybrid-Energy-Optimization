@@ -1,4 +1,4 @@
-.PHONY: clean data lint requirements test_environment fuel_consumption list_extraction load_window
+.PHONY: help clean data lint requirements test_environment fuel_consumption list_extraction load_window 
 
 #################################################################################
 # GLOBALS                                                                       #
@@ -16,12 +16,12 @@ HAS_CONDA=True
 endif
 
 #################################################################################
-# COMMANDS                                                                      #
+# PROJECT GLOBAL SETUP                                                          #
 #################################################################################
 
 ## Install Python Dependencies
 requirements: setup
-	$(PYTHON_INTERPRETER) -m pip install -e .
+	$(PYTHON_INTERPRETER) -m pip install --use-pep517 -e .
 
 ## Make Dataset
 data: requirements
@@ -98,7 +98,7 @@ load_window:
 # Separate expressions are necessary because labels cannot be delimited by
 # semicolon; see <http://stackoverflow.com/a/11799865/1968>
 
-.PHONY: help
+
 help:
 	@echo "$$(tput bold)Available rules:$$(tput sgr0)"
 	@echo
