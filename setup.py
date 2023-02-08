@@ -18,7 +18,7 @@ setup(
     url='https://github.com/AmedBrook/Pulp_MILP-Hybrid-Energy-Optimization',
     maintainer_email='Ahmed.Mabrouk@novia.fi',
     license='MIT',
-    packages=setuptools.find_packages(include=['HYH']),
+    packages=setuptools.find_packages(include=['HYH'], exclude=['src.models', 'src.visualization', 'src.dataset']),
     install_requires=get_install_requirements() 
     )
 
