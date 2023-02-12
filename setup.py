@@ -1,5 +1,5 @@
 import setuptools
-from setuptools import setup, find_packages
+from setuptools import setup, find_namespace_packages
 
 def get_install_requirements():    
 
@@ -18,7 +18,7 @@ setup(
     url='https://github.com/AmedBrook/Pulp_MILP-Hybrid-Energy-Optimization',
     maintainer_email='Ahmed.Mabrouk@novia.fi',
     license='MIT',
-    packages=setuptools.find_packages(include=['HYH'], exclude=['src.models', 'src.visualization', 'src.dataset']),
+    packages=setuptools.find_namespace_packages(include=['src', 'src.functions', 'src.tests'] ),
     install_requires=get_install_requirements() 
     )
 
