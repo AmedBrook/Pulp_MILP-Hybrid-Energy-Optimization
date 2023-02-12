@@ -1,7 +1,7 @@
 # testing routine for List_Extraction function
 
 import unittest
-import functions
+from src import functions
 
 
 class list_extract_test(unittest.TestCase):

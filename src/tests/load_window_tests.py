@@ -1,7 +1,7 @@
 # testing Load_window function
 
 import unittest
-import functions
+from src import functions
 
 
 class TestLoad(unittest.TestCase):
