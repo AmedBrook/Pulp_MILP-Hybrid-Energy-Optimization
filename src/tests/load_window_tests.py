@@ -1,7 +1,7 @@
 # testing Load_window function
 
 import unittest
-from src import functions
+from src.functions import load_window
 
 
 class TestLoad(unittest.TestCase):
@@ -10,7 +10,7 @@ class TestLoad(unittest.TestCase):
         """
         Test that it makes the load frame along the 60 time steps
         """
-        Loadframe = functions.Load_window(
+        Loadframe = load_window.lwd(
 
          200, 200, 10,
          400, 400, 10,
@@ -28,7 +28,7 @@ class TestLoad(unittest.TestCase):
         """
         Test that it respects genset's low and max bounds
         """
-        Loadframe = functions.Load_window(
+        Loadframe = load_window.lwd(
 
          200, 200, 10,
          400, 400, 10,

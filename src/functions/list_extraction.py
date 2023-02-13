@@ -1,8 +1,8 @@
 
-# List extraction function.
+# lisxtr function.
 
 
-def list_extract():
+def lixtr():
     import numpy as np
     import pulp
     pulp.pulpTestAll()
@@ -60,4 +60,4 @@ def list_extract():
     for nm in nms:
         print((nmss[nm]) + '=', (nms[nm]))
 
-    return list_extract
+    return lixtr

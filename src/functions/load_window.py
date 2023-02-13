@@ -1,8 +1,8 @@
-# Load window function.
+# lwd function.
 import numpy as np
 
 
-def Load_window(
+def lwd (
  val11, val12, val13,
  val21, val22, val23,
  val31, val32, val33,
@@ -25,7 +25,7 @@ def Load_window(
 # Function testing.
 
 
-Load_window(
+lwd (
  200, 200, 10,
  400, 400, 10,
  600, 600, 10,

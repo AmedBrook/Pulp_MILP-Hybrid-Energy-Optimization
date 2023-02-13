@@ -18,7 +18,7 @@ class list_extract_test(unittest.TestCase):
         n = len(t)  # number of time steps.
         V_steps = [x for x in range(0, n)]  # Time steps vector.
 
-        functions.list_extract(
+        functions.lixtr(
             'FC_A_', 'P_A_', 'P_A_load_',
             'P_A_to_bat_', 'P_From_bat_',
             'Q_bat_', 'Y_', 'Y_from_bat_',
