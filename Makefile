@@ -21,7 +21,7 @@ endif
 
 ## Install Python Dependencies
 requirements: setup
-	$(PYTHON_INTERPRETER) -m pip install --use-pep517 -e .
+	$(PYTHON_INTERPRETER) -m pip install -e .
 
 ## Make Dataset
 data: requirements
@@ -67,13 +67,13 @@ setup:
 #################################################################################
 
 fuel_consumption: 
-	$(PYTHON_INTERPRETER) src/functions/fuel_consumption_tests.py
+	$(PYTHON_INTERPRETER) src/tests/fuel_consumption_tests.py
 
 list_extraction: 
-	$(PYTHON_INTERPRETER) src/functions/list_extraction_tests.py
+	$(PYTHON_INTERPRETER) src/tests/list_extraction_tests.py
 
 load_window: 
-	$(PYTHON_INTERPRETER) src/functions/load_window_tests.py
+	$(PYTHON_INTERPRETER) src/tests/load_window_tests.py
 
 
 #################################################################################
