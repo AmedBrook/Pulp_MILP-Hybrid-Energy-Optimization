@@ -2,7 +2,7 @@
 # project requirements
 gurobipy==10.0.0
 PuLP==2.7.0
-matplotlib==3.2.2
+matplotlib
 numpy==1.21.6 
 
 # external requirements
