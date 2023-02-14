@@ -1,4 +1,4 @@
-.PHONY: help clean data lint requirements test_environment fuel_consumption list_extraction load_window 
+.PHONY: help clean setup lint test_environment fuel_consumption list_extraction load_window 
 
 #################################################################################
 # GLOBALS                                                                       #
@@ -19,13 +19,9 @@ endif
 # PROJECT GLOBAL SETUP                                                          #
 #################################################################################
 
-## Install Python Dependencies
-requirements: setup
+## Setting up the project via setup.py
+setup: 
 	$(PYTHON_INTERPRETER) -m pip install -e .
-
-## Make Dataset
-data: requirements
-	$(PYTHON_INTERPRETER) src/data/make_dataset.py data/raw data/processed
 
 ## Delete all compiled Python files
 clean:
@@ -54,24 +50,24 @@ else
 	@echo ">>> New virtualenv created. Activate with:\nworkon $(PROJECT_NAME)"
 endif
 
-## Test python and pulp environment is setup correctly
-test_environment:
-	$(PYTHON_INTERPRETER) test_environment.py
-
-## Set up the project via Setuptools
-setup: 
-	$(PYTHON_INTERPRETER) setup.py
 
 #################################################################################
 # PROJECT TESTS                                                                 #
 #################################################################################
 
+## Test python and pulp environment are setup correctly.
+test_environment:
+	$(PYTHON_INTERPRETER) test_environment.py
+
+## Test if fuel_consumption function working correctly.
 fuel_consumption: 
 	$(PYTHON_INTERPRETER) src/tests/fuel_consumption_tests.py
 
+## Test if list_extraction function is working correctly. 
 list_extraction: 
 	$(PYTHON_INTERPRETER) src/tests/list_extraction_tests.py
 
+## Test if load_window function is working correctly.
 load_window: 
 	$(PYTHON_INTERPRETER) src/tests/load_window_tests.py
 
