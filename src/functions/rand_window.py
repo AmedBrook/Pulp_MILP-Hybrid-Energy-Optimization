@@ -1,6 +1,7 @@
 # Generating random Load profil.
 import random
 
+
 def Load(r, P_A_max):
 
     Profile = {}
