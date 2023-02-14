@@ -2,7 +2,7 @@
 import numpy as np
 
 
-def lwd (
+def lwd(
  val11, val12, val13,
  val21, val22, val23,
  val31, val32, val33,
@@ -25,7 +25,7 @@ def lwd (
 # Function testing.
 
 
-lwd (
+lwd(
  200, 200, 10,
  400, 400, 10,
  600, 600, 10,
