@@ -19,19 +19,6 @@ endif
 # PROJECT GLOBAL SETUP                                                          #
 #################################################################################
 
-## Setting up the project via setup.py
-setup: 
-	$(PYTHON_INTERPRETER) -m pip install -e .
-
-## Delete all compiled Python files
-clean:
-	find . -type f -name "*.py[co]" -delete
-	find . -type d -name "__pycache__" -delete
-
-## Lint using flake8
-lint:
-	flake8 src/functions
-
 ## Set up python interpreter environment
 create_environment:
 ifeq (True,$(HAS_CONDA))
@@ -50,24 +37,36 @@ else
 	@echo ">>> New virtualenv created. Activate with:\nworkon $(PROJECT_NAME)"
 endif
 
+## Setting up the project via setup.py
+setup: 
+	$(PYTHON_INTERPRETER) -m pip install -e .
+
+## Delete all compiled Python files
+clean:
+	find . -type f -name "*.py[co]" -delete
+	find . -type d -name "__pycache__" -delete
+
+## Lint using flake8
+lint:
+	flake8 src/functions
 
 #################################################################################
-# PROJECT TESTS                                                                 #
+# PROJECT TEST ROUTINGS                                                         #
 #################################################################################
 
 ## Test python and pulp environment are setup correctly.
 test_environment:
 	$(PYTHON_INTERPRETER) test_environment.py
 
-## Test if fuel_consumption function working correctly.
+## Test if <fuelCon> function working correctly.
 fuel_consumption: 
 	$(PYTHON_INTERPRETER) src/tests/fuel_consumption_tests.py
 
-## Test if list_extraction function is working correctly. 
+## Test if <lixtr> function is working correctly. 
 list_extraction: 
 	$(PYTHON_INTERPRETER) src/tests/list_extraction_tests.py
 
-## Test if load_window function is working correctly.
+## Test if <lwd> function is working correctly.
 load_window: 
 	$(PYTHON_INTERPRETER) src/tests/load_window_tests.py
 
