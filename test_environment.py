@@ -4,7 +4,7 @@ REQUIRED_PYTHON = "python"
 
 def main():
     
-############## Testing the python version required ##############################
+############## Testing the required python version  ##############################
 
     system_major = sys.version_info.major
     if REQUIRED_PYTHON == "python":
@@ -20,21 +20,19 @@ def main():
             "This project requires Python {}. Found: Python {}".format(
                 required_major, sys.version))
     else:
-        print(">>> Development environment passes all tests!")
+        print(">>> The required Python version passes all tests!")
 
-############ Pulp packages and version ##########################################
+############ Testing the required Pulp version ##########################################
 
     import pulp
-
     pulp_version = pulp. VERSION
-        
     if pulp_version != "2.7.0":
         raise TypeError(
             "This project requires Pulp version 2.7.0" )
     else:
         print(">>> Pulp version passes test!")
     
-########### Testing pulp packages ###############################################
+############ Testing installed pulp packages ###############################################
 
     import pulp
     if pulp.pulpTestAll() != 'OK' : 
