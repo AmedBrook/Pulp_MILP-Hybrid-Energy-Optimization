@@ -1,4 +1,4 @@
-.PHONY: help clean setup lint test_environment fuel_consumption list_extraction load_window 
+.PHONY: help clean setup lint test_env test_fuleCon test_lixtr test_lwd 
 
 #################################################################################
 # GLOBALS                                                                       #
@@ -19,8 +19,8 @@ endif
 # PROJECT GLOBAL SETUP                                                          #
 #################################################################################
 
-## Set up python interpreter environment
-create_environment:
+
+create_environment: ## Set up python interpreter environment
 ifeq (True,$(HAS_CONDA))
 		@echo ">>> Detected conda, creating conda environment."
 	ifeq (3,$(findstring 3,$(PYTHON_INTERPRETER)))
@@ -37,38 +37,37 @@ else
 	@echo ">>> New virtualenv created. Activate with:\nworkon $(PROJECT_NAME)"
 endif
 
-## Setting up the project via setup.py
-setup: 
+setup: ## Setting up the project via setup.py
+	$(PYTHON_INTERPRETER) -m pip install setuptools
 	$(PYTHON_INTERPRETER) -m pip install -e .
 
-## Delete all compiled Python files
-clean:
+
+clean: ## Delete all compiled Python files
 	find . -type f -name "*.py[co]" -delete
 	find . -type d -name "__pycache__" -delete
 
-## Lint using flake8
-lint:
+
+lint: ## Lint using flake8
 	flake8 src/functions
+	flake8 notebook
 
 #################################################################################
 # PROJECT TEST ROUTINGS                                                         #
 #################################################################################
 
-## Test python and pulp environment are setup correctly.
-test_environment:
+test_env: test_fuleCon test_lwd ## Test python, pulp and some internal packages.
 	$(PYTHON_INTERPRETER) test_environment.py
 
-## Test if <fuelCon> function working correctly.
-fuel_consumption: 
+test_fuleCon: ## Test if <fuelCon> function working correctly.
 	$(PYTHON_INTERPRETER) src/tests/fuel_consumption_tests.py
 
-## Test if <lixtr> function is working correctly. 
-list_extraction: 
-	$(PYTHON_INTERPRETER) src/tests/list_extraction_tests.py
 
-## Test if <lwd> function is working correctly.
-load_window: 
+test_lwd: ## Test if <lwd> function is working correctly.
 	$(PYTHON_INTERPRETER) src/tests/load_window_tests.py
+
+
+test_lixtr: ## Test if <lixtr> function is working correctly. 
+	$(PYTHON_INTERPRETER) src/tests/list_extraction_tests.py
 
 
 #################################################################################
