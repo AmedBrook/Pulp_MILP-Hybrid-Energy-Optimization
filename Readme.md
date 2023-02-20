@@ -42,10 +42,10 @@ $\newline$
  
 # Project installations : 
 
-##  <em>Manual installation :</em> 
+##  <em>Manual installation.</em> 
 ----
 >
-> ### Project environment.
+> #### Project environment.
 ---
 >$\newline$  
 >$\newline$ 
@@ -60,8 +60,9 @@ $\newline$
 >	- $ conda activate --HYH_env.
 > ```
 >$\newline$ 
+----
 >
->### Project setup.
+> #### Project setup.
 ---
 >
 >$\newline$  
@@ -91,7 +92,7 @@ $\newline$
 > This a quick guide on how to install the required packages if you have decided for whatever reason to go through installations one by one and setting up the project without passingg by the setup.py file. Though you still have to go through the manual installation for [Mathjax](https://github.com/AmedBrook/Pulp_MILP-Hybrid-Energy-Optimization#mathjax) setup. 
 >$\newline$  
 >$\newline$  
-## PuLP.
+### PuLP.
 ------------
 >
 >- In order to install Pulp modler packages run one of the following commands : : 
@@ -106,7 +107,7 @@ $\newline$
 >```
 >$\newline$  
 >$\newline$ 
-## Gurobi. 
+### Gurobi. 
 -------------
 >
 > - To install Gurobi solver packages, run one of the following commands :
@@ -121,7 +122,7 @@ $\newline$
 >```
 >$\newline$  
 >$\newline$ 
-## Mkdocs. 
+### Mkdocs. 
 ------
 > - To install Mkdocs packages, run one of the following commands :
 >  
@@ -149,7 +150,7 @@ $\newline$
 >
 >$\newline$  
 $\newline$ 
-## Mathjax. 
+### Mathjax. 
 -------
 > Mathjax is a Javascript library that can display mathimatical notations in the browser using LaTex or other. 
 In order to integarate Mathjax within Mkdocs do the following: 
@@ -182,7 +183,7 @@ In order to integarate Mathjax within Mkdocs do the following:
 >```
 >$\newline$  
 $\newline$ 
-## flake8. 
+### flake8. 
 -----
 > To analyse code syntax and debug make sure each single peace of code follows the PEP8 and other coding standards we use flake8 linter to do so. 
 >- In order to install flake8 run on of the follwing commands : 
@@ -198,7 +199,7 @@ $\newline$
 >
 >$\newline$  
 >$\newline$ 
-## <em>Pre-configured installation :</em>
+## <em>Pre-configured installation.</em>
 ----
 >$\newline$  
 
@@ -211,7 +212,7 @@ Providing you have make installed in your system, for Linux based system it come
 >$\newline$  
 >$\newline$ 
 >
-## chocolatey.
+### chocolatey.
 --------------
 >
 > First thing first we will install chocolatey, make sure you are using the Pwershell command as an administrator,
@@ -234,7 +235,7 @@ Providing you have make installed in your system, for Linux based system it come
 $\newline$  
 $\newline$ 
 
-## Make.
+### Make.
 --------------
 > - Now that you have `chocolatey` installed, we can install `make` by running the command : 
 >```
@@ -260,15 +261,17 @@ Once the <em><strong>`make`</em></strong> installation is done , and assuming th
 > ```
 >$\newline$
 >$\newline$
->
-# Project tests.
-
+----
+## <em>Project tests.</em>
+----
+>$\newline$
+>$\newline$
 > - To test packages and dependencies just run the command : 
 > 
 > ```	
 >	- $ make env_test
 > ```
-> Under the hood make will go over the <em><strong>`Makefile`</em></strong> located in our directory which itself will chain to all test units located in<em><strong>`src/tests`</em></strong> and do the heavy work for you.
+> Under the hood make will go over the <em><strong>`Makefile`</em></strong> located in our directory which itself will chain to all test units located in <em><strong>`src/tests`</em></strong> directory and do the heavy work for you.
 >$\newline$  
 >$\newline$ 
 >$\newline$  
