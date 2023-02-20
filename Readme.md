@@ -154,10 +154,10 @@ In order to integarate Mathjax within Mkdocs do the following:
 > ```
 >  			mkdocs_______
 >      			|___ docs
->		      	|		|___ javascripts
->             	|		|     		|___ mathjax.js
->			    |		|           |
->									|
+>		      			|___ javascripts
+>             			|     		|___ mathjax.js
+>			    		|           
+>									
 >```
 >
 > - Add the following script lines in the configuration file<em><strong> `mkdocs.yml` </em></strong>
