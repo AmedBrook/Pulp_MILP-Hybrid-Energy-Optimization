@@ -83,7 +83,7 @@ $\newline$
 >```
 > 
 > 
-> Seperate packages installations walk-through 
+>  ###  <em>Seperate packages installations walk-through</em>  
 >$\newline$  
 >$\newline$ 
 > This a quick guide on how to install the required packages if you have decided for whatever reason to go through installations one by one and setting up the project without passingg by the setup.py file. Though you still have to go through the manual installation for <em>` Mathjax `</em> setup. 
