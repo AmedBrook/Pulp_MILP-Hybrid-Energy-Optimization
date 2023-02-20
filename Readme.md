@@ -260,14 +260,6 @@ Once the <em><strong>`make`</em></strong> installation is done , and assuming th
 > ```
 >$\newline$
 >$\newline$
-> - To test packages and dependencies run the command : 
-> 
-> ```	
->	- $ make test_env
-> ```
->$\newline$
->$\newline$
->
 >
 # Project tests.
 
