@@ -264,8 +264,7 @@ Once the <em><strong>`make`</em></strong> installation is done , and assuming th
 ----
 ## <em>Project tests.</em>
 ----
->$\newline$  
->$\newline$ 
+>
 > - To test code syntax and style just run the following command : 
 > 
 > ```	
