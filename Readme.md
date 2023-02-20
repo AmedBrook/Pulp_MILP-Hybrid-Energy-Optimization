@@ -83,10 +83,14 @@ $\newline$
 >```
 > 
 > 
->  ###  <em>Seperate packages installations walk-through</em>  
+>$\newline$  
+>$\newline$  
+  ##  <em> Seperate installations walk-through. </em>  
 >$\newline$  
 >$\newline$ 
-> This a quick guide on how to install the required packages if you have decided for whatever reason to go through installations one by one and setting up the project without passingg by the setup.py file. Though you still have to go through the manual installation for <em>` Mathjax `</em> setup. 
+> This a quick guide on how to install the required packages if you have decided for whatever reason to go through installations one by one and setting up the project without passingg by the setup.py file. Though you still have to go through the manual installation for [Mathjax](#Mathjax.) setup. 
+>$\newline$  
+>$\newline$  
 ## PuLP.
 ------------
 >
@@ -261,11 +265,8 @@ Once the <em><strong>`make`</em></strong> installation is done , and assuming th
 > ```	
 >	- $ make test_env
 > ```
-> in the back-scene make will go over the <em><strong>`Makefile`</em></strong> located in our directory which itself will chain to <em><strong>`setup.py`</em></strong> file and do the heavy work for you.
->$\newline$  
->$\newline$ 
-
->
+>$\newline$
+>$\newline$
 # Project tests.
 
 > - To test packages and dependencies just run the command : 
