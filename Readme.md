@@ -163,7 +163,7 @@ In order to integarate Mathjax within Mkdocs do the following:
 > - Add the following script lines in the configuration file<em><strong> `mkdocs.yml` </em></strong>
 >
 > ```
->	extra_javascript:
+>extra_javascript:
 >
 >javascripts/mathjax.js
 >https://polyfill.io/v3/polyfill.min.js?features=es6
