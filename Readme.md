@@ -274,6 +274,11 @@ Once the <em><strong>`make`</em></strong> installation is done , and assuming th
 > Under the hood make will go over the <em><strong>`Makefile`</em></strong> located in our directory which itself will chain to all test units located in <em><strong>`src/tests`</em></strong> directory and do the heavy work for you.
 >$\newline$  
 >$\newline$ 
+> - To test code syntax and style just run the following command : 
+> 
+> ```	
+>	- $ make lint
+> ```
+> Under the hood make will go over the <em><strong>`Makefile`</em></strong> located in our directory which itself will chain to all coding resources in <em><strong>`src/functions`</em></strong> and <em><strong>`notebooks`</em></strong> directories and will check the syntax and style of your code based on PEP8 standards for you.
 >$\newline$  
 >$\newline$ 
-
