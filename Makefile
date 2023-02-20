@@ -49,7 +49,7 @@ clean: ## Delete all compiled Python files
 
 lint: ## Lint using flake8
 	flake8 src/functions
-	flake8 notebook
+	flake8 notebooks
 
 #################################################################################
 # PROJECT TEST ROUTINGS                                                         #
