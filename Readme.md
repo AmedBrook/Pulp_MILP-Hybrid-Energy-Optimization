@@ -276,7 +276,7 @@ Once the <em><strong>`make`</em></strong> installation is done , and assuming th
 > ```	
 >	- $ make env_test
 > ```
-> Under the hood make will go over the <em><strong>`Makefile`</em></strong> located in our directory which itself will chain to all test units in<em><strong>`src/tests`</em></strong> and do the heavy work for you.
+> Under the hood make will go over the <em><strong>`Makefile`</em></strong> located in our directory which itself will chain to all test units located in<em><strong>`src/tests`</em></strong> and do the heavy work for you.
 >$\newline$  
 >$\newline$ 
 >$\newline$  
