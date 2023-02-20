@@ -275,8 +275,6 @@ Once the <em><strong>`make`</em></strong> installation is done , and assuming th
 >$\newline$  
 >$\newline$ 
 >
->$\newline$
->$\newline$
 > - To test packages and dependencies just run the command : 
 > 
 > ```	
