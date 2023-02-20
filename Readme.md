@@ -44,11 +44,9 @@ $\newline$
 
 ##  <em>Manual installation :</em> 
 ----
->$\newline$  
->$\newline$ 
 >
 > ### Project environment.
-> ============================================
+---
 >$\newline$  
 >$\newline$ 
 > Using Anaconda environnment manager: 
@@ -61,11 +59,10 @@ $\newline$
 > ```
 >	- $ conda activate --HYH_env.
 > ```
->$\newline$  
 >$\newline$ 
 >
 >### Project setup.
->==============================================
+---
 >
 >$\newline$  
 >
@@ -82,14 +79,18 @@ $\newline$
 > - Now that you have <em>`setuptools`</em> in you environment, in order to install all packages and dependencies at once run the command : 
 >
 >```
->	- $ python -m install -e . 
+>	- $ python -m pip install -e . 
 >```
+> 
+> 
+> Seperate packages installations walk-through 
 >$\newline$  
 >$\newline$ 
+> This a quick guide on how to install the required packages if you have decided for whatever reason to go through installations one by one and setting up the project without passingg by the setup.py file. Though you still have to go through the manual installation for <em>` Mathjax `</em> setup. 
 ## PuLP.
 ------------
 >
->- In order to install Pulp modler pacjakges we use the command : 
+>- In order to install Pulp modler packages run one of the following commands : : 
 >
 >Using Anaconda package index :
 >```
@@ -104,13 +105,13 @@ $\newline$
 ## Gurobi. 
 -------------
 >
-> - To install Gurobi solver packages, we use the commands :
+> - To install Gurobi solver packages, run one of the following commands :
 >
 > Using Anaconda package index :
 >```	
 >	- $ conda install -c gurobi gurobi  
 >```
-> - Using Python package index (Pypi) : 
+> Using Python package index (Pypi) : 
 >```
 >	- $ python -m pip install gurobipy 
 >```
@@ -118,13 +119,18 @@ $\newline$
 >$\newline$ 
 ## Mkdocs. 
 ------
->
-> - To install mkdocs (Pypi): 
->
+> - To install Mkdocs packages, run one of the following commands :
+>  
+> Using Python package index (Pypi) : 
 >```	
 >	- $ python -m pip install mkdocs
 >```
->
+> Using Anaconda package index :
+>```	
+>	- $ conda install -c conda-forge mkdocs
+>```
+>$\newline$  
+>$\newline$ 
 > - To create new mkdocs project : 
 > ```	
 >	- $ python -m mkdocs new [name of the project]
@@ -170,6 +176,22 @@ In order to integarate Mathjax within Mkdocs do the following:
 >https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 >
 >```
+>$\newline$  
+$\newline$ 
+## flake8. 
+-----
+> To analyse code syntax and debug make sure each single peace of code follows the PEP8 and other coding standards we use flake8 linter to do so. 
+>- In order to install flake8 run on of the follwing commands : 
+>
+>Using Anaconda package index :
+>```
+>	- $ conda install -c anaconda flake8
+>```
+>Using Python package index (Pypi) : 
+>```
+>	- $ python -m pip install flake8
+>```
+>
 >$\newline$  
 >$\newline$ 
 ## <em>Pre-configured installation :</em>
