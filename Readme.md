@@ -88,7 +88,7 @@ $\newline$
   ##  <em> Seperate installations walk-through. </em>  
 >$\newline$  
 >$\newline$ 
-> This a quick guide on how to install the required packages if you have decided for whatever reason to go through installations one by one and setting up the project without passingg by the setup.py file. Though you still have to go through the manual installation for [Mathjax](#Mathjax.) setup. 
+> This a quick guide on how to install the required packages if you have decided for whatever reason to go through installations one by one and setting up the project without passingg by the setup.py file. Though you still have to go through the manual installation for [Mathjax](https://github.com/AmedBrook/Pulp_MILP-Hybrid-Energy-Optimization#mathjax) setup. 
 >$\newline$  
 >$\newline$  
 ## PuLP.
@@ -267,6 +267,8 @@ Once the <em><strong>`make`</em></strong> installation is done , and assuming th
 > ```
 >$\newline$
 >$\newline$
+>
+>
 # Project tests.
 
 > - To test packages and dependencies just run the command : 
