@@ -8,7 +8,7 @@ The optimization parameters are set of paramters that have beeen used along  wit
 
 #### Set of parameters.
 
-$Q_{\mathrm{max}} \hspace{1cm}$ : Maximal energy charge stored in battery (kWh).
+$Q_{\mathrm{max}} \hspace{1cm}$ : Maximal energy charge stored in battery (kWh)$
 
 
 
