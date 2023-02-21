@@ -39,57 +39,42 @@ $\newline$
 $\newline$ 
 $\newline$  
 $\newline$ 
- 
-# Project installations : 
-
-##  <em>Manual installation.</em> 
-----
->
-> #### Project environment.
----
->$\newline$  
->$\newline$ 
-> Using Anaconda environnment manager: 
->
->	- You create a new environment aside of the root, and called somthing recognisable, we named it here as <em>HYH_env</em> , we have used here python version 3.9.7. to do so you tape : 
-> ```
->	- $ conda create --HYH_env python=3.9.7
->```
-> - Activate the environment by taping :
-> ```
->	- $ conda activate --HYH_env.
-> ```
->$\newline$ 
-----
->
-> #### Project setup.
----
->
->$\newline$  
->
-> Before stating the setup process you need to have <em>`setuptools`</em> installed, if you don't have it already do so,
-> run the command :
-> - Through Pypi : 
->```
->	- $ pip install setuptools 
->```
-> - Through Conda :
->```
->	- $ conda install -c conda-forge setuptools 
->```
-> - Now that you have <em>`setuptools`</em> in you environment, in order to install all packages and dependencies at once run the command : 
->
->```
->	- $ python -m pip install -e . 
->```
-> 
-> 
->$\newline$  
->$\newline$  
+  
   ##  <em> Seperate installations walk-through. </em>  
 >$\newline$  
 >$\newline$ 
-> This a quick guide on how to install the required packages if you have decided for whatever reason to go through installations one by one and setting up the project without passingg by the setup.py file. Though you still have to go through the manual installation for [Mathjax](https://github.com/AmedBrook/Pulp_MILP-Hybrid-Energy-Optimization#mathjax) setup. 
+
+> This is a quick guide on how to install the required packages if you have decided for whatever reason to go through installations one by one and setting up the project without passingg by the setup.py file. Though you still have to go through the manual installation for [Mathjax](https://github.com/AmedBrook/Pulp_MILP-Hybrid-Energy-Optimization#mathjax) setup. 
+>$\newline$  
+>$\newline$  
+### matplotlib.
+------------
+>
+>- In order to install matplotlib package run one of the following commands : : 
+>
+>Using Anaconda package index :
+>```
+>	- $ conda install -c conda-forge matplotlib
+>```
+>Using Python package index (Pypi) : 
+>```
+>	- $ python -m pip install matplotlib
+>```
+>$\newline$  
+>$\newline$  
+### numpy.
+------------
+>
+>- In order to install numpy package run one of the following commands : : 
+>
+>Using Anaconda package index :
+>```
+>	- $ conda install -c anaconda numpy
+>```
+>Using Python package index (Pypi) : 
+>```
+>	- $ python -m pip install numpy
+>```
 >$\newline$  
 >$\newline$  
 ### PuLP.
@@ -199,6 +184,51 @@ $\newline$
 >
 >$\newline$  
 >$\newline$ 
+
+# Project installations : 
+
+##  <em>Manual installation.</em> 
+----
+>
+> #### Project environment.
+---
+>$\newline$  
+>$\newline$ 
+> Using Anaconda environnment manager: 
+>
+>	- You create a new environment, and called somthing recognisable, we named it here as <em>HYH</em> , we have used here python version 3.9.7. to do so you tape : 
+> ```
+>	- $ conda create --HYH python=3.9.7
+>```
+> - Activate the environment by taping :
+> ```
+>	- $ conda activate --HYH_env.
+> ```
+>$\newline$ 
+----
+>
+> #### Project setup.
+---
+>
+>$\newline$  
+>
+> Before stating the setup process you need to have <em>`setuptools`</em> installed, if you don't have it already do so,
+> run the command :
+> - Through Pypi : 
+>```
+>	- $ pip install setuptools 
+>```
+> - Through Conda :
+>```
+>	- $ conda install -c conda-forge setuptools 
+>```
+> - Now that you have <em>`setuptools`</em> in you environment, in order to install all packages and dependencies at once run the command : 
+>
+>```
+>	- $ python -m pip install -e . 
+>```
+> 
+
 ## <em>Pre-configured installation.</em>
 ----
 >$\newline$  
@@ -207,7 +237,7 @@ $\newline$
 While the manual installation can walk you through around the various commands basics for each used packages in the project, chances are you might already know those commands and you don't want to bother yourself about taping every single command, so that's why we have provided the possibility to use <em><strong>`make`</em></strong> scripting, to make life easy for you. You find in the following the commands you will need to do this. 
 
 
-Providing you have make installed in your system, for Linux based system it comes already installed in your system you don't need to install anything just skeep this part to {...}. For windows based systems there are multiple ways to get GNU make installed, like for example Cygwin, NMAKE, CMake..., however we recommand to go for [chocolatey](https://community.chocolatey.org/packages/make), we think it's the most straighforward way to install make for windows systems with less effort. 
+In case you have make installed in your system, for Linux based system it comes already installed in your system you don't need to install anything just skeep this part to {...}. For windows based systems there are multiple ways to get GNU make installed, like for example Cygwin, Nmake, Cmake..., however we recommand to go for [chocolatey](https://community.chocolatey.org/packages/make), we think it's the most straighforward way to install make for windows systems with less effort. 
 
 >$\newline$  
 >$\newline$ 
@@ -215,7 +245,7 @@ Providing you have make installed in your system, for Linux based system it come
 ### chocolatey.
 --------------
 >
-> First thing first we will install chocolatey, make sure you are using the Pwershell command as an administrator,
+> First thing first, we will install chocolatey, make sure you are using the Powershell command as an admin,
 >	
 > - Then run this command first :
 >```
@@ -243,11 +273,11 @@ $\newline$
 >```
 >$\newline$    
 $\newline$ 
-Once the <em><strong>`make`</em></strong> installation is done , and assuming that you have downloaded the project files in your local machine it's very easy to workout everything. 
+Once `make` installation is done , and assuming that you have downloaded the project files in your local machine it's very easy to workout everything. 
 >
 >$\newline$
 >$\newline$
-> - To create the conda environmnt run the command : 
+> - To create the conda environemnt run the command : 
 > 
 > ```	
 >	- $ make create_environment
@@ -270,7 +300,7 @@ Once the <em><strong>`make`</em></strong> installation is done , and assuming th
 > ```	
 >	- $ make lint
 > ```
-> Under the hood, make will go over the <em><strong>`Makefile`</em></strong> located in our directory which itself will chain to all coding resources in <em><strong>`src/functions`</em></strong> and <em><strong>`notebooks`</em></strong> directories and will check the syntax and style of your code using flake8 to meet PEP8 standards.
+> Under the hood, make will go over the <em><strong>`Makefile`</em></strong> located in our directory which itself will chain to all coding resources in <em><strong>`/src/functions`</em></strong> and <em><strong>`/notebooks`</em></strong> directories and will check the syntax and style of your code using flake8 to meet PEP8 standards.
 >$\newline$  
 >$\newline$ 
 >
@@ -279,7 +309,7 @@ Once the <em><strong>`make`</em></strong> installation is done , and assuming th
 > ```	
 >	- $ make env_test
 > ```
-> Behind the scenes, make will go over the <em><strong>`Makefile`</em></strong> located in our directory which itself will chain to all test units located in <em><strong>`src/tests`</em></strong> directory and do the heavy work for you.
+> Behind the scenes, make will go over the <em><strong>`Makefile`</em></strong> located in our directory which itself will chain to all test units located in <em><strong>`/src/tests`</em></strong> directory and do the heavy work for you.
 >$\newline$
 >$\newline$
 
