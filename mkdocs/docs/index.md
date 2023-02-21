@@ -126,7 +126,7 @@ To install Mkdocs packages, run one of the following commands:
 
     `$ python -m mkdocs serve` 
 	
-* To preview the documentation then browse within the output https address returned by the last command.
+* To see the rendered changes browse within the output https address returned by the last command.
 For more guidance on mkdocs, see [here](https://www.mkdocs.org/user-guide/).
 
 ### flake8. 
@@ -201,8 +201,6 @@ While the manual installation can walk you through around the various commands b
 
 
 In case you have make installed in your system, for Linux based system it comes already installed in your system you don't need to install anything just skeep this part to {...}. For windows based systems there are multiple ways to get GNU make installed, like for example Cygwin, Nmake, Cmake..., however we recommand to go for [chocolatey](https://community.chocolatey.org/packages/make), we think it's the most straighforward way to install make for windows systems with less effort. 
-
-For more reading see here.
 
 #### chocolatey.
 
