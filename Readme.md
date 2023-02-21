@@ -177,9 +177,9 @@ In order to integarate Mathjax within Mkdocs do the following:
 ---
 >$\newline$  
 >$\newline$ 
-Using Anaconda environnment manager: 
+- Using Anaconda environnment manager: 
 >
-	- You create a new environment, and called somthing recognisable, we named it here as <em>HYH</em> , we have used here python version 3.9.7. to do so you tape : 
+ You create a new environment, and called somthing recognisable, we named it here as <em>HYH</em> , we have used here python version 3.9.7. to do so you tape : 
 > ```
 >	- $ conda create --HYH python=3.9.7
 >```
