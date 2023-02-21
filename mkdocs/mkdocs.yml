@@ -5,7 +5,7 @@ nav:
 
     - Project case study.: 
         - Project context.: Project description and context.md
-        - Global overview.: Project_overview.md
+        - Project overview.: Project_overview.md
     - Getting started.: index.md
     - Problem formulating.: 
         - Problem Parameters.: parameters.md
