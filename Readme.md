@@ -95,7 +95,7 @@ $\newline$
 ### Gurobi. 
 -------------
 >
-> - To install Gurobi solver packages, run one of the following commands :
+- To install Gurobi solver packages, run one of the following commands :
 >
 > Using Anaconda package index :
 >```	
@@ -109,19 +109,19 @@ $\newline$
 >$\newline$ 
 ### Mkdocs. 
 ------
-> - To install Mkdocs packages, run one of the following commands :
+- To install Mkdocs packages, run one of the following commands :
 >  
-> Using Python package index (Pypi) : 
+Using Python package index (Pypi) : 
 >```	
 >	- $ python -m pip install mkdocs
 >```
-> Using Anaconda package index :
+Using Anaconda package index :
 >```	
 >	- $ conda install -c conda-forge mkdocs
 >```
 >$\newline$  
 >$\newline$ 
-> - To create new mkdocs project : 
+ - To create new mkdocs project : 
 > ```	
 >	- $ python -m mkdocs new [name of the project]
 > ```
@@ -129,7 +129,7 @@ $\newline$
 > ```	
 >	- $ python -m mkdocs serve 
 > ```	
-> - To preview the documentation then browse within the output https address returned by the last command.
+ - To preview the documentation then browse within the output https address returned by the last command.
 >
 > For more guidance on mkdocs, see [here](https://www.mkdocs.org/user-guide/).
 >
@@ -137,7 +137,7 @@ $\newline$
 $\newline$ 
 ### Mathjax. 
 -------
-> Mathjax is a Javascript library that can display mathimatical notations in the browser using LaTex or other. 
+Mathjax is a Javascript library that can display mathimatical notations in the browser using LaTex or other. 
 In order to integarate Mathjax within Mkdocs do the following: 
 >
 > - Install pymdown-extensions (Pypi): 
@@ -194,9 +194,9 @@ $\newline$
 ---
 >$\newline$  
 >$\newline$ 
-> Using Anaconda environnment manager: 
+Using Anaconda environnment manager: 
 >
->	- You create a new environment, and called somthing recognisable, we named it here as <em>HYH</em> , we have used here python version 3.9.7. to do so you tape : 
+	- You create a new environment, and called somthing recognisable, we named it here as <em>HYH</em> , we have used here python version 3.9.7. to do so you tape : 
 > ```
 >	- $ conda create --HYH python=3.9.7
 >```
@@ -231,7 +231,6 @@ $\newline$
 
 ## <em>Pre-configured installation.</em>
 ----
->$\newline$  
 
 
 While the manual installation can walk you through around the various commands basics for each used packages in the project, chances are you might already know those commands and you don't want to bother yourself about taping every single command, so that's why we have provided the possibility to use <em><strong>`make`</em></strong> scripting, to make life easy for you. You find in the following the commands you will need to do this. 
@@ -247,44 +246,45 @@ In case you have make installed in your system, for Linux based system it comes 
 >
 > First thing first, we will install chocolatey, make sure you are using the Powershell command as an admin,
 >	
-> - Then run this command first :
+- Then run this command first :
 >```
 > Get-ExecutionPolicy 
 >```
-> - If it returns Restricted, then run : 
+- If it returns Restricted, then run : 
 >```
 > Set-ExecutionPolicy AllSigned or Set-ExecutionPolicy Bypass -Scope Process
 >```
-> - Now, to install `chocolatey` run the following command by coping it at once and past it in command line, then hit enter:
+- Now, to install `chocolatey` run the following command by coping it at once and past it in command line, then hit enter:
 >
 >```
 > Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 >```
 >
-> Please check [chocolatey](https://community.chocolatey.org/packages/make) website for more guidance !
+Please check [chocolatey](https://community.chocolatey.org/packages/make) website for more guidance !
 $\newline$  
 $\newline$ 
 
 ### Make.
 --------------
-> - Now that you have `chocolatey` installed, we can install `make` by running the command : 
+- Now that you have `chocolatey` installed, we can install `make` by running the command : 
 >```
 > choco install make --version=3.81
 >```
 >$\newline$    
 $\newline$ 
+
 Once `make` installation is done , and assuming that you have downloaded the project files in your local machine it's very easy to workout everything. 
 >
 >$\newline$
 >$\newline$
-> - To create the conda environemnt run the command : 
+- To create the conda environemnt run the command : 
 > 
 > ```	
 >	- $ make create_environment
 > ```
 >$\newline$
 >$\newline$
-> - To setup the project run the command : 
+- To setup the project run the command : 
 > 
 > ```	
 >	- $ make setup
@@ -295,21 +295,24 @@ Once `make` installation is done , and assuming that you have downloaded the pro
 ## <em>Project tests.</em>
 ----
 >
-> - To lint code scripts we are using flake8, just run the following command : 
+- To lint code scripts we are using flake8, just run the following command : 
 > 
 > ```	
 >	- $ make lint
 > ```
-> Under the hood, make will go over the <em><strong>`Makefile`</em></strong> located in our directory which itself will chain to all coding resources in <em><strong>`/src/functions`</em></strong> and <em><strong>`/notebooks`</em></strong> directories and will check the syntax and style of your code using flake8 to meet PEP8 standards.
+
+Under the hood, make will go over the <em><strong>`Makefile`</em></strong> located in our directory which itself will chain to all coding resources in <em><strong>`/src/functions`</em></strong> and <em><strong>`/notebooks`</em></strong> directories and will check the syntax and style of your code using flake8 to meet PEP8 standards.
+
 >$\newline$  
 >$\newline$ 
 >
-> - To test packages and dependencies just run the command : 
+- To test packages and dependencies just run the command : 
 > 
 > ```	
 >	- $ make env_test
 > ```
-> Behind the scenes, make will go over the <em><strong>`Makefile`</em></strong> located in our directory which itself will chain to all test units located in <em><strong>`/src/tests`</em></strong> directory and do the heavy work for you.
+
+Behind the scenes, make will go over the <em><strong>`Makefile`</em></strong> located in our directory which itself will chain to all test units located in <em><strong>`/src/tests`</em></strong> directory and do the heavy work for you.
 >$\newline$
 >$\newline$
 
