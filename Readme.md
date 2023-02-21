@@ -11,9 +11,6 @@ Project's title.
 
 Fuel minimization: MILP model with semi-continuous power supply and battery logic.
 
-$\newline$  
-$\newline$ 
-
 Project's description and context. 
 ===============================
 
@@ -28,8 +25,6 @@ In the Notebook scripts associated with this porject, we simulate an application
 
 The framwork used in this case study is PuLP, to solve a Mixed Intger Linear Programming problem together with first the built-in solver CBC and then with a commercial solver, we used Gurobi in our case.
 
-$\newline$  
-$\newline$ 
 Project use case.
 ====================
 
@@ -37,12 +32,7 @@ this particular case is initially specefic for the offshore shipping industry as
 
 $\newline$  
 $\newline$ 
-$\newline$  
-$\newline$ 
-  
   ##  <em> Seperate installations walk-through. </em>  
->$\newline$  
->$\newline$ 
 
 > This is a quick guide on how to install the required packages if you have decided for whatever reason to go through installations one by one and setting up the project without passingg by the setup.py file. Though you still have to go through the manual installation for [Mathjax](https://github.com/AmedBrook/Pulp_MILP-Hybrid-Energy-Optimization#mathjax) setup. 
 >$\newline$  
@@ -60,8 +50,7 @@ $\newline$
 >```
 >	- $ python -m pip install matplotlib
 >```
->$\newline$  
->$\newline$  
+
 ### numpy.
 ------------
 >
@@ -74,9 +63,7 @@ $\newline$
 >Using Python package index (Pypi) : 
 >```
 >	- $ python -m pip install numpy
->```
->$\newline$  
->$\newline$  
+
 ### PuLP.
 ------------
 >
@@ -90,8 +77,7 @@ $\newline$
 >```
 >	- $ python -m pip install pulp
 >```
->$\newline$  
->$\newline$ 
+
 ### Gurobi. 
 -------------
 >
@@ -105,8 +91,7 @@ $\newline$
 >```
 >	- $ python -m pip install gurobipy 
 >```
->$\newline$  
->$\newline$ 
+
 ### Mkdocs. 
 ------
 - To install Mkdocs packages, run one of the following commands :
@@ -133,8 +118,7 @@ Using Anaconda package index :
 >
 > For more guidance on mkdocs, see [here](https://www.mkdocs.org/user-guide/).
 >
->$\newline$  
-$\newline$ 
+
 ### Mathjax. 
 -------
 Mathjax is a Javascript library that can display mathimatical notations in the browser using LaTex or other. 
@@ -166,8 +150,7 @@ In order to integarate Mathjax within Mkdocs do the following:
 >https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 >
 >```
->$\newline$  
-$\newline$ 
+
 ### flake8. 
 -----
 > To analyse code syntax and debug make sure each single peace of code follows the PEP8 and other coding standards we use flake8 linter to do so. 
