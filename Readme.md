@@ -162,7 +162,7 @@ In order to integarate Mathjax within Mkdocs do the following:
 
 ## Project setup options. 
 ---
-Due to everyone's preferences and environments, we have provided two differente ways to setup the project with required external dpendencies and internal modules. 
+Due to everyone's preferences and environments, we have provided two differente ways to setup the project with the required external dpendencies and internal modules. 
 
 ###  Standalone setup.
 ---
