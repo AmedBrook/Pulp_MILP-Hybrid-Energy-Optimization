@@ -163,7 +163,6 @@ In order to integarate Mathjax within Mkdocs do the following:
 ## Project setup options. 
 ---
 $\newline$  
-$\newline$  
 ###  Standalone setup.
 ---
 >
@@ -262,8 +261,7 @@ Once `make` installation is done , and assuming that you have downloaded the pro
 
 ## Test units.
 ---
-$\newline$  
-$\newline$  
+$\newline$   
 #### Pulp & environment testing.
 ----------------------------
 - To test Python environment along side with the required Pulp pakages you will need just to run the command : 
