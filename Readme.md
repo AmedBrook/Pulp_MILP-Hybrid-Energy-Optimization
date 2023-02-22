@@ -164,15 +164,17 @@ In order to integarate Mathjax within Mkdocs do the following:
 >	- $ python -m pip install flake8
 >```
 >
+$\newline$  
+$\newline$ 
+
+---
+## Project setup options. 
+---
+###  Standalone setup.
 >$\newline$  
 >$\newline$ 
-
-# Project setup options : 
-
-###  Standalone setup.
-----
 >
-> #### Environment.
+#### Environment.
 ---
 >
 - Using Anaconda environnment manager: 
@@ -185,10 +187,9 @@ In order to integarate Mathjax within Mkdocs do the following:
 > ```
 >	- $ conda activate --HYH_env.
 > ```
+>$\newline$  
 >$\newline$ 
-----
->
-> #### Requirements & Dependencies.
+#### Requirements & Dependencies.
 ---
 >
 > Before stating the setup process you need to have <em>`setuptools`</em> installed, if you don't have it already do so,
@@ -207,7 +208,8 @@ In order to integarate Mathjax within Mkdocs do the following:
 >	- $ python -m pip install -e . 
 >```
 > 
-
+$\newline$  
+$\newline$ 
 ### Pre-configured setup.
 ----
 
@@ -216,8 +218,10 @@ While the manual installation can walk you through around the various commands b
 
 
 In case you have make installed in your system, for Linux based system it comes already installed in your system you don't need to install anything just skeep this part to {...}. For windows based systems there are multiple ways to get GNU make installed, like for example Cygwin, Nmake, Cmake..., however we recommand to go for [chocolatey](https://community.chocolatey.org/packages/make), we think it's the most straighforward way to install make for windows systems with less effort. 
->
-### chocolatey.
+
+$\newline$  
+$\newline$ 
+#### chocolatey.
 --------------
 >
 > First thing first, we will install chocolatey, make sure you are using the Powershell command as an admin,
@@ -240,7 +244,7 @@ Please check [chocolatey](https://community.chocolatey.org/packages/make) websit
 $\newline$  
 $\newline$ 
 
-### Make.
+#### Make.
 --------------
 - Now that you have `chocolatey` installed, we can install `make` by running the command : 
 >```
@@ -264,10 +268,11 @@ Once `make` installation is done , and assuming that you have downloaded the pro
 > ```	
 >	- $ make setup
 > ```
->$\newline$
->$\newline$
+$\newline$
+$\newline$
+
 ----
-## <em>Testing units.</em>
+## Testing units.
 ----
 ### Testing the environment.
 
