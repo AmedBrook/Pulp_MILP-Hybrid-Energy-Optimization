@@ -30,11 +30,11 @@ Packages walk-through.
 ======================== 
 
 This is a quick guide on how to install the required packages if you have decided for whatever reason to go through installations one by one and setting up the project without passingg by the setup.py file. Though you still have to go through the manual installation for [Mathjax](https://github.com/AmedBrook/Pulp_MILP-Hybrid-Energy-Optimization#mathjax) setup. 
->$\newline$  
->$\newline$  
+$\newline$  
+
 
 #### matplotlib.
-------------
+
 >
 - In order to install matplotlib package run one of the following commands : : 
 >
@@ -48,7 +48,7 @@ This is a quick guide on how to install the required packages if you have decide
 >```
 
 #### numpy.
-------------
+
 >
 - In order to install numpy package run one of the following commands : : 
 >
@@ -61,7 +61,7 @@ This is a quick guide on how to install the required packages if you have decide
 >	- $ python -m pip install numpy
 
 #### PuLP.
-------------
+
 >
 - In order to install Pulp modler packages run one of the following commands : : 
 >
@@ -75,7 +75,7 @@ This is a quick guide on how to install the required packages if you have decide
 >```
 
 #### Gurobi. 
--------------
+
 >
 - To install Gurobi solver packages, run one of the following commands :
 >
@@ -89,7 +89,7 @@ This is a quick guide on how to install the required packages if you have decide
 >```
 
 #### Mkdocs. 
-------
+
 - To install Mkdocs packages, run one of the following commands :
 >  
 > Using Python package index (Pypi) : 
@@ -115,7 +115,7 @@ This is a quick guide on how to install the required packages if you have decide
 >
 
 #### Mathjax. 
--------
+
 Mathjax is a Javascript library that can display mathimatical notations in the browser using LaTex or other. 
 In order to integarate Mathjax within Mkdocs do the following: 
 >
@@ -147,7 +147,7 @@ In order to integarate Mathjax within Mkdocs do the following:
 >```
 
 #### flake8. 
------
+
 > To analyse code syntax and debug make sure each single peace of code follows the PEP8 and other coding standards we use flake8 linter to do so. 
 - In order to install flake8 run on of the follwing commands : 
 >
@@ -165,6 +165,7 @@ In order to integarate Mathjax within Mkdocs do the following:
 Project setup options. 
 ==========================
 ###  Standalone setup.
+---
 $\newline$  
 
 >
@@ -200,20 +201,21 @@ Before stating the setup process you need to have <em>`setuptools`</em> installe
 >```
 >	- $ python -m pip install -e . 
 >```
-> 
-$\newline$  
-$\newline$ 
+
 ### Pre-configured setup.
-----
+---
 
 
 While the manual installation can walk you through around the various commands basics for each used packages in the project, chances are you might already know those commands and you don't want to bother yourself about taping every single command, so that's why we have provided the possibility to use <em><strong>`make`</em></strong> scripting, to make life easy for you. You find in the following the commands you will need to do this. 
 
 
 In case you have make installed in your system, for Linux based system it comes already installed in your system you don't need to install anything just skeep this part to {...}. For windows based systems there are multiple ways to get GNU make installed, like for example Cygwin, Nmake, Cmake..., however we recommand to go for [chocolatey](https://community.chocolatey.org/packages/make), we think it's the most straighforward way to install make for windows systems with less effort. 
+$\newline$  
+$\newline$  
 
 #### chocolatey.
---------------
+
+
 >
 First thing first, we will install chocolatey, make sure you are using the Powershell command as an admin,
 >	
@@ -236,7 +238,7 @@ $\newline$
 $\newline$ 
 
 #### Make.
---------------
+
 Now that you have `chocolatey` installed, we can install `make` by running the command : 
 >```
 > choco install make --version=3.81
@@ -269,6 +271,7 @@ $\newline$
 $\newline$
 
 ### Testing the environment.
+----------------------------
 $\newline$
 
 - To test packages and dependencies just run the command : 
@@ -282,6 +285,7 @@ Behind the scenes, make will go over the <em><strong>`Makefile`</em></strong> lo
 $\newline$
 $\newline$
 ### Testing syntax & style.
+----------------------------
 $\newline$
 - To lint code scripts we are using flake8, just run the following command : 
 > 
@@ -295,6 +299,7 @@ Under the hood, make will go over the <em><strong>`Makefile`</em></strong> locat
 $\newline$
 $\newline$
 ### Testing internal modules.
+-----------------------------
 $\newline$
 >In our code we ended up using three main functions which help us to implemente the problem, the first function is called FuelCon it is used to calculate based on a linear model the fuel comsumption of the genset for a specific power load P. The second function is called `lwd, is the abreviation of load window, which is used to constructe a load profile for a specific number of time steps out of a given sets of power loads arrays. The third one is called lixtr and it's the abreviation of list extraction, which could be used in the section 'Pre-processing visualization data' for extracting lists out of dictionaries. So in order to make sure those functions are behaving as is should be some testing routings are required by following the next commands.
 
