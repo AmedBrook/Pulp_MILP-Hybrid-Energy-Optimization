@@ -1,7 +1,7 @@
-## HYH
+## HEO
 ---
 
-PuLP-MILP Hybrid Energy Optimization, for fuel minimization: MILP model with semi-continuous power supply and battery logic.
+PuLP-MILP based Hybrid Energy Optimization, for fuel minimization: MILP model with semi-continuous power supply and battery logic.
 
 
 
