@@ -12,9 +12,9 @@ nav:
         - Problem LP variables.: lp_vars.md
         - Problem LP constraints.: lp_cstrs.md
         - Optimization objective.: obj_func.md
-    - HYH Implementation.: 
-        - HYH quick guide.: hyh_quick_guide.md
-        - Contributor guide.: contr_gd.md
+    - Implementation.: 
+        - User quick guide.: user_quick_guide.md
+        - Contributor guide.: contr_guide.md
     - About.: 
         - Authors.: authors.md
         - Changelog & Versionning.: chng_log.md
