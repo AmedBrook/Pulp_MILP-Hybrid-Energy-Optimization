@@ -270,8 +270,6 @@ $\newline$
 
 #### Testing the environment.
 ----------------------------
-$\newline$
-
 - To test packages and dependencies just run the command : 
 > 
 > ```	
@@ -284,7 +282,6 @@ $\newline$
 $\newline$
 #### Testing syntax & style.
 ----------------------------
-$\newline$
 - To lint code scripts we are using flake8, just run the following command : 
 > 
 > ```	
@@ -298,7 +295,6 @@ $\newline$
 $\newline$
 #### Testing internal modules.
 -----------------------------
-$\newline$
 >In our code we ended up using three main functions which help us to implemente the problem, the first function is called FuelCon it is used to calculate based on a linear model the fuel comsumption of the genset for a specific power load P. The second function is called `lwd, is the abreviation of load window, which is used to constructe a load profile for a specific number of time steps out of a given sets of power loads arrays. The third one is called lixtr and it's the abreviation of list extraction, which could be used in the section 'Pre-processing visualization data' for extracting lists out of dictionaries. So in order to make sure those functions are behaving as is should be some testing routings are required by following the next commands.
 
 - To test the `FuelCon` function, run the command:  
