@@ -1,17 +1,11 @@
 HYH
 ==============================
 
-PuLP-MILP Hybrid Energy Optimization.
-
-$\newline$  
-$\newline$ 
-Project's title.
-=================
+PuLP-MILP Hybrid Energy Optimization, for fuel minimization: MILP model with semi-continuous power supply and battery logic.
 
 
-Fuel minimization: MILP model with semi-continuous power supply and battery logic.
 
-Project's description and context. 
+Project description and context. 
 ===============================
 
 
@@ -52,7 +46,7 @@ Packages walk-through.
 >	- $ python -m pip install matplotlib
 >```
 
-### numpy.
+#### numpy.
 ------------
 >
 >- In order to install numpy package run one of the following commands : : 
@@ -65,7 +59,7 @@ Packages walk-through.
 >```
 >	- $ python -m pip install numpy
 
-### PuLP.
+#### PuLP.
 ------------
 >
 >- In order to install Pulp modler packages run one of the following commands : : 
@@ -79,7 +73,7 @@ Packages walk-through.
 >	- $ python -m pip install pulp
 >```
 
-### Gurobi. 
+#### Gurobi. 
 -------------
 >
 - To install Gurobi solver packages, run one of the following commands :
@@ -93,7 +87,7 @@ Packages walk-through.
 >	- $ python -m pip install gurobipy 
 >```
 
-### Mkdocs. 
+#### Mkdocs. 
 ------
 - To install Mkdocs packages, run one of the following commands :
 >  
@@ -119,7 +113,7 @@ Using Anaconda package index :
 > For more guidance on mkdocs, see [here](https://www.mkdocs.org/user-guide/).
 >
 
-### Mathjax. 
+#### Mathjax. 
 -------
 Mathjax is a Javascript library that can display mathimatical notations in the browser using LaTex or other. 
 In order to integarate Mathjax within Mkdocs do the following: 
@@ -151,7 +145,7 @@ In order to integarate Mathjax within Mkdocs do the following:
 >
 >```
 
-### flake8. 
+#### flake8. 
 -----
 > To analyse code syntax and debug make sure each single peace of code follows the PEP8 and other coding standards we use flake8 linter to do so. 
 >- In order to install flake8 run on of the follwing commands : 
@@ -165,8 +159,6 @@ In order to integarate Mathjax within Mkdocs do the following:
 >	- $ python -m pip install flake8
 >```
 >
-$\newline$  
-$\newline$ 
 
 
 Project setup options. 
@@ -267,12 +259,13 @@ Once `make` installation is done , and assuming that you have downloaded the pro
 >	- $ make setup
 > ```
 >
-$\newline$  
-$\newline$ 
 
 
 Testing units.
 =================
+
+$\newline$
+$\newline$
 
 ### Testing the environment.
 
@@ -285,7 +278,8 @@ Testing units.
 
 Behind the scenes, make will go over the <em><strong>`Makefile`</em></strong> located in our directory which itself will chain to all test units located in <em><strong>`/src/tests`</em></strong> directory and do the heavy work for you.
 >
->
+$\newline$
+$\newline$
 ### Testing syntax & style.
 - To lint code scripts we are using flake8, just run the following command : 
 > 
@@ -296,6 +290,8 @@ Behind the scenes, make will go over the <em><strong>`Makefile`</em></strong> lo
 Under the hood, make will go over the <em><strong>`Makefile`</em></strong> located in our directory which itself will chain to all coding resources in <em><strong>`/src/functions`</em></strong> and <em><strong>`/notebooks`</em></strong> directories and will check the syntax and style of your code using flake8 to meet PEP8 standards.
 >
 >
+$\newline$
+$\newline$
 ### Testing internal modules.
 
 >In our code we ended up using three main functions which help us to implemente the problem, the first function is called FuelCon it is used to calculate based on a linear model the fuel comsumption of the genset for a specific power load P. The second function is called `lwd, is the abreviation of load window, which is used to constructe a load profile for a specific number of time steps out of a given sets of power loads arrays. The third one is called lixtr and it's the abreviation of list extraction, which could be used in the section 'Pre-processing visualization data' for extracting lists out of dictionaries. So in order to make sure those functions are behaving as is should be some testing routings are required by following the next commands.
