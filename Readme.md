@@ -287,22 +287,22 @@ Under the hood, make will go over the <em><strong>`Makefile`</em></strong> locat
 -----------------------------
 
 - To test the `FuelCon` function, run the command:  
-
-```	
-	 - $ make fuelCon_test
-```
+>
+>```	
+>	 - $ make fuelCon_test
+>```
 
 - To test the `lwd` function, run the command: 
-
-```	
-	 - $ make lwd_test
-```
+>
+>```	
+>	 - $ make lwd_test
+>```
 
 - To test the `lixtr` functions, run the command: 
-
-```	
-    - $ make lixtr_test
-```
+>
+>```	
+>    - $ make lixtr_test
+>```
 
 In our code we ended up using three main functions which help us to implemente the problem, they are located under <strong><em>`src/functions`</em></strong> directory. 
 
