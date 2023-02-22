@@ -162,7 +162,8 @@ In order to integarate Mathjax within Mkdocs do the following:
 
 ## Project setup options. 
 ---
-$\newline$  
+Due to everyone's preferences and environments, we have provided two differente ways to setup the project with required external dpendencies and internal modules. 
+
 ###  Standalone setup.
 ---
 >
@@ -261,7 +262,8 @@ Once `make` installation is done , and assuming that you have downloaded the pro
 
 ## Test units.
 ---
-$\newline$   
+Testing code is important to garantee consistency and availabality of this project. Test units are devide in three main aspects: testing Pulp modler which test the appropriate solvers, testing code syntax and style conferming to PEP8 standard, testing internal modules which are mainly functions used for implemeting the problem. 
+
 #### Pulp & environment testing.
 ----------------------------
 - To test Python environment along side with the required Pulp pakages you will need just to run the command : 
