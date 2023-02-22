@@ -1,12 +1,12 @@
-HYH
-==============================
+## HYH
+---
 
 PuLP-MILP Hybrid Energy Optimization, for fuel minimization: MILP model with semi-continuous power supply and battery logic.
 
 
 
-Project description and context. 
-===============================
+## Project description and context. 
+---
 
 
 The project aims to explore the possibility of integrating 
@@ -19,13 +19,13 @@ In the Notebook scripts associated with this porject, we simulate an application
 
 The framwork used in this case study is PuLP, to solve a Mixed Intger Linear Programming problem together with first the built-in solver CBC and then with a commercial solver, we used Gurobi in our case.
 
-Project use case.
-====================
+## Project use case.
+---
 
 this particular case is initially specefic for the offshore shipping industry as they are the most transportation fuel consuming and needing some sort of solutions to use fuel  optimally in their trips. However this is not only exlusive to this sector, it can be easily extended to other sectors as long as the purpose is to optimize energy usage and energy hybridization.
 
-Packages walk-through. 
-======================== 
+## Packages walk-through. 
+---
 
 This is a quick guide on how to install the required packages if you have decided for whatever reason to go through installations one by one and setting up the project without passingg by the setup.py file. Though you still have to go through the manual installation for [Mathjax](https://github.com/AmedBrook/Pulp_MILP-Hybrid-Energy-Optimization#mathjax) setup. 
 $\newline$  
@@ -160,8 +160,10 @@ In order to integarate Mathjax within Mkdocs do the following:
 >
 
 
-Project setup options. 
-==========================
+## Project setup options. 
+---
+$\newline$  
+$\newline$  
 ###  Standalone setup.
 ---
 >
@@ -182,7 +184,7 @@ Project setup options.
 >
 Before stating the setup process you need to have <em>`setuptools`</em> installed, if you don't have it already do so, run the command :
 >
-> - Using Python package index (Pypi) : : 
+> - Using Python package index (Pypi) :
 >```
 >	- $ pip install setuptools 
 >```
@@ -258,9 +260,10 @@ Once `make` installation is done , and assuming that you have downloaded the pro
 >
 
 
-Testing units.
-=================
-
+## Test units.
+---
+$\newline$  
+$\newline$  
 #### Pulp & environment testing.
 ----------------------------
 - To test Python environment along side with the required Pulp pakages you will need just to run the command : 
