@@ -261,7 +261,7 @@ Once `make` installation is done , and assuming that you have downloaded the pro
 Testing units.
 =================
 
-#### Testing the environment.
+#### Pulp & environment testing.
 ----------------------------
 - To test packages and dependencies just run the command : 
 > 
