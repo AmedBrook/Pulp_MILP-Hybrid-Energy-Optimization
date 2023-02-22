@@ -32,7 +32,8 @@ this particular case is initially specefic for the offshore shipping industry as
 
 $\newline$  
 $\newline$ 
-  ##  <em> Installations walk-through. </em>  
+Packages walk-through. 
+======================== 
 
 > This is a quick guide on how to install the required packages if you have decided for whatever reason to go through installations one by one and setting up the project without passingg by the setup.py file. Though you still have to go through the manual installation for [Mathjax](https://github.com/AmedBrook/Pulp_MILP-Hybrid-Energy-Optimization#mathjax) setup. 
 >$\newline$  
@@ -167,12 +168,12 @@ In order to integarate Mathjax within Mkdocs do the following:
 $\newline$  
 $\newline$ 
 
----
-## Project setup options. 
----
+
+Project setup options. 
+==========================
 ###  Standalone setup.
->$\newline$  
->$\newline$ 
+$\newline$  
+
 >
 #### Environment.
 ---
@@ -187,8 +188,7 @@ $\newline$
 > ```
 >	- $ conda activate --HYH_env.
 > ```
->$\newline$  
->$\newline$ 
+
 #### Requirements & Dependencies.
 ---
 >
@@ -219,12 +219,10 @@ While the manual installation can walk you through around the various commands b
 
 In case you have make installed in your system, for Linux based system it comes already installed in your system you don't need to install anything just skeep this part to {...}. For windows based systems there are multiple ways to get GNU make installed, like for example Cygwin, Nmake, Cmake..., however we recommand to go for [chocolatey](https://community.chocolatey.org/packages/make), we think it's the most straighforward way to install make for windows systems with less effort. 
 
-$\newline$  
-$\newline$ 
 #### chocolatey.
 --------------
 >
-> First thing first, we will install chocolatey, make sure you are using the Powershell command as an admin,
+First thing first, we will install chocolatey, make sure you are using the Powershell command as an admin,
 >	
 - Then run this command first :
 >```
@@ -234,7 +232,7 @@ $\newline$
 >```
 > Set-ExecutionPolicy AllSigned or Set-ExecutionPolicy Bypass -Scope Process
 >```
-- Now, to install `chocolatey` run the following command by coping it at once and past it in command line, then hit enter:
+Now, to install `chocolatey` run the following command by coping it at once and past it in command line, then hit enter:
 >
 >```
 > Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
@@ -246,7 +244,7 @@ $\newline$
 
 #### Make.
 --------------
-- Now that you have `chocolatey` installed, we can install `make` by running the command : 
+Now that you have `chocolatey` installed, we can install `make` by running the command : 
 >```
 > choco install make --version=3.81
 >```
@@ -268,12 +266,14 @@ Once `make` installation is done , and assuming that you have downloaded the pro
 > ```	
 >	- $ make setup
 > ```
-$\newline$
-$\newline$
+>
+$\newline$  
+$\newline$ 
 
-----
-## Testing units.
-----
+
+Testing units.
+=================
+
 ### Testing the environment.
 
 >
