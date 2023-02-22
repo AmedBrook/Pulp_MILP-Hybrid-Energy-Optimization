@@ -129,7 +129,7 @@ To install Mkdocs packages, run one of the following commands:
 * To see the rendered changes browse within the output https address returned by the last command.
 For more guidance on mkdocs, see [here](https://www.mkdocs.org/user-guide/).
 
-### flake8. 
+##### flake8. 
 
 To analyse code syntax and debug make sure each single peace of code follows the PEP8 and other coding standards we use flake8 linter to do so. 
 In order to install flake8 run on of the follwing commands : 
@@ -252,7 +252,7 @@ Once make installation is done, and assuming that you have downloaded the projec
 <br>
 <br>
 ----
-## Project tests.
+## Testing units.
 ----
 
 #### Testing the environment.
@@ -278,6 +278,8 @@ Under the hood, make will go over the `Makefile` located in our directory which 
 
 
 #### Testing internal modules. 
+
+In our code we ended up using three main functions which help us to implemente the problem, the first function is called `FuelCon` it is used to calculate based on a linear model the fuel comsumption of the genset for a specific power load `P`. The second function is called ``lwd`, is the abreviation of load window, which is used to constructe a load profile for a specific number of time steps out of a given sets of power loads arrays. The third one is called `lixtr` and it's the abreviation of list extraction, which could be used in the section 'Pre-processing visualization data' for extracting lists out of dictionaries. So in order to make sure those functions are behaving as is should be some testing routings are required by following the next commands. 
 
 * To test the `FuelCon` function, run the command: 
 
