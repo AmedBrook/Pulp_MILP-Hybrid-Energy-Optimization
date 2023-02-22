@@ -6,7 +6,7 @@
 
 PROJECT_DIR := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 PROFILE = default
-PROJECT_NAME = HYH
+PROJECT_NAME = HEO
 PYTHON_INTERPRETER = python
 
 ifeq (,$(shell which conda))
