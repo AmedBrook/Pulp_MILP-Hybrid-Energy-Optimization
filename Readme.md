@@ -171,13 +171,13 @@ Due to everyone's preferences and environments, we have provided two differente 
 >
 - Using Anaconda environnment manager: 
 >
- You create a new environment, and called somthing recognisable, we named it here as <em>HYH</em> , we have used here python version 3.9.7. to do so you tape : 
+ You create a new environment, and called somthing recognisable, we named it here as <em>heo</em> , we have used here python version 3.9.7. to do so you tape : 
 > ```
->	- $ conda create --HYH python=3.9.7
+>	- $ conda create --heo_env python=3.9.7
 >```
 > - Activate the environment by taping :
 > ```
->	- $ conda activate --HYH_env.
+>	- $ conda activate --heo_env
 > ```
 
 #### Requirements & Dependencies.  
