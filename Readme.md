@@ -164,11 +164,8 @@ Project setup options.
 ==========================
 ###  Standalone setup.
 ---
-$\newline$  
-
 >
 #### Environment.
-$\newline$  
 >
 - Using Anaconda environnment manager: 
 >
@@ -181,8 +178,7 @@ $\newline$
 >	- $ conda activate --HYH_env.
 > ```
 
-#### Requirements & Dependencies.
-$\newline$  
+#### Requirements & Dependencies.  
 >
 Before stating the setup process you need to have <em>`setuptools`</em> installed, if you don't have it already do so, run the command :
 >
