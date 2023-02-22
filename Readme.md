@@ -24,8 +24,6 @@ Project use case.
 
 this particular case is initially specefic for the offshore shipping industry as they are the most transportation fuel consuming and needing some sort of solutions to use fuel  optimally in their trips. However this is not only exlusive to this sector, it can be easily extended to other sectors as long as the purpose is to optimize energy usage and energy hybridization.
 
-$\newline$  
-$\newline$ 
 Packages walk-through. 
 ======================== 
 
@@ -111,7 +109,7 @@ $\newline$
 > ```	
  - To see the rendered changes in action then browse within the output https address returned by the last command.
 >
-> For more guidance on mkdocs, see [here](https://www.mkdocs.org/user-guide/).
+> For more guidance about mkdocs, see [here](https://www.mkdocs.org/user-guide/).
 >
 
 #### Mathjax. 
@@ -170,7 +168,7 @@ $\newline$
 
 >
 #### Environment.
----
+$\newline$  
 >
 - Using Anaconda environnment manager: 
 >
@@ -184,7 +182,7 @@ $\newline$
 > ```
 
 #### Requirements & Dependencies.
----
+$\newline$  
 >
 Before stating the setup process you need to have <em>`setuptools`</em> installed, if you don't have it already do so, run the command :
 >
@@ -270,7 +268,7 @@ Testing units.
 $\newline$
 $\newline$
 
-### Testing the environment.
+#### Testing the environment.
 ----------------------------
 $\newline$
 
@@ -284,7 +282,7 @@ Behind the scenes, make will go over the <em><strong>`Makefile`</em></strong> lo
 >
 $\newline$
 $\newline$
-### Testing syntax & style.
+#### Testing syntax & style.
 ----------------------------
 $\newline$
 - To lint code scripts we are using flake8, just run the following command : 
@@ -298,7 +296,7 @@ Under the hood, make will go over the <em><strong>`Makefile`</em></strong> locat
 >
 $\newline$
 $\newline$
-### Testing internal modules.
+#### Testing internal modules.
 -----------------------------
 $\newline$
 >In our code we ended up using three main functions which help us to implemente the problem, the first function is called FuelCon it is used to calculate based on a linear model the fuel comsumption of the genset for a specific power load P. The second function is called `lwd, is the abreviation of load window, which is used to constructe a load profile for a specific number of time steps out of a given sets of power loads arrays. The third one is called lixtr and it's the abreviation of list extraction, which could be used in the section 'Pre-processing visualization data' for extracting lists out of dictionaries. So in order to make sure those functions are behaving as is should be some testing routings are required by following the next commands.
