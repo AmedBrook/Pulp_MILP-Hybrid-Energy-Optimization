@@ -260,9 +260,8 @@ Once `make` installation is done , and assuming that you have downloaded the pro
 
 Testing units.
 =================
+$\newline$
 
-$\newline$
-$\newline$
 
 #### Testing the environment.
 ----------------------------
@@ -275,7 +274,6 @@ $\newline$
 Behind the scenes, make will go over the <em><strong>`Makefile`</em></strong> located in our directory which itself will chain to all test units located in <em><strong>`/src/tests`</em></strong> directory and do the heavy work for you.
 >
 $\newline$
-$\newline$
 #### Testing syntax & style.
 ----------------------------
 - To lint code scripts we are using flake8, just run the following command : 
@@ -287,7 +285,6 @@ $\newline$
 Under the hood, make will go over the <em><strong>`Makefile`</em></strong> located in our directory which itself will chain to all coding resources in <em><strong>`/src/functions`</em></strong> and <em><strong>`/notebooks`</em></strong> directories and will check the syntax and style of your code using flake8 to meet PEP8 standards.
 >
 >
-$\newline$
 $\newline$
 #### Testing internal modules.
 -----------------------------
