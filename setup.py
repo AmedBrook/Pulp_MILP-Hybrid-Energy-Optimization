@@ -18,11 +18,11 @@ def get_long_description():
 
 setup(
 
-    name='HYH',
+    name='HEO',
     version='0.1.0',
     authors='Novia Intelligent Systems Institute',
     maintainer='Ahmed Mabrouk', 
-    description='MILP Hybrid Energy Optimization',
+    description='Pulp MILP Hybrid Energy Optimization',
     long_description= get_long_description(),
     long_description_content_type="text/markdown",
     url='https://github.com/AmedBrook/Pulp_MILP-Hybrid-Energy-Optimization',
