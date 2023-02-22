@@ -167,9 +167,9 @@ In order to integarate Mathjax within Mkdocs do the following:
 >$\newline$  
 >$\newline$ 
 
-# Project installations : 
+# Project setup options : 
 
-##  <em>Standalone setup.</em> 
+###  Standalone setup.
 ----
 >
 > #### Environment.
@@ -208,7 +208,7 @@ In order to integarate Mathjax within Mkdocs do the following:
 >```
 > 
 
-## <em>Pre-configured setup.</em>
+### Pre-configured setup.
 ----
 
 
