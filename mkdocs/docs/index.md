@@ -170,15 +170,18 @@ extra_javascript:
 <br>
 
 ---
-## Standalone setup.
+## Setup options.
 ---
+<br>
 
+### Standalone setup.
+----
 
-##### Environment.
+###### Environment.
 
 * `$ conda create --HYH_model python=3.9.7` - Create a new environment aside of the root, and name it somthing recognisable, we named here as HYH_model, we have used here python version 3.9.7. to do so you tape.
 
-##### Requirements and Dependencies.
+###### Requirements and Dependencies.
 
  Before stating the setup process you need to have <em>`setuptools`</em> installed, if you don't have it already do through the following commands:
 
@@ -191,11 +194,10 @@ extra_javascript:
 *  `$ python -m pip install -e .`
 
 <br>
-<br>
 
+### Pre-configured setup.
 ----
-## Pre-configured setup.
-----
+
 
 While the manual installation can walk you through around the various commands basics for each used packages in the project, chances are you might already know those commands and you don't want to bother yourself about taping every single command, so that's why we have provided the possibility to use `make` scripting, to make life easy for you. You find in the following the commands you will need to do this. 
 
