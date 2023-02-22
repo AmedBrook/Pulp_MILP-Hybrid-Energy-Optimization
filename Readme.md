@@ -1,4 +1,4 @@
-## HEO
+## HEO.
 ---
 
 PuLP-MILP based Hybrid Energy Optimization, for fuel minimization: MILP model with semi-continuous power supply and battery logic.
@@ -61,7 +61,7 @@ $\newline$
 #### PuLP.
 
 >
-- In order to install Pulp modler packages run one of the following commands : : 
+- In order to install Pulp modler packages run one of the following commands :
 >
 >Using Anaconda package index :
 >```
