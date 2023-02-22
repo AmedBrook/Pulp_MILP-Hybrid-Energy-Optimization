@@ -32,7 +32,7 @@ this particular case is initially specefic for the offshore shipping industry as
 
 $\newline$  
 $\newline$ 
-  ##  <em> Seperate installations walk-through. </em>  
+  ##  <em> Installations walk-through. </em>  
 
 > This is a quick guide on how to install the required packages if you have decided for whatever reason to go through installations one by one and setting up the project without passingg by the setup.py file. Though you still have to go through the manual installation for [Mathjax](https://github.com/AmedBrook/Pulp_MILP-Hybrid-Energy-Optimization#mathjax) setup. 
 >$\newline$  
@@ -104,8 +104,7 @@ Using Anaconda package index :
 >```	
 >	- $ conda install -c conda-forge mkdocs
 >```
->$\newline$  
->$\newline$ 
+>
  - To create new mkdocs project : 
 > ```	
 >	- $ python -m mkdocs new [name of the project]
@@ -170,13 +169,12 @@ In order to integarate Mathjax within Mkdocs do the following:
 
 # Project installations : 
 
-##  <em>Manual installation.</em> 
+##  <em>Standalone setup.</em> 
 ----
 >
-> #### Project environment.
+> #### Environment.
 ---
->$\newline$  
->$\newline$ 
+>
 - Using Anaconda environnment manager: 
 >
  You create a new environment, and called somthing recognisable, we named it here as <em>HYH</em> , we have used here python version 3.9.7. to do so you tape : 
@@ -190,10 +188,8 @@ In order to integarate Mathjax within Mkdocs do the following:
 >$\newline$ 
 ----
 >
-> #### Project setup.
+> #### Requirements & Dependencies.
 ---
->
->$\newline$  
 >
 > Before stating the setup process you need to have <em>`setuptools`</em> installed, if you don't have it already do so,
 > run the command :
@@ -212,7 +208,7 @@ In order to integarate Mathjax within Mkdocs do the following:
 >```
 > 
 
-## <em>Pre-configured installation.</em>
+## <em>Pre-configured setup.</em>
 ----
 
 
@@ -220,9 +216,6 @@ While the manual installation can walk you through around the various commands b
 
 
 In case you have make installed in your system, for Linux based system it comes already installed in your system you don't need to install anything just skeep this part to {...}. For windows based systems there are multiple ways to get GNU make installed, like for example Cygwin, Nmake, Cmake..., however we recommand to go for [chocolatey](https://community.chocolatey.org/packages/make), we think it's the most straighforward way to install make for windows systems with less effort. 
-
->$\newline$  
->$\newline$ 
 >
 ### chocolatey.
 --------------
@@ -253,9 +246,8 @@ $\newline$
 >```
 > choco install make --version=3.81
 >```
->$\newline$    
-$\newline$ 
-
+>
+>
 Once `make` installation is done , and assuming that you have downloaded the project files in your local machine it's very easy to workout everything. 
 >
 >$\newline$
@@ -275,19 +267,10 @@ Once `make` installation is done , and assuming that you have downloaded the pro
 >$\newline$
 >$\newline$
 ----
-## <em>Project tests.</em>
+## <em>Testing units.</em>
 ----
->
-- To lint code scripts we are using flake8, just run the following command : 
-> 
-> ```	
->	- $ make lint
-> ```
+### Testing the environment.
 
-Under the hood, make will go over the <em><strong>`Makefile`</em></strong> located in our directory which itself will chain to all coding resources in <em><strong>`/src/functions`</em></strong> and <em><strong>`/notebooks`</em></strong> directories and will check the syntax and style of your code using flake8 to meet PEP8 standards.
-
->$\newline$  
->$\newline$ 
 >
 - To test packages and dependencies just run the command : 
 > 
@@ -296,6 +279,36 @@ Under the hood, make will go over the <em><strong>`Makefile`</em></strong> locat
 > ```
 
 Behind the scenes, make will go over the <em><strong>`Makefile`</em></strong> located in our directory which itself will chain to all test units located in <em><strong>`/src/tests`</em></strong> directory and do the heavy work for you.
->$\newline$
->$\newline$
+>
+>
+### Testing syntax & style.
+- To lint code scripts we are using flake8, just run the following command : 
+> 
+> ```	
+>	- $ make lint
+> ```
 
+Under the hood, make will go over the <em><strong>`Makefile`</em></strong> located in our directory which itself will chain to all coding resources in <em><strong>`/src/functions`</em></strong> and <em><strong>`/notebooks`</em></strong> directories and will check the syntax and style of your code using flake8 to meet PEP8 standards.
+>
+>
+### Testing internal modules.
+
+>In our code we ended up using three main functions which help us to implemente the problem, the first function is called FuelCon it is used to calculate based on a linear model the fuel comsumption of the genset for a specific power load P. The second function is called `lwd, is the abreviation of load window, which is used to constructe a load profile for a specific number of time steps out of a given sets of power loads arrays. The third one is called lixtr and it's the abreviation of list extraction, which could be used in the section 'Pre-processing visualization data' for extracting lists out of dictionaries. So in order to make sure those functions are behaving as is should be some testing routings are required by following the next commands.
+
+- To test the `FuelCon` function, run the command:  
+
+```	
+	 - $ make fuelCon_test
+```
+
+- To test the `lwd` function, run the command: 
+
+```	
+	 - $ make lwd_test
+```
+
+- To test the `lixtr` functions, run the command: 
+
+```	
+    - $ make lixtr_test
+```
