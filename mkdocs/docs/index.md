@@ -179,7 +179,7 @@ extra_javascript:
 
 ###### Environment.
 
-* `$ conda create --HYH_model python=3.9.7` - Create a new environment aside of the root, and name it somthing recognisable, we named here as HYH_model, we have used here python version 3.9.7. to do so you tape.
+* `$ conda create --HEO_model python=3.9.7` - Create a new environment aside of the root, and name it somthing recognisable, we named here as HEO_model, we have used here python version 3.9.7. to do so you tape.
 
 ###### Requirements and Dependencies.
 
