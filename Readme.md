@@ -24,141 +24,6 @@ The framwork used in this case study is PuLP, to solve a Mixed Intger Linear Pro
 
 this particular case is initially specefic for the offshore shipping industry as they are the most transportation fuel consuming and needing some sort of solutions to use fuel  optimally in their trips. However this is not only exlusive to this sector, it can be easily extended to other sectors as long as the purpose is to optimize energy usage and energy hybridization.
 
-## Packages walk-through. 
----
-
-This is a quick guide on how to install the required packages if you have decided for whatever reason to go through installations one by one and setting up the project without passingg by the setup.py file. Though you still have to go through the manual installation for [Mathjax](https://github.com/AmedBrook/Pulp_MILP-Hybrid-Energy-Optimization#mathjax) setup. 
-$\newline$  
-
-
-#### matplotlib.
-
->
-- In order to install matplotlib package run one of the following commands : : 
->
->Using Anaconda package index :
->```
->	- $ conda install -c conda-forge matplotlib
->```
->Using Python package index (Pypi) : 
->```
->	- $ python -m pip install matplotlib
->```
-
-#### numpy.
-
->
-- In order to install numpy package run one of the following commands : : 
->
->Using Anaconda package index :
->```
->	- $ conda install -c anaconda numpy
->```
->Using Python package index (Pypi) : 
->```
->	- $ python -m pip install numpy
-
-#### PuLP.
-
->
-- In order to install Pulp modler packages run one of the following commands :
->
->Using Anaconda package index :
->```
->	- $ conda install -c forge-pulp
->```
->Using Python package index (Pypi) : 
->```
->	- $ python -m pip install pulp
->```
-
-#### Gurobi. 
-
->
-- To install Gurobi solver packages, run one of the following commands :
->
-> Using Anaconda package index :
->```	
->	- $ conda install -c gurobi gurobi  
->```
-> Using Python package index (Pypi) : 
->```
->	- $ python -m pip install gurobipy 
->```
-
-#### Mkdocs. 
-
-- To install Mkdocs packages, run one of the following commands :
->  
-> Using Python package index (Pypi) : 
->```	
->	- $ python -m pip install mkdocs
->```
-> Using Anaconda package index :
->```	
->	- $ conda install -c conda-forge mkdocs
->```
->
- - To create new mkdocs project : 
-> ```	
->	- $ python -m mkdocs new [name of the project]
-> ```
-- To preview your documentation, you need to locate in the docs directory created with the last command and then run: 
-> ```	
->	- $ python -m mkdocs serve 
-> ```	
- - To see the rendered changes in action then browse within the output https address returned by the last command.
->
-> For more guidance about mkdocs, see [here](https://www.mkdocs.org/user-guide/).
->
-
-#### Mathjax. 
-
-Mathjax is a Javascript library that can display mathimatical notations in the browser using LaTex or other. 
-In order to integarate Mathjax within Mkdocs do the following: 
->
-- Install pymdown-extensions (Pypi): 
->
-> ```	
->	- $ python -m pip install pymdown-extensions
-> ```
-- Within your mkdocs folder create the following: 
->
-> ```
->  			mkdocs_______
->      			|___ docs
->		      			|___ javascripts
->             			|     		|___ mathjax.js
->			    		|           
->									
->```
->
-- Add the following script lines in the configuration file<em><strong> `mkdocs.yml` </em></strong>
->
-> ```
->extra_javascript:
->
->javascripts/mathjax.js
->https://polyfill.io/v3/polyfill.min.js?features=es6
->https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
->
->```
-
-#### flake8. 
-
-> To analyse code syntax and debug make sure each single peace of code follows the PEP8 and other coding standards we use flake8 linter to do so. 
-- In order to install flake8 run on of the follwing commands : 
->
->Using Anaconda package index :
->```
->	- $ conda install -c anaconda flake8
->```
->Using Python package index (Pypi) : 
->```
->	- $ python -m pip install flake8
->```
->
-
 
 ## Project setup options. 
 ---
@@ -168,29 +33,20 @@ Due to everyone's preferences and environments, we have provided two differente 
 ---
 >
 #### Environment.
->
-- Using Anaconda environnment manager: 
->
- You create a new environment, and called somthing recognisable, we named it here as <em>heo</em> , we have used here python version 3.9.7. to do so you could use conda : 
-> ```
->	- $ conda create --heo_env python=3.9.7
->```
-> - Activate the environment by taping :
-> ```
->	- $ conda activate --heo_env
-> ```
 
-#### Requirements & Dependencies.  
 >
 Before stating the setup process you need to have <em>`setuptools`</em> installed, if you don't have it already do so, run the command :
 >
 > - Using Python package index (Pypi) :
 >```
->	- $ pip install setuptools 
->```
-> - Using Anaconda package index :
->```
 >	- $ conda install -c conda-forge setuptools 
+>```
+> - Then you can run the commands:
+>```
+>	- $ conda create -n heo python
+    - $ conda activate heo
+    - $ pip install -e .
+
 >```
 > - Now that you have <em>`setuptools`</em> in you environment, in order to install all packages and dependencies at once run the command : 
 >
