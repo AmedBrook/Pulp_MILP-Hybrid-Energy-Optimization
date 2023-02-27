@@ -33,13 +33,8 @@ Due to everyone's preferences and environments, we have provided two differente 
 ---
 >
 $\newline$  
-Before stating the setup process you need to have <em>`setuptools`</em> installed, if you don't have it already do so, run the command :
+Assuming that you have <em>`setuptools`</em> installed, in order to setup the project environment and install all packages and dependencies, you could run the commands :
 >
-> - Using Python package index (Pypi) :
->```
->	- $ conda install -c conda-forge setuptools 
->```
-> - Then now that you have setuptools installed, in order to setup the environment and install all packages and dependencies at once run the command :, 
 >```
 >   - $ conda create -n heo python
 >   - $ conda activate heo
