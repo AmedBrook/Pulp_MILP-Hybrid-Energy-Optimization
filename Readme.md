@@ -32,27 +32,20 @@ Due to everyone's preferences and environments, we have provided two differente 
 ###  Standalone setup.
 ---
 >
-#### Environment.
-
->
+$\newline$  
 Before stating the setup process you need to have <em>`setuptools`</em> installed, if you don't have it already do so, run the command :
 >
 > - Using Python package index (Pypi) :
 >```
 >	- $ conda install -c conda-forge setuptools 
 >```
-> - Then you can run the commands:
+> - Then now that you have setuptools installed, in order to setup the environment and install all packages and dependencies at once run the command :, 
 >```
->	- $ conda create -n heo python
-    - $ conda activate heo
-    - $ pip install -e .
+>   - $ conda create -n heo python
+>   - $ conda activate heo
+>   - $ pip install -e .
+>```
 
->```
-> - Now that you have <em>`setuptools`</em> in you environment, in order to install all packages and dependencies at once run the command : 
->
->```
->	- $ python -m pip install -e . 
->```
 
 ### Pre-configured setup.
 ---
