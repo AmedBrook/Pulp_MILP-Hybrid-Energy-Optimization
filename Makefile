@@ -48,8 +48,8 @@ clean: ## Delete all compiled Python files
 
 
 lint: ## Lint using flake8
-	flake8 src/functions
-	flake8 notebooks
+	$(PYTHON_INTERPRETER) -m flake8 src/functions
+	$(PYTHON_INTERPRETER) -m flake8 notebooks
 
 #################################################################################
 # PROJECT TEST ROUTINGS                                                         #
