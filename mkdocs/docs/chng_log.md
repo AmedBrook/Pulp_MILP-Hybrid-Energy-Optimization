@@ -12,7 +12,7 @@
    * Adapting suitable width for the bargraphs.
    * Setting up environment variables for Gurobi licence secret keys.
    
-#### Version 0.2.0.
+#### Version 0.2.0. [Pre-release]
    
     Date: 27.11.2022.
    * Scaling down the the model to 3 time steps for testing purposes
@@ -55,7 +55,7 @@
      the for outer for loop. 
 
 
-#### Version 0.1.5.
+#### Version 0.1.5. [Pre-release]
  
     Date: 29.10.2022.
    * Importing `sys` module and addiing the python 'environment cell' to keep track of the 
@@ -95,7 +95,7 @@
      definition.
    * Printing out the constraints status using the command 'Optim.variables'
       
-#### Version 0.1.4.
+#### Version 0.1.4. [Pre-release]
 
     Date: 18.09.2022.
    * Installing and testing out Pulp module and its packages.
