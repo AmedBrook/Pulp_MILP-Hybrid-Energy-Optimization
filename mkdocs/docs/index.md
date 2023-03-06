@@ -6,12 +6,6 @@ For full source project : [https://github.com/AmedBrook/Pulp_MILP-Hybrid-Energy-
 
 ## Project layout.
 ---
-    data/
-        external/
-        interim/
-        processed/
-        raw/
-        .gitkeepg
     mkdocs/
         docs/
             img/
@@ -24,12 +18,8 @@ For full source project : [https://github.com/AmedBrook/Pulp_MILP-Hybrid-Energy-
     models/
         .gitkeep
     notebooks/
-        tests/
             .gitkeep
-            HYH_V0.2.0.ipynb
-        HYH_V0.1.4.ipynb
-        HYH_V0.1.5.ipynb
-        HYH_V0.2.1.ipynb
+            heo_model.ipynb
     references/
         .gitkeep
     reports/
@@ -43,27 +33,24 @@ For full source project : [https://github.com/AmedBrook/Pulp_MILP-Hybrid-Energy-
             tests/
                 env_tests.py
                 fuel_consumption_tests.py
-                list_extraction_tests.py
+                list_Extraction_tests.py
                 load_window_tests.py
         __init__.py
         .gitkeep
-        dictionaries_add.py
+        add_dict.py
         fuel_consumption.py
         list_extraction.py
         load_window.py
         rand_val.py
         rand_window.py
-    .env
-    .gitignore
     Authors.txt
     Changelog.md
-    Gurobi-license.txt
     License
     Makefile
     Readme.md
     Requirements.txt
     setup.py
-    tox.ini
+    setup.cfg
 
 <br>
 <br>
