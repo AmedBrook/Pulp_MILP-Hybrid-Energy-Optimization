@@ -53,113 +53,9 @@ For full source project : [https://github.com/AmedBrook/Pulp_MILP-Hybrid-Energy-
     setup.cfg
 
 <br>
-<br>
----
-## Packages walk-through.
----
-
-This is a quick guide on how to install the required packages if you have decided for whatever reason to go through installations one by one and setting up the project without passingg by the setup.py or using make for this matter. Though you still have to go through the manual installation for [Mathjax](https://github.com/AmedBrook/Pulp_MILP-Hybrid-Energy-Optimization#mathjax) setup.
-
-##### matplotlib.
-
-In order to install matplotlib package run one of the following commands : 
-
-* Using Anaconda package index : `$ conda install -c conda-forge matplotlib` 
-
-* Using Python package index (Pypi) : `$ python -m pip install matplotlib` 
-
-
-##### numpy.
-
-In order to install numpy package run one of the following commands : : 
-
-* Using Anaconda package index : `$ conda install -c anaconda numpy`
-
-* Using Python package index (Pypi) : `$ python -m pip install numpy` 
-
-##### PuLP.
-
-In order to install Pulp modler packages run one of the following commands : : 
-
-* Using Python package index (Pypi) : `$ python -m pip install pulp`
-
-* Using Anaconda package index(Conda) : `$ conda install -c forge-pulp`
-
-
-##### Gurobi.
-
-To install Gurobi solver packages, run one of the following commands :
-
-* Using Python package index (Pypi) : `$ python -m pip install gurobipy` 
-
-* Using Anaconda package index(conda) : `$ conda install -c gurobi gurobi`  
-
-    
-##### Mkdocs. 
-
-To install Mkdocs packages, run one of the following commands: 
-
-* Using Python package index (Pypi) : `$ python -m pip install mkdocs`
-
-
-* Using Anaconda package index (Conda) : `$ conda install -c conda-forge mkdocs` 
-
-
-* To create new mkdocs project : 
-	
-	`$ python -m mkdocs new [name of the project]` 
-
-* To preview your documentation, you need to locate in the docs directory created with the last command and then run: 
-
-    `$ python -m mkdocs serve` 
-	
-* To see the rendered changes browse within the output https address returned by the last command.
-For more guidance on mkdocs, see [here](https://www.mkdocs.org/user-guide/).
-
-##### flake8. 
-
-To analyse code syntax and debug make sure each single peace of code follows the PEP8 and other coding standards we use flake8 linter to do so. 
-In order to install flake8 run on of the follwing commands : 
-
-* Using Anaconda package index : `$ conda install -c anaconda flake8` 
-
-* Using Python package index (Pypi) : `$ python -m pip install flake8` 
-
-
-##### Mathjax. 
-
-Mathjax is a Javascript library that can display mathimatical notations in the browser using LaTex or other. 
-In order to integarate Mathjax within Mkdocs do the following: 
-
-* Install pymdown-extensions (Pypi): `$ python -m pip install pymdown-extensions` 
-
-* Within your mkdocs folder create the following: 
-
-```
- 			mkdocs_______
-      			|___ docs
-		      			|___ javascripts
-             			|     		|___ mathjax.js
-			    		|           
-```									
-
-
-* Add the following script lines in the configuration file `mkdocs.yml` :
-
-```yaml
-extra_javascript:
-
-    javascripts/mathjax.js
-    https://polyfill.io/v3/polyfill.min.js?features=es6
-    https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-```
-
-<br>
-
 ---
 ## Setup options.
 ---
-<br>
 
 ### Standalone setup.
 ----
@@ -180,8 +76,7 @@ extra_javascript:
 
 *  `$ python -m pip install -e .`
 
-<br>
-
+---
 ### Pre-configured setup.
 ----
 
@@ -238,8 +133,35 @@ Once make installation is done, and assuming that you have downloaded the projec
 ``` 
 	 $ make setup
 ```
-<br>
-<br>
+
+##### Mathjax. 
+
+Mathjax is a Javascript library that can display mathimatical notations in the browser using LaTex or other. 
+In order to integarate Mathjax within Mkdocs do the following: 
+
+* Install pymdown-extensions (Pypi): `$ python -m pip install pymdown-extensions` 
+
+* Within your mkdocs folder create the following: 
+
+```
+ 			mkdocs_______
+      			|___ docs
+		      			|___ javascripts
+             			|     		|___ mathjax.js
+			    		|           
+```									
+
+
+* Add the following script lines in the configuration file `mkdocs.yml` :
+
+```yaml
+extra_javascript:
+
+    javascripts/mathjax.js
+    https://polyfill.io/v3/polyfill.min.js?features=es6
+    https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+```
+
 ----
 ## Testing units.
 ----

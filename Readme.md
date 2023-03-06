@@ -33,7 +33,7 @@ Due to everyone's preferences and environments, we have provided two differente 
 ---
 >
 $\newline$  
-Assuming that you have <em>`setuptools`</em> installed, in order to setup the project environment and install all packages and dependencies, you could run the commands :
+In order to setup the project environment and install all packages and dependencies, run the commands :
 >
 >```
 >   - $ conda create -n heo python
