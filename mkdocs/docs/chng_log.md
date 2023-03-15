@@ -1,8 +1,8 @@
 ## Releases.
 
-#### Version 0.2.1.
+#### Version 0.2.1. [release]
    
-    Date: 21.12.2022.
+    Date: 15.3.2023.
    * Re-scaling up the model to `60` time steps for an implementation to the full  
      time frame. 
    * Adopting `dt=1` instead of `2/3`.
