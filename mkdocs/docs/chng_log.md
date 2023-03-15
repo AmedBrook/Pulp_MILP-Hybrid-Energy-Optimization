@@ -11,6 +11,8 @@
    * Forcing logical constraints for the 'Y' LpVariable. 
    * Adapting suitable width for the bargraphs.
    * Setting up environment variables for Gurobi licence secret keys.
+   * Using Plotly bargraphs instead of Matplotlib.
+   * Using `10 steps` load window as a proof of concept. 
    
 #### Version 0.2.0. [Pre-release]
    

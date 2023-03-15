@@ -1,5 +1,5 @@
 Releases
-  Version 0.2.1 : 21-12-2022
+  Version 0.2.1 : 15-3-2023
    
 
    * Re-scaling up the model to 60 time steps for an implementation to the full  
@@ -10,6 +10,8 @@ Releases
    * Forcing logical constraints for the 'Y' LpVariable. 
    * Adapting suitable width for the bargraphs.
    * Setting up environment variables for Gurobi licence secret keys.
+   * Using Plotly bargraphs instead of Matplotlib.
+   * Using 10 steps load window as a proof of concept. 
    
   Version 0.1.5 :
  
@@ -103,6 +105,3 @@ Tests
    * Adding the battery charging logical constraints. 
    * Adopting the final step battery charge logic out of the nested if statement and out of 
      the for outer for loop. 
-   
-   
-   
