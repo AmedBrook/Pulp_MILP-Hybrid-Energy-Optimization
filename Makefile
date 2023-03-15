@@ -20,7 +20,7 @@ endif
 #################################################################################
 
 
-create_environment: ## Set up python interpreter environment
+create_env: ## Set up python interpreter environment
 ifeq (True,$(HAS_CONDA))
 		@echo ">>> Detected conda, creating conda environment."
 	ifeq (3,$(findstring 3,$(PYTHON_INTERPRETER)))

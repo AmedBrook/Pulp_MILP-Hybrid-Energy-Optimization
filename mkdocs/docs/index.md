@@ -125,7 +125,7 @@ Once make installation is done, and assuming that you have downloaded the projec
 * To create the conda environment run the command : 
  
 ```	
-	 $ make create_environment
+	 $ make create_env
 ```
 
 * To setup the project run the command : 

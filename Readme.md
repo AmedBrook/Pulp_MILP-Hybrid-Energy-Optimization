@@ -92,7 +92,7 @@ Once `make` installation is done , and assuming that you have downloaded the pro
 - To create the conda environemnt run the command : 
 > 
 > ```	
->	- $ make create_environment
+>	- $ make create_env
 > ```
 >$\newline$
 >$\newline$
