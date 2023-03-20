@@ -20,18 +20,15 @@ nav:
         - Changelog & Versionning.: chng_log.md
 
 
+
+
 markdown_extensions:
     - toc:
-        permalink: true  
+        permalink: true 
+    - pymdownx.arithmatex:
+        generic: true 
+    - attr_list
 
-
-markdown_extensions:
-  - pymdownx.arithmatex:
-      generic: true
-
-
-markdown_extensions:
-  - attr_list:
 
 extra_javascript:
   - javascripts/mathjax.js
