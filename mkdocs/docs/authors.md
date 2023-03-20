@@ -3,7 +3,7 @@
 
 - Johan Westö, D.Sc. (Tech.), R&D Project Leader, Novia.
 - Ray Pörn, Ph.D., Principal Lecturer, Novia.
-- Ahmed Mabrouk, Ch.Eng., R&D Project Assistant, Novia.
+- Ahmed Mabrouk, CEng., R&D Project Assistant, Novia.
 
 Web sites : 
 
