@@ -62,7 +62,9 @@ For full source project : [https://github.com/AmedBrook/Pulp_MILP-Hybrid-Energy-
 
 ###### Environment.
 
-* `$ conda create --HEO_model python=3.9.7` - Create a new environment aside of the root, and name it somthing recognisable, we named here as HEO_model, we have used here python version 3.9.7. to do so you tape.
+* Create a new environment aside of the root, and name it somthing recognisable, we named here as HEO_model, we have used here python version 3.9.7. 
+
+To do so, run the command : `$ conda create --HEO_model python=3.9.7`
 
 ###### Requirements and Dependencies.
 
