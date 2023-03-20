@@ -35,7 +35,7 @@ setup(
            'Development Status :: 3 - Alpha',
 
             # Our Intended audience is mostly those who understand Energy Optimization and Integration.
-           'Intended Audience :: Energy Optimization and Integration',
+           'Intended Audience :: Energy Optimization and Battery Storage Integration',
 
            # Our License is MIT.
            'License :: OSI Approved :: MIT License',
