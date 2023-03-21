@@ -1,6 +1,7 @@
 Problem parameters
 =================
 
+![Screenshot](img/hyh_illustration_parameters.png)
 
 #### Optimization parameters.
 
@@ -8,7 +9,7 @@ The optimization parameters are set of paramters that have beeen used along  wit
 
 #### Set of parameters.
 
-$Q_{\mathrm{max}} \hspace{1cm}$ : Maximal energy charge stored in battery (kWh)$
+$Q_{\mathrm{max}} \hspace{1cm}$ : Maximal energy charge stored in battery (kWh)
 
 
 
@@ -24,7 +25,7 @@ $P_{\mathrm{max}\;} \hspace{1cm}$ : Maximal power available from genset (kW).
 
 
 
-${FC}_{max} \hspace{0.7cm}$ : Maximal fuel consumption (g/h).
+${FC}_{max} \hspace{0.7cm}$ : Maximal fuel consumption (g).
 
 
 
@@ -32,15 +33,15 @@ ${FC}_{offset} \hspace{0.4cm}$ : Offset for fuel consumption model at P=0).
 
 
 
-$a \hspace{1.7cm}$ : Slope in fuel consumption model.
+$a \hspace{1.7cm}$ : Slope value in fuel consumption model.
 
 
 
-$b \hspace{1.7cm}$ : Intercept in fuel consumption model.
+$b \hspace{1.7cm}$ : Intercept value in fuel consumption model.
 
 
 
-$K_{\mathrm{start}} \hspace{1cm}$ : Additional fuel consumption when starting genset (kg).
+$K_{\mathrm{start}} \hspace{1cm}$ : Additional fuel consumption when starting genset (g).
 
 
 
@@ -65,11 +66,11 @@ $t \hspace{1.8cm}$ :  Time vector in simulation (dimension(t)=n).
 
 
 
-$\eta^{\mathrm{toBat}} \; \hspace{0.9cm}$ :  Efficiency when charging battery.
+$\eta^{\mathrm{toBat}} \; \hspace{0.9cm}$ :  Efficiency when charging the battery.
 
 
 
-$\eta^{\mathrm{fromBat}} \; \hspace{0.5cm}$ :   Efficiency when battery is used for load.
+$\eta^{\mathrm{fromBat}} \; \hspace{0.5cm}$ :   Efficiency when releasing from the battery.
 
 
 
