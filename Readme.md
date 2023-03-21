@@ -156,3 +156,61 @@ In our code we ended up using three main functions which help us to implemente t
 The first function is called <strong><em>`FuelCon`</em></strong> it is used to calculate based on a linear model the fuel comsumption of the genset for a specific power load P.
  The second function is called <strong><em>`lwd`</em></strong>, is the abreviation of load window, which is used to constructe a load profile for a specific number of time steps out of a given sets of power loads arrays. 
  The third one is called <strong><em>`lixtr`</em></strong> and it's the abreviation of list extraction, which could be used in the section 'Pre-processing visualization data' for extracting lists out of dictionaries. So in order to make sure those functions are behaving as is should be some testing routings are required by following the next commands.
+
+ ## Documentation.
+---
+
+#### Mkdocs.
+
+We are using Mkdocs in order to generate documentation pages for the project.
+
+to install Mkdocs, run the command : 
+>```
+> pip install mkdocs
+>```
+>
+To create a new project with the name ´heo´, you can run: 
+>```
+> mkdocs new heo
+>```
+>
+After creation the project, you might have something simmilar to this: 
+
+```
+            mkdocs.yml
+      		docs
+		         |___ index.md
+      
+```									
+
+
+#### Mathjax.
+
+Mathjax is a Javascript library that can display mathimatical notations in the browser using LaTex or other. In order to integarate Mathjax within Mkdocs do the following:
+
+Install pymdown-extensions (Pypi):
+
+>```
+>  python -m pip install pymdown-extensions
+>```
+>
+
+
+Within your mkdocs folder create the following:
+
+```
+ 			mkdocs_______
+      			|___ docs
+		      			|___ javascripts
+             			|     		|___ mathjax.js
+			    		|           
+```									
+* Add the following script lines in the configuration file `mkdocs.yml` :
+
+```yaml
+extra_javascript:
+
+    javascripts/mathjax.js
+    https://polyfill.io/v3/polyfill.min.js?features=es6
+    https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+```
