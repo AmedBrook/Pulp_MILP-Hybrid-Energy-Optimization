@@ -183,6 +183,12 @@ After creation the project, you might have something simmilar to this:
                     |___./...
 ```									
 
+if you want to preview live the changes you make on the mkdocs pages, you can run the command 
+>```
+>   - $ python mkdocs serve
+>```
+>
+<br>
 
 #### Mathjax.
 
