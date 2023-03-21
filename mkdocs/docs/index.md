@@ -20,8 +20,6 @@ For full source project : [https://github.com/AmedBrook/Pulp_MILP-Hybrid-Energy-
     notebooks/
             .gitkeep
             heo_model.ipynb
-    references/
-        .gitkeep
     reports/
         figures/
         Load Analysis & Benchmark/
@@ -43,8 +41,15 @@ For full source project : [https://github.com/AmedBrook/Pulp_MILP-Hybrid-Energy-
         load_window.py
         rand_val.py
         rand_window.py
+    tests/
+        __init__.py
+        .gitkeep
+        env_test.py
+        fuel_consumption_tests.py
+        list_extraction_tests.py
+        load_window_tests.py
+
     Authors.txt
-    Changelog.md
     License
     Makefile
     Readme.md
