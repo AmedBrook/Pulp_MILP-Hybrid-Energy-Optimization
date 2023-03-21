@@ -166,12 +166,12 @@ We are using Mkdocs in order to generate documentation pages for the project.
 
 to install Mkdocs, run the command : 
 >```
-> pip install mkdocs
+>   - $ pip install mkdocs
 >```
 >
 To create a new project with the name ´heo´, you can run: 
 >```
-> mkdocs new heo
+>   - $ mkdocs new heo
 >```
 >
 After creation the project, you might have something simmilar to this: 
@@ -179,7 +179,8 @@ After creation the project, you might have something simmilar to this:
 ```
             mkdocs.yml
       		docs
-		         |___ index.md
+		      |___ index.md
+              |___./...
       
 ```									
 
@@ -191,7 +192,7 @@ Mathjax is a Javascript library that can display mathimatical notations in the b
 Install pymdown-extensions (Pypi):
 
 >```
->  python -m pip install pymdown-extensions
+>  - $ python -m pip install pymdown-extensions
 >```
 >
 
@@ -201,7 +202,7 @@ Within your mkdocs folder create the following:
 ```
  			mkdocs_______
       			|___ docs
-		      			|___ javascripts
+		      		|___ javascripts
              			|     		|___ mathjax.js
 			    		|           
 ```									
