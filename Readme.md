@@ -180,8 +180,7 @@ After creation the project, you might have something simmilar to this:
             mkdocs.yml
       		docs
 		      |___ index.md
-              |___./...
-      
+                |___./...
 ```									
 
 
@@ -204,7 +203,7 @@ Within your mkdocs folder create the following:
       			|___ docs
 		      		|___ javascripts
              			|     		|___ mathjax.js
-			    		|           
+			    	|           
 ```									
 * Add the following script lines in the configuration file `mkdocs.yml` :
 
