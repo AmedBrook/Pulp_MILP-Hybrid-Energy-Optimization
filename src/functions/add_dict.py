@@ -1,5 +1,5 @@
 
-# merge_dictionaries_1_2 function 
+# merge_dictionaries_1_2 function
 
 def merge_dict(dict1, dict2):
     merged_dictionary_1_2 = {}
