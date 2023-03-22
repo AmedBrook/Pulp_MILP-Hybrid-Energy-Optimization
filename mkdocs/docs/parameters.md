@@ -1,4 +1,4 @@
-Problem parameters
+Problem parameters.
 =================
 
 ![Screenshot](img/hyh_illustration_parameters.png)
@@ -30,7 +30,7 @@ ${FC}_{max} \hspace{0.7cm}$ : Maximal fuel consumption (g).
 
 
 
-${FC}_{offset} \hspace{0.4cm}$ : Offset for fuel consumption model at P=0).
+${FC}_{offset} \hspace{0.4cm}$ : Offset for fuel consumption model (at P=0).
 
 
 
@@ -39,10 +39,6 @@ $a \hspace{1.7cm}$ : Slope value from the fuel consumption model.
 
 
 $b \hspace{1.7cm}$ : Intercept value from the fuel consumption model.
-
-
-
-$K_{\mathrm{start}} \hspace{1cm}$ : Additional fuel consumption when starting genset (g).
 
 
 
@@ -59,10 +55,6 @@ $n \hspace{1.7cm}$ :  Number of time steps in simulation.
 
 
 
-$t_{\mathrm{max}\;} \hspace{1.1cm}$ : Max time in simulation (h).
-
-
-
 $t \hspace{1.8cm}$ :  Time vector in simulation (dimension(t)=n).
 
 
@@ -75,7 +67,7 @@ $\eta^{\mathrm{fromBat}} \; \hspace{0.5cm}$ :   Efficiency when releasing from t
 
 
 
-$L \hspace{1.6cm}$ : Vector of pre-defined load profile (must be of same length as time vector (kWh).
+$L \hspace{1.6cm}$ : Vector of pre-defined load profile (must be of same length as time vector) (kWh).
 
 $\newline$ 
 
