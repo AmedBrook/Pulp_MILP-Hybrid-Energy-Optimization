@@ -15,8 +15,6 @@ For full source project : [https://github.com/AmedBrook/Pulp_MILP-Hybrid-Energy-
         site/
             ...
         mkdocs.yml
-    models/
-        .gitkeep
     notebooks/
             .gitkeep
             heo_model.ipynb
