@@ -3,20 +3,20 @@ site_url: https://heo.fi/
 
 nav: 
 
-    - Project case study.: 
-        - Project context.: index.md
-        - Project overview.: Project_overview.md
-    - Problem formulating.: 
-        - Problem Parameters.: parameters.md
-        - Problem LP variables.: lp_vars.md
-        - Problem LP constraints.: lp_cstrs.md
-        - Optimization objective.: obj_func.md
-    - Implementation.: 
-        - User quick guide.: user_quick_guide.md
-        - Contributor guide.: contr_guide.md
-    - About.: 
-        - Authors.: authors.md
-        - Changelog & Versionning.: chng_log.md
+    - Project case study: 
+        - Project context: index.md
+        - Project overview: Project_overview.md
+    - Problem formulating: 
+        - Problem Parameters: parameters.md
+        - Problem LP variables: lp_vars.md
+        - Problem LP constraints: lp_cstrs.md
+        - Optimization objective: obj_func.md
+    - Implementation: 
+        - User quick guide: user_quick_guide.md
+        - Contributor guide: contr_guide.md
+    - About: 
+        - Authors: authors.md
+        - Changelog & Versionning: chng_log.md
 
 
 
