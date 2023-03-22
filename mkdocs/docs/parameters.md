@@ -69,5 +69,8 @@ $\eta^{\mathrm{fromBat}} \; \hspace{0.5cm}$ :   Efficiency when releasing from t
 
 $L \hspace{1.6cm}$ : Vector of pre-defined load profile (must be of same length as time vector) (kWh).
 
+$Z \hspace{1.7cm}$ : Aditional fuel oil consumption costs when starting a genset.
+$FC_{\mathrm{A}} \hspace{1.05cm}$ : Genset fuel oil consumption (g).
+
 $\newline$ 
 
