@@ -27,6 +27,8 @@ markdown_extensions:
     - pymdownx.arithmatex:
         generic: true 
     - attr_list
+    - pymdownx.snippets:
+        check_paths: true
 
 
 extra_javascript:
