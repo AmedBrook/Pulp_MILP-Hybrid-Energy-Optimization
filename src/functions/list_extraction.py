@@ -14,10 +14,10 @@ def lixtr():
     V_steps = [x for x in range(0, n)]
     Optim = pulp.LpProblem('Energy_Opt', pulp.LpMinimize)
 
-    FC_A_ = ([] for i in range(10))
-    P_A_ = ([] for i in range(10))
-    P_A_load_ = ([] for i in range(10))
-    P_A_to_bat_ = ([] for i in range(10))
+    FC_ = ([] for i in range(10))
+    P_ = ([] for i in range(10))
+    P_load_ = ([] for i in range(10))
+    P_to_bat_ = ([] for i in range(10))
     P_From_bat_ = ([] for i in range(10))
     Q_bat_ = ([] for i in range(10))
     Y_ = ([] for i in range(10))
@@ -26,10 +26,10 @@ def lixtr():
     Z_ = ([] for i in range(10))
 
     nms = {
-     0: FC_A_,
-     1: P_A_,
-     2: P_A_load_,
-     3: P_A_to_bat_,
+     0: FC_,
+     1: P_,
+     2: P_load_,
+     3: P_to_bat_,
      4: P_From_bat_,
      5: Q_bat_,
      6: Y_,
@@ -39,10 +39,10 @@ def lixtr():
      }
 
     nmss = {
-     0: 'FC_A_',
-     1: 'P_A_',
-     2: 'P_A_load_',
-     3: 'P_A_to_bat_',
+     0: 'FC_',
+     1: 'P_',
+     2: 'P_load_',
+     3: 'P_to_bat_',
      4: 'P_From_bat_',
      5: 'Q_bat_',
      6: 'Y_',

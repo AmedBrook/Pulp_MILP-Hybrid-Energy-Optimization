@@ -19,15 +19,15 @@ class list_extract_test(unittest.TestCase):
         V_steps = [x for x in range(0, n)]  # Time steps vector.
 
         functions.lixtr(
-            'FC_A_', 'P_A_', 'P_A_load_',
-            'P_A_to_bat_', 'P_From_bat_',
+            'FC_', 'P_', 'P_load_',
+            'P_to_bat_', 'P_From_bat_',
             'Q_bat_', 'Y_', 'Y_from_bat_',
             'Y_to_bat_', 'Z_')
 
-        lenn_FC_A_ = len('FC_A_')
-        lenn_P_A_ = len('P_A_')
-        lenn_P_A_load_ = len('P_A_load_')
-        lenn_P_A_to_bat_ = len('P_A_to_bat_')
+        lenn_FC_ = len('FC_')
+        lenn_P_ = len('P_')
+        lenn_P_load_ = len('P_load_')
+        lenn_P_to_bat_ = len('P_to_bat_')
         lenn_P_From_bat_ = len('P_From_bat_')
         lenn_Q_bat_ = len('Q_bat_')
         lenn_Y_ = len('Y_')
@@ -38,10 +38,10 @@ class list_extract_test(unittest.TestCase):
         # error message in case if test case got failed.
         message = "the extracted list doesn't fit the load frame"
 
-        self.assertEqual(lenn_FC_A_, len(V_steps), message)
-        self.assertEqual(lenn_P_A_, len(V_steps), message)
-        self.assertEqual(lenn_P_A_load_, len(V_steps), message)
-        self.assertEqual(lenn_P_A_to_bat_, len(V_steps), message)
+        self.assertEqual(lenn_FC_, len(V_steps), message)
+        self.assertEqual(lenn_P_, len(V_steps), message)
+        self.assertEqual(lenn_P_load_, len(V_steps), message)
+        self.assertEqual(lenn_P_to_bat_, len(V_steps), message)
         self.assertEqual(lenn_P_From_bat_, len(V_steps), message)
         self.assertEqual(lenn_Q_bat_, len(V_steps), message)
         self.assertEqual(lenn_Y_, len(V_steps), message)
