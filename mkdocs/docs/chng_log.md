@@ -15,4 +15,12 @@
 #### Version 0.1.4. [Pre-release]
 
     Date: 18.09.2022.
+
+$\newline$ 
+$\newline$ 
+$\newline$ 
+
+---
    
+For more details about all releases, please check the github project : 
+[https://github.com/AmedBrook/Pulp_MILP-Hybrid-Energy-Optimization](https://github.com/AmedBrook/Pulp_MILP-Hybrid-Energy-Optimization).
