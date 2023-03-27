@@ -1,4 +1,4 @@
-Problem LP constraints
+Problem LP constraints.
 =====================
 
 #### Linear programming constraints.
@@ -6,6 +6,7 @@ Problem LP constraints
 Linear programming constraints (LP constraints) are the rules that gouverne the problem optimization process. They are fondamentally set of equations, they might be either inequality equations ( example : ${a} + {b} \le {c}\hspace{0.3cm}$)   or equality equations  ( example : ${a} + {b} = {c}\hspace{0.3cm}$) constructed based on the LP variables quantities and problem parameters. (See. Problem LP variables and Problem LP constraints). 
 
 #### Set of problem LP constraints.
+---
 
 
 
@@ -45,4 +46,4 @@ $\hspace{6.9cm}P_k^{\mathrm{fromBat}} \le 0\ldotp 9P_{\mathrm{max}} {\cdot \;y}_
 
 $\newline$ 
 
-- Constraints for linearization of objective:  $\hspace{0.5cm}z_k \ge y_k -y_{k-1}\hspace{3.6cm}$ $k=2,\dots ,n$
+- Objective linearization :  $\hspace{1.7cm}z_k \ge y_k -y_{k-1}\hspace{5.5cm}$ $k=2,\dots ,n$

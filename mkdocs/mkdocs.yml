@@ -7,10 +7,12 @@ nav:
         - Project context.: index.md
         - Project overview.: Project_overview.md
     - Problem formulating: 
-        - Problem LP variables.: lp_vars.md
-        - Problem Parameters.: parameters.md
-        - Problem LP constraints.: lp_cstrs.md
-        - Optimization objective.: obj_func.md
+        - Variables.: lp_vars.md
+        - Parameters.: parameters.md
+        - Upper and lower bounds.: low_up_bnds.md
+        - Logical constraints.: lp_cstrs.md
+        - Objective.: obj_func.md
+        - Problem size.: prblm_size.md
     - Implementation: 
         - User quick guide.: user_quick_guide.md
         - Contributor guide.: contr_guide.md
