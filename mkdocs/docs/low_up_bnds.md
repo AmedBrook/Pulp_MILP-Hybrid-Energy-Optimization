@@ -8,7 +8,7 @@ Linear programing (LP) variables are the variables whose values the optimizer wi
 ---
 | LPvariable                    | Lower bound                                      | Upper bound
 | ------------------------      | --------------                                   | --------
-| $Q_{bat}{k}$                  | $0\ldotp 2.Q_{\mathrm{max}}$                     | $Q_{\mathrm{max}}$
+| $Q_{\mathrm{bat}, k}$         | $0\ldotp 2.Q_{\mathrm{max}}$                     | $Q_{\mathrm{max}}$
 | $P_{k}$                       | $P_{\mathrm{min}}$                               | $0.9.P_{\mathrm{max}}$
 | $P_{\mathrm{load}, k}$        | $P_{\mathrm{min}}$                               | $0.9.P_{\mathrm{max}}$
 | $P_{\mathrm{to~bat}, k}$      | $P_{\mathrm{min}}$                               | $0.9.P_{\mathrm{max}}$
