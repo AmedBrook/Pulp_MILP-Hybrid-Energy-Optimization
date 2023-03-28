@@ -12,7 +12,7 @@ Linear programming constraints (LP constraints) are the rules that gouverne the 
 
 
 
-- Load requirements : 
+- $Load\,requirements :$ 
 
 \begin{flalign*}
 & L_k =P_k^{\mathrm{load}} +\eta {\;}^{\mathrm{fromBat}} {\cdot \;P}_k^{\mathrm{fromBat}}  & \forall\,\,\,\,\,\, k=1,\dots ,n
@@ -21,7 +21,7 @@ Linear programming constraints (LP constraints) are the rules that gouverne the 
 
 <br>
 
-- Power split : 
+- $Power \, split :$ 
 
 \begin{flalign*}
 & P_{k\;} =P_k^{\mathrm{load}} {+\;P}_k^{\mathrm{toBat}}\ & \forall\,\,\,\,\,\, k=1,\dots ,n 
@@ -29,7 +29,7 @@ Linear programming constraints (LP constraints) are the rules that gouverne the 
 
 <br>
 
-- Charge balance constraints : 
+- $Charge \,balance \,constraints :$
 
 \begin{flalign*}
 & Q_k =Q_{k-1} +\eta^{\mathrm{toBat}} \cdot \;P_k^{\mathrm{toBat}} \Delta t-\;P_k^{\mathrm{fromBat}} \Delta t\\
@@ -39,7 +39,7 @@ Linear programming constraints (LP constraints) are the rules that gouverne the 
 
 <br>
 
-- Genset logical constraints : 
+- $Genset\, constraints :$
 
 
 \begin{flalign*}
@@ -49,7 +49,7 @@ Linear programming constraints (LP constraints) are the rules that gouverne the 
 
 <br>
 
-- Battery logical constraints : 
+- $Battery \,logical \,constraints :$ 
 
 
 \begin{flalign*}
@@ -60,7 +60,7 @@ Linear programming constraints (LP constraints) are the rules that gouverne the 
 
 <br>
 
-- Fuel consumption :
+- $Fuel \,consumption :$
 
 \begin{flalign*}
 & {FC}_{k\;} ={aP}_{k\;} +b-{fc}_{offset} \cdot \left(1-y_k \right)\  & \forall\,\,\,\,\,\, k=1,\dots ,n
@@ -69,7 +69,7 @@ Linear programming constraints (LP constraints) are the rules that gouverne the 
 
 <br>
 
-- Objective linearization : 
+- $Objective \,linearization :$ 
 
 
 \begin{flalign*}
