@@ -67,3 +67,5 @@ Linear programming constraints (LP constraints) are the rules that gouverne the 
 & z_k \ge y_k -y_{k-1} & k=2,\dots ,n
 \end{flalign*}         
 
+<br>
+<br>
