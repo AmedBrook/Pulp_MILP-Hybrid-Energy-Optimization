@@ -11,8 +11,8 @@ Therefore, We need to know the problem size in order to see if the problem is co
 
 \begin{flalign*}
 \begin{cases}
-& - Continuous :  6.n.m \\    
-& - Binary :  4.n.m \\  
-& - Constraints :  9.n.m 
+- Continuous : &  6.n.m \\    
+- Binary : &  4.n.m \\  
+- Constraints : &  9.n.m 
 \end{cases}
 \end{flalign*}    
