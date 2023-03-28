@@ -1,11 +1,11 @@
 Problem size.
 =================
 
-Linear programing (LP) variables are the variables whose values the optimizer will solve for in each time step. 
+comuputation cost is the most implicaated factor when it comes to designing optimization based software solutions as it can affect the speed for processing information and hence delaying outputs. 
 
 ![Screenshot](img/hyh_illustration_lpvariables.png)
 
-We need to know the problem size in order to see if the problem is computationaly cost effective or not, our problem size is mainly dependant on the size of the load window time frame (aka : steps ${n}$ ), the number of LP variables, the number of gensets ${m}$ (we use 1 genset in our case) and the numbere of problem constraints. 
+Therefore, We need to know the problem size in order to see if the problem is computationaly cost effective or not, our problem size is mainly dependant on the size of the load window time frame (aka : steps ${n}$ ), the number of LP variables, the number of gensets ${m}$ (we use 1 genset in our case) and the numbere of problem constraints. 
 
 
 
