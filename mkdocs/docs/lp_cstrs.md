@@ -15,6 +15,7 @@ Linear programming constraints (LP constraints) are the rules that gouverne the 
 - $Load\,requirements :$ 
 
 \begin{flalign*}
+\color{black}
 & L_k =P_k^{\mathrm{load}} +\eta {\;}^{\mathrm{fromBat}} {\cdot \;P}_k^{\mathrm{fromBat}}  & \forall\,\,\,\,\,\, k=1,\dots ,n
 \end{flalign*}        
 
