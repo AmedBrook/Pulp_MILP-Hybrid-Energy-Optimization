@@ -5,9 +5,14 @@ Linear programing (LP) variables are the variables whose values the optimizer wi
 
 ![Screenshot](img/hyh_illustration_lpvariables.png)
 
-We need to know the problem size in order to see if the problem is computationaly cost effective or not, our problem size is mainly dependant on the size of the load window time frame (aka : steps ${n}$ ), the number of LP variables and the number of gensets ${m}$ (we use 1 genset in our case). 
+We need to know the problem size in order to see if the problem is computationaly cost effective or not, our problem size is mainly dependant on the size of the load window time frame (aka : steps ${n}$ ), the number of LP variables, the number of gensets ${m}$ (we use 1 genset in our case) and the numbere of problem constraints. 
 
-- Continuous : $\hspace{3cm}\hspace{1cm} {3} \cdot {n} \cdot {m}$    
-- Binary : $\hspace{4cm}\hspace{1cm} {2} \cdot {n} \cdot {m}$   
 
-- Number of constraints : $\hspace{1cm}\hspace{1cm} {7} \cdot {n} \cdot {m} + {3} \cdot {n}$ $\hspace{1cm}$ 
+
+\begin{flalign*}
+\begin{cases}
+& - Continuous :  6.n.m \\    
+& - Binary :  4.n.m \\  
+& - Constraints :  9.n.m 
+\end{cases}
+\end{flalign*}    

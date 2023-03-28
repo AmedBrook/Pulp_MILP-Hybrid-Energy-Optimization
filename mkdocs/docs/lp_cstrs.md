@@ -60,6 +60,15 @@ Linear programming constraints (LP constraints) are the rules that gouverne the 
 
 <br>
 
+- Fuel consumption :
+
+\begin{flalign*}
+& {FC}_{k\;} ={aP}_{k\;} +b-{fc}_{offset} \cdot \left(1-y_k \right)\  & \forall\,\,\,\,\,\, k=1,\dots ,n
+\end{flalign*}
+
+
+<br>
+
 - Objective linearization : 
 
 
