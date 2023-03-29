@@ -20,6 +20,8 @@ Authors:
 
 Websites : 
 
- [Novia Intelligent Systems Institute.](https://www.novia.fi/en/intelligentsystems/), [Novia University of Applied Sciences.](https://www.novia.fi)
+ :link: [Novia Intelligent Systems Institute.](https://www.novia.fi/en/intelligentsystems/) 
+<br>
+ :link: [Novia University of Applied Sciences.](https://www.novia.fi)
 
 ![Screenshot](img/Novia_flag.PNG){: style="height:130px;width:700px"}
