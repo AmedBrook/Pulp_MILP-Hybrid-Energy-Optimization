@@ -5,7 +5,7 @@ nav:
 
     - Project case study: 
         - Project context.: index.md
-        - Project overview.: Project_overview.md
+        - Project overview.: project_overview.md
     - Problem formulating: 
         - Variables.: lp_vars.md
         - Parameters.: parameters.md
@@ -31,7 +31,15 @@ markdown_extensions:
     - attr_list
     - pymdownx.snippets:
         check_paths: true
-
+    - pymdownx.emoji:
+        emoji_index: !!python/name:pymdownx.emoji.twemoji
+        emoji_generator: !!python/name:pymdownx.emoji.to_svg
+        alt: short
+        options:
+            attributes:
+                align: absmiddle
+                height: 20px
+                width: 20px
 
 extra_javascript:
   - javascripts/mathjax.js
