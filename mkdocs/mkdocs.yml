@@ -10,7 +10,7 @@ nav:
         - Variables.: lp_vars.md
         - Parameters.: parameters.md
         - Upper and lower bounds.: low_up_bnds.md
-        - Logical constraints.: lp_cstrs.md
+        - Problem constraints.: lp_cstrs.md
         - Objective.: obj_func.md
         - Problem size.: prblm_size.md
     - Implementation: 
