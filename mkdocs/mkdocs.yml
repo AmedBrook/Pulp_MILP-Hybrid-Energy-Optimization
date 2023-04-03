@@ -31,6 +31,8 @@ markdown_extensions:
     - attr_list
     - pymdownx.snippets:
         check_paths: false
+        url_timeout: 15.0
+        encoding: 'utf-8'
     - pymdownx.emoji:
         emoji_index: !!python/name:pymdownx.emoji.twemoji
         emoji_generator: !!python/name:pymdownx.emoji.to_svg
