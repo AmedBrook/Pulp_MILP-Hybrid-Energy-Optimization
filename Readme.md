@@ -143,8 +143,7 @@ extra_javascript:
 ```
 
 ## Testing units
-
-----
+-------------------------
 
 #### Testing the environment
 * To test packages and dependencies just run the command : 
