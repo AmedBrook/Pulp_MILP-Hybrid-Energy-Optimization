@@ -150,10 +150,8 @@ extra_javascript:
 ```
 Behind the scenes, make will go over the `Makefile` located in our directory which itself will chain to all test units located in `/src/tests` directory and execute every single test module existing in that directory.
 
----
 
 #### Testing syntax & style
-
 * To lint code scripts we are using flake8, just run the following command : 
 
 ```	
