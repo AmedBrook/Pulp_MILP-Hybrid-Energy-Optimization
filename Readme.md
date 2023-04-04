@@ -1,10 +1,10 @@
-## HEO.
+### HEO.
 
 ---
 
 PuLP-MILP based Hybrid Energy Optimization, for fuel minimization: MILP model with semi-continuous power supply and battery logic.
 
-## Project description and context
+### Project description and context
 
 ---
 
