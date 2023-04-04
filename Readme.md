@@ -1,6 +1,5 @@
 ### HEO.
 
------
 
 PuLP-MILP based Hybrid Energy Optimization, for fuel minimization: MILP model with semi-continuous power supply and battery logic.
 
@@ -151,7 +150,7 @@ extra_javascript:
 
 ## Testing units
 
----
+
 
 #### Testing the environment
 * To test packages and dependencies just run the command : 
