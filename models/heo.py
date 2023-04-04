@@ -1,8 +1,9 @@
 
 '''
+######################################################
 Mixed integer energy hybridization problem solved
 with Pulp script to optimize fuel oil consumption
-
+######################################################
 '''
 # IMPORTING LIBRARIES.
 import numpy as np
@@ -58,7 +59,7 @@ Y_from_bat = pulp.LpVariable.dicts("Y_from_bat", V_steps, lowBound=0, upBound=1,
 Y = pulp.LpVariable.dicts("Y", V_steps, lowBound=0, upBound=1, cat=LpInteger)
 
 
-# Setting up the objectif function.
+# SETTING UP THE OBJECTIF FUNCTION.
 FC = sum(FOC[k] for k in V_steps) * dt/1000  # sum of the fuel oil comsumption for all gensets over all k steps.
 L_added_cost = sum(Z[i] for i in V_steps_z)  # Sum of all of the additional costs including starting costs.
 Optim += lpSum(FC + L_added_cost), "Minimization fuel oil consumption objective"
@@ -103,7 +104,7 @@ Optim += Q_bat[V_steps[-1]] == Q_final
 status = Optim.solve(GUROBI())
 
 
-# PRINTING THE LP OPTIMAL VALUES.
+# PRINTING THE LP OPTIMAL SOLUTION.
 for v in Optim.variables():
     print(v.name, "=", v.varValue)
 
