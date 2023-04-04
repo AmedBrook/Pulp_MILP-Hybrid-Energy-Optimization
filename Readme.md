@@ -16,13 +16,13 @@ The farmwork used in this case study is PuLP, to solve a Mixed Integer Linear Pr
 
 ## Project use case
 
-----
+---
 
 This particular case is initially specific for the offshore shipping industry as they are the most transportation fuel consuming and needing some sort of solutions to use fuel optimally in their trips. However, this is not only exclusive to this sector, it can be easily extended to other sectors as long as the purpose is to optimize energy usage and energy hybridization.
 
 ## Project setup options
 
-----
+---
 
 ### Standalone setup
 ###### Environment
