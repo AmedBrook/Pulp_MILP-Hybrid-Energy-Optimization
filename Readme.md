@@ -15,7 +15,9 @@ In the Notebook scripts associated with this project, we simulate an application
 The farmwork used in this case study is PuLP, to solve a Mixed Integer Linear Programming problem together with first the built-in solver CBC and then with a commercial solver, we used Gurobi in our case.
 
 ## Project use case
+
 ----
+
 This particular case is initially specific for the offshore shipping industry as they are the most transportation fuel consuming and needing some sort of solutions to use fuel optimally in their trips. However, this is not only exclusive to this sector, it can be easily extended to other sectors as long as the purpose is to optimize energy usage and energy hybridization.
 
 ## Project setup options
@@ -41,7 +43,9 @@ To do so, run the command : `$ conda create --HEO_model python=3.9.7`
 *  `$ python -m pip install -e .`
 
 ### Pre-configured setup
+
 ----
+
 While the manual installation can walk you through around the various commands basics for each used packages in the project, chances are you might already know those commands and you don't want to bother yourself about taping every single command, so that's why we have provided the possibility to use `make` scripting, to make life easy for you. You find in the following the commands you will need to do this. 
 
 
@@ -146,6 +150,7 @@ extra_javascript:
 ```
 
 ## Testing units
+
 ---
 
 #### Testing the environment
@@ -156,7 +161,7 @@ extra_javascript:
 ```
 Behind the scenes, make will go over the `Makefile` located in our directory which itself will chain to all test units located in `/src/tests` directory and execute every single test module existing in that directory.
 
-----
+---
 
 #### Testing syntax & style
 * To lint code scripts we are using flake8, just run the following command : 
