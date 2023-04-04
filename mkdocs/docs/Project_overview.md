@@ -9,14 +9,14 @@ This project seeks to utilize a genset optimally by introducing an energy storag
 
 ### Model synopsys
 The model developed is of Mixed Integer Linear Programming (MILP)
-type. All functions (objective and constraints) are linear and the variables can be continuous, integer or binary. Binary variables are used to model logical decisions in the problem (i.e. a generator is used = 1 or not used =o).
+type. All functions (objective and constraints) are linear, and the variables can be continuous, integer or binary. Binary variables are used to model logical decisions in the problem (i.e. a generator is used = 1 or not used =o).
 The optimal solution to the MILP problem is found by solving a sequence of
-many LP problems (simpler problems that are solved very fast), where the number of LP problems to solve depends on the number of binary and integer variables (more variables gives a larger combinatorial solution space).
+many LP problems (simpler problems that are solved very fast), where the number of LP problems to solve depends on the number of binary and integer variables (more variables give a larger combinatorial solution space).
 Nonlinear functions can in many cases be approximated with piecewise linear ones, meaning that the MILP approach is quite general. 
 There exist state-of-the-art MILP solvers on the market that are highly efficient and capable of solving even very "large" MILP problems.
 
 ### Model optimization policy
 The optimization model is done in discrete time, i.e. the time horizon is divided into smaller time steps and in each time step everything is kept constant.
-The objective is to minimize fuel consumption within the time horizon given a pre-defined load shedule for each time step.
+The objective is to minimize fuel consumption within the time horizon given a pre-defined load schedule for each time step.
 Logical variables are introduced to facilitate the logic necessary for operating gensets and batteries.
 This model is a proof of concept and relatively easy to adjust and scale up for potential use cases.

@@ -4,21 +4,21 @@ site_url: https://heo.fi/
 nav: 
 
     - Project case study: 
-        - Project context.: index.md
-        - Project overview.: project_overview.md
+        - Project context: index.md
+        - Project overview: project_overview.md
     - Problem formulating: 
-        - Variables.: lp_vars.md
-        - Parameters.: parameters.md
-        - Upper and lower bounds.: low_up_bnds.md
-        - Problem constraints.: lp_cstrs.md
-        - Objective.: obj_func.md
-        - Problem size.: prblm_size.md
+        - Variables: lp_vars.md
+        - Parameters: parameters.md
+        - Upper and lower bounds: low_up_bnds.md
+        - Problem constraints: lp_cstrs.md
+        - Objective: obj_func.md
+        - Problem size: prblm_size.md
     - Implementation: 
-        - User quick guide.: user_quick_guide.md
-        - Contributor guide.: contr_guide.md
+        - User quick guide: user_quick_guide.md
+        - Contributor guide: contr_guide.md
     - About: 
-        - Authors.: authors.md
-        - Releases.: chng_log.md
+        - Authors: authors.md
+        - Releases: chng_log.md
 
 
 

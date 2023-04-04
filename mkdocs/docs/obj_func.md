@@ -1,12 +1,12 @@
-Optimization objective.
+Optimization objective
 ======================
 
-#### Objective function. 
+#### Objective function
 
 The objective function is the goal behind why we set the problem. In our case the problem is an optimization problem so the the objective functin is an optimization objective. However the Optimization objective is two types either a maximization objective or minimization objective. Since we wish to reduce the energy cost then our optimzatio objective is a minimization one. 
 
 
-#### Problem minimization objective.
+#### Problem minimization objective
 ---
 
 In our case the miminzation objective is that The total fuel consumptions (kg) of the trip which are fuel consumption (as a function of required power output) for the genset including an additional cost for re starting the genset. therefore the Problem minimization objective could be formulated as follow : 

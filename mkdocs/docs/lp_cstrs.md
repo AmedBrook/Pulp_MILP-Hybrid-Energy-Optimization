@@ -1,13 +1,13 @@
-Problem LP constraints.
+Problem LP constraints
 =====================
 
 ![Screenshot](img/hyh_illustration_constraints.png)
 
-#### Linear programming constraints.
+#### Linear programming constraints
 
 Linear programming constraints (LP constraints) are the rules that gouverne the problem optimization process. They are fondamentally set of equations, they might be either inequality equations ( example : ${a} + {b} \le {c}\,$)   or equality equations  ( example : ${a} + {b} = {c}\,q$) constructed based on the LP variables quantities and problem parameters. (See. Problem LP variables and Problem LP constraints). 
 
-#### Set of problem LP constraints.
+#### Set of problem LP constraints
 ---
 
 

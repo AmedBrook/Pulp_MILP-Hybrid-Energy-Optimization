@@ -1,17 +1,14 @@
-Problem parameters.
+Problem parameters
 =================
 
 ![Screenshot](img/hyh_illustration_parameters.png)
 
-#### Optimization parameters.
+#### Optimization parameters
 
 The optimization parameters are set of paramters that have beeen used along  with this optimization problem. Those are related to power generation, energy charge and discharge, time, and some additional parameters in a mathimatical terminology and cost efficiency. 
 
 #### Set of parameters:
 ---
-
-
-
 
 | Parameter                         | Definition                                                                         | Unit
 | ------------------------          | -------------                                                                      |--------------
