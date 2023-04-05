@@ -19,13 +19,13 @@ This particular case is initially specific for the offshore shipping industry as
 ## Project setup options
 
 ### Standalone setup
-##### Environment
+##### Environment.
 
 * Create a new environment aside of the root, and name it somthing recognisable, we gave it a name here as HEO_model, we have used here python version 3.9.7. 
 
 To do so, run the command : `$ conda create --HEO_model python=3.9.7`
 
-##### Requirements and Dependencies
+##### Requirements and Dependencies.
  Before stating the setup process you need to have <em>`setuptools`</em> installed, if you don't have it already do through the following commands:
 
 * Python package index (Pypi) : `$ pip install setuptools`
