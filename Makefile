@@ -1,7 +1,7 @@
 .PHONY: clean setup lint env_test fuleCon_test lixtr_test lwd_test  
 
 #################################################################################
-# GLOBALS                                                                       #
+# GLOBALS.                                                                      #
 #################################################################################
 
 PROJECT_DIR := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
@@ -16,7 +16,7 @@ else
 endif
 
 #################################################################################
-# PROJECT GLOBAL SETUP                                                          #
+# PROJECT GLOBAL SETUP.                                                         #
 #################################################################################
 
 
@@ -53,7 +53,7 @@ lint: ## Lint using flake8
 	$(PYTHON_INTERPRETER) -m flake8 models
 
 #################################################################################
-# PROJECT TEST ROUTINGS                                                         #
+# PROJECT TEST UNITS.                                                           #
 #################################################################################
 
 env_test: fuleCon_test lwd_test ## Test python, pulp and some internal packages.
