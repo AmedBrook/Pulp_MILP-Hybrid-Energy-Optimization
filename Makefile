@@ -62,10 +62,11 @@ env_test: fuleCon_test lwd_test ## Test python, pulp and some internal packages.
 fuleCon_test: ## Test if <fuelCon> function working correctly.
 	$(PYTHON_INTERPRETER) tests/fuel_consumption_tests.py
 
-
 lwd_test: ## Test if <lwd> function is working correctly.
 	$(PYTHON_INTERPRETER) tests/load_window_tests.py
 
-
 lixtr_test: ## Test if <lixtr> function is working correctly. 
 	$(PYTHON_INTERPRETER) tests/list_extraction_tests.py
+
+obj_test: ## Test if the <Objective function> returns accuarate fuel values.
+	$(PYTHON_INTERPRETER) tests/obj_test.py
