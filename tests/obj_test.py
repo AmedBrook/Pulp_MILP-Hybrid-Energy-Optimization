@@ -9,11 +9,11 @@ class Test_Objective(unittest.TestCase):
 
     def test_obj_values(self):
         """
-        Test if the Objective function returns the sum ofthe fuel oilconsumption 
+        Test if the Objective function returns the sum ofthe fuel oilconsumption
         values over time steps with a tolerance of 3g differnce at most.
 
         """
-        delta = 3 
+        delta = 3
         self.assertAlmostEqual(value(Optim.objective), value(sum(FOC.values())/10**3),
                                msg='Total time steps fuel oil consmuption is not matching the objective function!',
                                delta=delta)
