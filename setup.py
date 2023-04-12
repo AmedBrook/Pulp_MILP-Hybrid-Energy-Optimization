@@ -49,7 +49,7 @@ setup(
            # The user is intendend for PYTHON 3
            'Programming Language :: Python :: 3'
       ],
-    packages=setuptools.find_namespace_packages(include=['tests', 'src', 'src.functions'] ),
+    packages=setuptools.find_namespace_packages(include=['models', 'tests', 'src', 'src.functions'] ),
     install_requires= get_install_requirements()
     )
 
