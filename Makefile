@@ -57,15 +57,15 @@ lint: ## Lint using flake8
 #################################################################################
 
 env_test: fuleCon_test lwd_test ## Test python, pulp and some internal packages.
-	$(PYTHON_INTERPRETER) src/tests/env_tests.py
+	$(PYTHON_INTERPRETER) tests/env_tests.py
 
 fuleCon_test: ## Test if <fuelCon> function working correctly.
-	$(PYTHON_INTERPRETER) src/tests/fuel_consumption_tests.py
+	$(PYTHON_INTERPRETER) tests/fuel_consumption_tests.py
 
 
 lwd_test: ## Test if <lwd> function is working correctly.
-	$(PYTHON_INTERPRETER) src/tests/load_window_tests.py
+	$(PYTHON_INTERPRETER) tests/load_window_tests.py
 
 
 lixtr_test: ## Test if <lixtr> function is working correctly. 
-	$(PYTHON_INTERPRETER) src/tests/list_extraction_tests.py
+	$(PYTHON_INTERPRETER) tests/list_extraction_tests.py
