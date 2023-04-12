@@ -1,4 +1,4 @@
-.PHONY: clean setup lint env_test fuleCon_test lixtr_test lwd_test  
+.PHONY: clean setup lint env_test fuleCon_test lixtr_test lwd_test obj_test 
 
 #################################################################################
 # GLOBALS.                                                                      #
