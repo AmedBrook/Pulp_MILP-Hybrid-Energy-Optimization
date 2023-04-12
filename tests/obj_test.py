@@ -9,8 +9,8 @@ class Test_Objective(unittest.TestCase):
 
     def test_obj_values(self):
         """
-        Test if the Objective function returns the sum ofthe fuel oilconsumption
-        values over time steps with a tolerance of 3g differnce at most.
+        Test if the Objective function returns the sum of the fuel oil consumption
+        values over time steps with a tolerance of 3g difference at most.
 
         """
         delta = 3
