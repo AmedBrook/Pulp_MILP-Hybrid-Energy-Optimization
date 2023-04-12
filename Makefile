@@ -51,6 +51,7 @@ lint: ## Lint using flake8
 	$(PYTHON_INTERPRETER) -m flake8 src/functions
 	$(PYTHON_INTERPRETER) -m flake8 notebooks
 	$(PYTHON_INTERPRETER) -m flake8 models
+	$(PYTHON_INTERPRETER) -m flake8 tests
 
 #################################################################################
 # PROJECT TEST UNITS.                                                           #
