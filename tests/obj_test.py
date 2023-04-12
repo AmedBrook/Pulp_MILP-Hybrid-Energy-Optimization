@@ -13,7 +13,7 @@ class Test_Objective(unittest.TestCase):
         the fuel oil consumption values over time steps.
         """
         delta = 3
-        self.assertAlmostEqual(value(Optim.objective), value(sum(FOC.values())/1000),
+        self.assertAlmostEqual(value(Optim.objective), value(sum(FOC.values())/10**3),
                                msg='Total time steps fuel oil consmuption is not matching the objective function!',
                                delta=delta)
 
