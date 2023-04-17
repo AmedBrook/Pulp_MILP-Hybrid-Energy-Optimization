@@ -5,7 +5,7 @@ nav:
 
     - Project case study: 
         - Project context: index.md
-        - Project overview: project_overview.md
+        - Project overview: Project_overview.md
     - Problem formulating: 
         - Variables: lp_vars.md
         - Parameters: parameters.md
