@@ -2,6 +2,7 @@
 
 import unittest
 from src import functions
+from models.heo import * 
 
 
 class list_extract_test(unittest.TestCase):
@@ -13,27 +14,24 @@ class list_extract_test(unittest.TestCase):
         import numpy as np
 
         dt = 1    # simulation time step dt.
-        t_max = 60   # time span for simulation = t_max hours.
+        t_max = 10   # time span for simulation = t_max hours.
         t = np.atleast_2d(np.arange(0, t_max, dt)).T.conj()   # time scale in hours.
         n = len(t)  # number of time steps.
         V_steps = [x for x in range(0, n)]  # Time steps vector.
 
         functions.lixtr(
-            'FC_', 'P_', 'P_load_',
-            'P_to_bat_', 'P_From_bat_',
-            'Q_bat_', 'Y_', 'Y_from_bat_',
-            'Y_to_bat_', 'Z_')
+            )
 
-        lenn_FC_ = len('FC_')
-        lenn_P_ = len('P_')
-        lenn_P_load_ = len('P_load_')
-        lenn_P_to_bat_ = len('P_to_bat_')
-        lenn_P_From_bat_ = len('P_From_bat_')
-        lenn_Q_bat_ = len('Q_bat_')
-        lenn_Y_ = len('Y_')
-        lenn_Y_from_bat_ = len('Y_from_bat_')
-        lenn_Y_to_bat_ = len('Y_to_bat_')
-        lenn_Z_ = len('Z_')
+        lenn_FC_ = len(FC)
+        lenn_P_ = len(P)
+        lenn_P_load_ = len(P_load)
+        lenn_P_to_bat_ = len(P_to_bat)
+        lenn_P_From_bat_ = len(P_From_bat)
+        lenn_Q_bat_ = len(Q_bat)
+        lenn_Y_ = len(Y)
+        lenn_Y_from_bat_ = len(Y_from_bat)
+        lenn_Y_to_bat_ = len(Y_to_bat)
+        lenn_Z_ = len(Z)+1
 
         # error message in case if test case got failed.
         message = "the extracted list doesn't fit the load frame"
