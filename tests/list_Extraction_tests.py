@@ -22,7 +22,7 @@ class list_extract_test(unittest.TestCase):
         functions.lixtr(
             )
 
-        lenn_FC_ = len(FC)
+        lenn_FC_ = len(FOC)
         lenn_P_ = len(P)
         lenn_P_load_ = len(P_load)
         lenn_P_to_bat_ = len(P_to_bat)
