@@ -61,5 +61,3 @@ def lixtr():
 
     return lixtr
 
-
-lixtr()
