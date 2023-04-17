@@ -21,20 +21,20 @@ This particular case is initially specific for the offshore shipping industry as
 ### Standalone setup
 ##### Environment.
 
-* Create a new environment aside of the root, and name it somthing recognisable, we gave it a name here as HEO_model, we have used here python version 3.9.7. 
+Create a new environment aside of the root, and name it somthing recognisable, we gave it a name here as HEO_model, we have used here python version 3.9.7. 
 
 To do so, run the command : `$ conda create --HEO_model python=3.9.7`
 
 ##### Requirements and Dependencies.
  Before stating the setup process you need to have <em>`setuptools`</em> installed, if you don't have it already do through the following commands:
 
-* Python package index (Pypi) : `$ pip install setuptools`
+Python package index (Pypi) : `$ pip install setuptools`
 
-* Anaconda package index (Conda) : `$ conda install -c conda-forge setuptools`
+Anaconda package index (Conda) : `$ conda install -c conda-forge setuptools`
 
  Now that you have <em>`setuptools`</em> in you environment, in order to install all packages and dependencies at once run the command : 
 
-*  `$ python -m pip install -e .`
+`$ python -m pip install -e .`
 
 ### Pre-configured setup
 
@@ -46,17 +46,17 @@ In case you have make installed in your system, for Linux based system it comes 
 ##### chocolatey
  First thing first, we will install chocolatey, make sure you are using the Powershell command as an admin,
 	
-* Then run this command first : 
+Then run this command first : 
 ```bash
 Get-ExecutionPolicy 
 ```
 
-* If it returns Restricted, then run : 
+If it returns Restricted, then run : 
 ```bash
 Set-ExecutionPolicy AllSigned or Set-ExecutionPolicy Bypass -Scope Process
 ```
 
-* Now, to install `chocolatey` run the following command by coping it at once and past it in command line, then hit enter:
+Now, to install `chocolatey` run the following command by coping it at once and past it in command line, then hit enter:
 
 ```bash
  Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1')) 
@@ -67,7 +67,7 @@ Please check [chocolatey](https://community.chocolatey.org/packages/make) websit
     
 
 ##### Make
-* Now that you have `chocolatey` installed, we can install `make` by running the command : 
+Now that you have `chocolatey` installed, we can install `make` by running the command : 
 
 ``` 
      $ choco install make --version=3.81
@@ -75,13 +75,13 @@ Please check [chocolatey](https://community.chocolatey.org/packages/make) websit
 
 Once make installation is done, and assuming that you have downloaded the project files in your local machine it's very easy to workout everything. 
 
-* To create the conda environment run the command : 
+To create the conda environment run the command : 
  
 ```	
 	 $ make create_env
 ```
 
-* To setup the project run the command : 
+To setup the project run the command : 
 
 ``` 
 	 $ make setup
@@ -117,9 +117,11 @@ if you want to preview live the changes you make on the mkdocs pages, then you c
 Mathjax is a Javascript library that can display mathimatical notations in the browser using LaTex or other. 
 In order to integarate Mathjax within Mkdocs do the following: 
 
-* Install pymdown-extensions (Pypi): `$ python -m pip install pymdown-extensions` 
+Install pymdown-extensions (Pypi): 
 
-* Within your mkdocs folder create the following: 
+`$ python -m pip install pymdown-extensions` 
+
+Within your mkdocs folder create the following: 
 
 ```
  			mkdocs_______
@@ -130,7 +132,7 @@ In order to integarate Mathjax within Mkdocs do the following:
 ```									
 
 
-* Add the following script lines in the configuration file `mkdocs.yml` :
+Add the following script lines in the configuration file `mkdocs.yml` :
 
 ```yaml
 extra_javascript:
@@ -143,7 +145,7 @@ extra_javascript:
 ## Testing units
 
 #### Testing the environment
-* To test packages and dependencies just run the command : 
+To test packages and dependencies just run the command : 
 
 ```	
 	- $ make env_test
@@ -152,7 +154,7 @@ Behind the scenes, make will go over the `Makefile` located in our directory whi
 
 
 #### Testing syntax & style
-* To lint code scripts we are using flake8, just run the following command : 
+To lint code scripts we are using flake8, just run the following command : 
 
 ```	
 	 - $ make lint
@@ -163,19 +165,19 @@ Under the hood, make will go over the `Makefile` located in our directory which 
 #### Testing internal modules
 In our code we ended up using three main functions which help us to implemente the problem, the first function is called `FuelCon` it is used to calculate based on a linear model the fuel comsumption of the genset for a specific power load `P`. The second function is called `lwd`, is the abreviation of load window, which is used to constructe a load profile for a specific number of time steps out of a given sets of power loads arrays. The third one is called `lixtr` and it's the abreviation of list extraction, which could be used in the section 'Pre-processing visualization data' for extracting lists out of dictionaries. So in order to make sure those functions are behaving as is should be some testing routings are required by following the next commands. 
 
-* To test the `FuelCon` function, run the command: 
+To test the `FuelCon` function, run the command: 
 
 ```	
 	 - $ make fuelCon_test
 ```
 
-* To test the `lwd` function, run the command: 
+To test the `lwd` function, run the command: 
 
 ```	
 	 - $ make lwd_test
 ```
 
-* To test the `lixtr` functions, run the command: 
+To test the `lixtr` functions, run the command: 
 
 ```	
     - $ make lixtr_test
