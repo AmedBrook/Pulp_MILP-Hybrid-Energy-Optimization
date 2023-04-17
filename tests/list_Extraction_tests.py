@@ -3,7 +3,7 @@
 import unittest
 from src import functions
 from models.heo import * 
-
+import numpy as np
 
 class list_extract_test(unittest.TestCase):
 
@@ -11,7 +11,6 @@ class list_extract_test(unittest.TestCase):
         """
         Test if it extracts the same list length for all targeted LP varaibles
         """
-        import numpy as np
 
         dt = 1    # simulation time step dt.
         t_max = 10   # time span for simulation = t_max hours.
