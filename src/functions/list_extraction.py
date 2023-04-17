@@ -13,7 +13,7 @@ def lixtr():
     V_steps = [x for x in range(0, n)]
     Optim = pulp.LpProblem('Energy_Opt', pulp.LpMinimize)
 
-    FC_ = ([] for i in range(len(V_steps)))
+    FOC_ = ([] for i in range(len(V_steps)))
     P_ = ([] for i in range(len(V_steps)))
     P_load_ = ([] for i in range(len(V_steps)))
     P_to_bat_ = ([] for i in range(len(V_steps)))
@@ -25,7 +25,7 @@ def lixtr():
     Z_ = ([] for i in range(len(V_steps)))
 
     nms = {
-     0: FC_,
+     0: FOC_,
      1: P_,
      2: P_load_,
      3: P_to_bat_,
