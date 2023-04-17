@@ -38,7 +38,7 @@ def lixtr():
      }
 
     nmss = {
-     0: 'FC_',
+     0: 'FOC_',
      1: 'P_',
      2: 'P_load_',
      3: 'P_to_bat_',
