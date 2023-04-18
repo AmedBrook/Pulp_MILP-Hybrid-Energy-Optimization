@@ -3,6 +3,7 @@
 import unittest
 from models.heo import *
 
+
 class Test_Objective(unittest.TestCase):
 
     def test_obj_values(self):
