@@ -2,8 +2,6 @@
 
 import unittest
 from models.heo import *
-from models.heo import FOC
-
 
 class Test_Objective(unittest.TestCase):
 
