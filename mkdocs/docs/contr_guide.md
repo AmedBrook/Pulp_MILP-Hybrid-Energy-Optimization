@@ -17,9 +17,11 @@ This is a guide on how to contribute to HEO project.
 
 6. Make sure all the tests pass.
 
-7. Ensure the docs are accurate.
+7. Lint the code.
 
-8. Submit a Pull Request.
+8. Ensure the docs are accurate.
+
+9. Submit a Pull Request.
 
 On top of having python installed, we will be using git and the command line. Also, we assume you have a github account and know how to fork a project. We will use plain git through the command line but feel free to use the git client of your choice.
 
@@ -51,6 +53,13 @@ When you fix an issue in HEO model or add a functionality, you should add a test
 
  - Go to src/functions/ folder and add a new method.
  - Go to src/functions/tests folder and add an other method that tests your changes.
+
+### linting the code
+After writing the code nedded for the contribution you have to check for style and syntax errors, for this we use flake8, you just run the command in root directory : 
+
+```
+$ make lint
+```
 
 
 ### Building the documentation
