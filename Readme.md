@@ -70,7 +70,7 @@ Please check [chocolatey](https://community.chocolatey.org/packages/make) websit
 Now that you have `chocolatey` installed, we can install `make` by running the command : 
 
 ``` 
-     $ choco install make --version=3.81
+$ choco install make --version=3.81
 ```
 
 Once make installation is done, and assuming that you have downloaded the project files in your local machine it's very easy to workout everything. 
@@ -78,25 +78,25 @@ Once make installation is done, and assuming that you have downloaded the projec
 To create the conda environment run the command : 
  
 ```	
-	 $ make create_env
+$ make create_env
 ```
 
 To setup the project run the command : 
 
 ``` 
-	 $ make setup
+$ make setup
 ```
 #### Mkdocs
 We are using Mkdocs in order to generate documentation pages for the project.
 
 to install Mkdocs, run the command : 
 ```
-     $ pip install mkdocs
+$ pip install mkdocs
 ```
 
 To create a new project with the name ´heo´, you can run: 
 ```
-     $ mkdocs new heo
+$ mkdocs new heo
 ```
 
 After creation the project, you might have something simmilar to this: 
@@ -110,7 +110,7 @@ After creation the project, you might have something simmilar to this:
 
 if you want to preview live the changes you make on the mkdocs pages, then you can serve them by running the command: 
 ```
-     $ python mkdocs serve
+$ python mkdocs serve
 ```
 
 ##### Mathjax
@@ -148,7 +148,7 @@ extra_javascript:
 To test packages and dependencies just run the command : 
 
 ```	
-	 $ make env_test
+$ make env_test
 ```
 Behind the scenes, make will go over the `Makefile` located in our directory which itself will chain to all test units located in `/src/tests` directory and execute every single test module existing in that directory.
 
@@ -157,7 +157,7 @@ Behind the scenes, make will go over the `Makefile` located in our directory whi
 To lint code scripts we are using flake8, just run the following command : 
 
 ```	
-	 $ make lint
+$ make lint
 ```
 Under the hood, make will go over the `Makefile` located in our directory which itself will chain to all coding resources in `/src/functions` and `/notebooks` directories and will check the syntax and style of your code using flake8 to meet PEP8 standards.
 
@@ -168,18 +168,18 @@ In our code we ended up using three main functions which help us to implemente t
 To test the `FuelCon` function, run the command: 
 
 ```	
-	 $ make fuelCon_test
+$ make fuelCon_test
 ```
 
 To test the `lwd` function, run the command: 
 
 ```	
-	 $ make lwd_test
+$ make lwd_test
 ```
 
 To test the `lixtr` functions, run the command: 
 
 ```	
-     $ make lixtr_test
+$ make lixtr_test
 ```
 
