@@ -14,16 +14,16 @@ def lixtr(FOC_,
           Y_to_bat_,
           Z_):
 
-    FOC_,
-    P_,
-    P_load_,
-    P_to_bat_,
-    P_From_bat_,
-    Q_bat_,
-    Y_,
-    Y_from_bat_,
-    Y_to_bat_,
-    Z_ = ([] for i in range(10))
+    FOC_ = []
+    P_ = []
+    P_load_ = []
+    P_to_bat_ = []
+    P_From_bat_ = []
+    Q_bat_ = []
+    Y_ = []
+    Y_from_bat_ = []
+    Y_to_bat_ = []
+    Z_ = []
 
     nms = {0: FOC_,
            1: P_,
