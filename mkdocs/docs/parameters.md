@@ -5,7 +5,7 @@ Problem parameters
 
 #### Optimization parameters
 
-The optimization parameters are a set of paramters that have been used along with this optimization problem. These parameters are related to power generation, energy charge and discharge, time, and some additional parameters in a the mathimatical conceptuality of the problem and cost efficiency. The problem results and simulations are based on the values given to these parameters and changing them will trigger different results depending on the physical component of the problem (batteries and genset specifications). 
+The optimization parameters are a set of paramters that have been used along with this optimization problem. These parameters are related to power generation, energy charge and discharge, time, and some additional parameters in a the mathimatical conceptuality of the problem and cost efficiency. The problem results and simulations are based on the values given to these parameters and changing them will trigger different results depending on the physical component of the problem (batterie(s) and genset(s) specifications). 
 
 #### Set of parameters:
 ---
