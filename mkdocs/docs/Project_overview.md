@@ -3,8 +3,8 @@ Project overview.
 
 ### HEO Model - Genset(s) and Baterie(s)
 
-The solution introduced in this project aims to utilize a genset optimally by integrating an energy storage in the form of a batteries to let ship genset run at optimal load over a predefined time horizon. 
-The primary example is built around an offshore shipping example, but the general framework of the studied solution can be extrapolated to any setting where there are two or more energy sources.
+The solution introduced in this project aims to utilize a genset optimally by integrating an energy storage in the form of set batteries to let ship genset run at optimal load over a predefined time horizon. 
+The primary example is built around an offshore shipping example, but the general framework of the studied solution can be extrapolated to any specific setting where there are two or more energy sources.
 
 ![Screenshot](img/hyh_illustration.png)
 
