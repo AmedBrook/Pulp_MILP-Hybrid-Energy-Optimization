@@ -2,7 +2,7 @@
 
 ---
 
-PuLP-MILP based Hybrid Energy Optimization, for fuel minimization: MILP model with semi-continuous power supply and battery logic.
+HEO is a PuLP-MILP based Hybrid Energy Optimizer, for oil and fuel optimization with battery storage system integration. 
 
 ## Project description and context
 
