@@ -12,7 +12,7 @@ class Test_Objective(unittest.TestCase):
         values over time steps with a tolerance of 3g difference at most.
 
         """
-        delta = 3
+        delta = 0
         self.assertAlmostEqual(value(Optim.objective),
                                value(sum(FOC.values())/10**3),
                                msg='Total time steps fuel oil consmuption is not matching the objective function!',
