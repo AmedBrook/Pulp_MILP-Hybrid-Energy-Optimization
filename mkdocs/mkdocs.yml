@@ -20,9 +20,6 @@ nav:
         - Authors: authors.md
         - Releases: chng_log.md
 
-
-
-
 markdown_extensions:
     - toc:
         permalink: true 
