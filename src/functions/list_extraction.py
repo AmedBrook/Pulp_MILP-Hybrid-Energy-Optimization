@@ -1,55 +1,50 @@
 
 # lisxtr function.
 
+from models.heo import *
 
-def lixtr():
-    import numpy as np
-    import pulp
-    pulp.pulpTestAll()
 
-    dt = 1
-    t_max = 60
-    t = np.atleast_2d(np.arange(0, t_max, dt)).T.conj()
-    n = len(t)
-    V_steps = [x for x in range(0, n)]
-    Optim = pulp.LpProblem('Energy_Opt', pulp.LpMinimize)
+def lixtr(FOC_,
+          P_,
+          P_load_,
+          P_to_bat_,
+          P_From_bat_,
+          Q_bat_, Y_,
+          Y_from_bat_,
+          Y_to_bat_,
+          Z_):
 
-    FC_A_ = ([] for i in range(10))
-    P_A_ = ([] for i in range(10))
-    P_A_load_ = ([] for i in range(10))
-    P_A_to_bat_ = ([] for i in range(10))
-    P_From_bat_ = ([] for i in range(10))
-    Q_bat_ = ([] for i in range(10))
-    Y_ = ([] for i in range(10))
-    Y_from_bat_ = ([] for i in range(10))
-    Y_to_bat_ = ([] for i in range(10))
-    Z_ = ([] for i in range(10))
+    FOC_ = []
+    P_ = []
+    P_load_ = []
+    P_to_bat_ = []
+    P_From_bat_ = []
+    Q_bat_ = []
+    Y_ = []
+    Y_from_bat_ = []
+    Y_to_bat_ = []
+    Z_ = []
 
-    nms = {
-     0: FC_A_,
-     1: P_A_,
-     2: P_A_load_,
-     3: P_A_to_bat_,
-     4: P_From_bat_,
-     5: Q_bat_,
-     6: Y_,
-     7: Y_from_bat_,
-     8: Y_to_bat_,
-     9: Z_
-     }
+    nms = {0: FOC_,
+           1: P_,
+           2: P_load_,
+           3: P_to_bat_,
+           4: P_From_bat_,
+           5: Q_bat_, 6: Y_,
+           7: Y_from_bat_,
+           8: Y_to_bat_,
+           9: Z_}
 
-    nmss = {
-     0: 'FC_A_',
-     1: 'P_A_',
-     2: 'P_A_load_',
-     3: 'P_A_to_bat_',
-     4: 'P_From_bat_',
-     5: 'Q_bat_',
-     6: 'Y_',
-     7: 'Y_from_bat_',
-     8: 'Y_to_bat_',
-     9: 'Z_'
-     }
+    nmss = {0: 'FOC_',
+            1: 'P_',
+            2: 'P_load_',
+            3: 'P_to_bat_',
+            4: 'P_From_bat_',
+            5: 'Q_bat_',
+            6: 'Y_',
+            7: 'Y_from_bat_',
+            8: 'Y_to_bat_',
+            9: 'Z_'}
 
     for v in Optim.variables():
         for nm in nmss:

@@ -24,7 +24,7 @@ class TestLoad(unittest.TestCase):
 
     def test_load_bounds(self):
 
-        P_A_max = 1000
+        P_max = 1000
         """
         Test that it respects genset's low and max bounds
         """
@@ -37,7 +37,7 @@ class TestLoad(unittest.TestCase):
          0, 10, 20, 30)
 
         res = sum(Loadframe[k] for k in range(60))
-        Power_max_limit = P_A_max*60*0.9
+        Power_max_limit = P_max*60*0.9
         power_low_limit = 0
 
         if res <= Power_max_limit and res >= power_low_limit:

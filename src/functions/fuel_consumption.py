@@ -2,7 +2,7 @@
 # Some parameters to define fuelCon function.
 
 import numpy as np
-P_A_max = 1000  # max output from gen set A.
+P_max = 1000  # max output from gen set A.
 dt = 2/3  # simulation time step dt.
 t_max = 5  # time span for simulation = t_max hours.
 t = np.atleast_2d(np.arange(2, t_max, dt)).T.conj()    # time scale in hours.
@@ -13,8 +13,8 @@ V_steps_z = V_steps[:-1]  # Time steps vector without the final step.
 # fuel consumption function.
 
 
-def fuelCon(P_A, P_A_max):
+def fuelCon(P, P_max):
 
     fc = {}
-    fc = 260 * P_A - 67 / P_A_max * P_A**2
+    fc = 260 * P - 67 / P_max * P**2
     return fc

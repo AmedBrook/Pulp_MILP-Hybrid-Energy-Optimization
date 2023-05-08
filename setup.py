@@ -35,7 +35,7 @@ setup(
            'Development Status :: 3 - Alpha',
 
             # Our Intended audience is mostly those who understand Energy Optimization and Integration.
-           'Intended Audience :: Energy Optimization and Integration',
+           'Intended Audience :: Energy Optimization and Battery Storage Integration',
 
            # Our License is MIT.
            'License :: OSI Approved :: MIT License',
@@ -49,7 +49,7 @@ setup(
            # The user is intendend for PYTHON 3
            'Programming Language :: Python :: 3'
       ],
-    packages=setuptools.find_namespace_packages(include=['src', 'src.functions', 'src.tests'] ),
+    packages=setuptools.find_namespace_packages(include=['models', 'tests', 'src', 'src.functions'] ),
     install_requires= get_install_requirements()
     )
 

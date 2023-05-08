@@ -1,40 +1,21 @@
 Project overview.
 ====================
 
-### HEO Model - 1Gen-1Bat.
+### HEO Model - Genset(s) and Baterie(s)
 
-This particular case is initially specefic for the offshore shipping industry as they are the most transportation fuel consuming and needing some sort of solutions to use fuel optimally in their trips. However this is not only exlusive to this sector, it can be easily extended to other sectors as long as the purpose is to optimize energy usage and energy hybridization using only one genset and one battery storage system (1Gen-1Bat for short).
+The solution introduced in this project aims to utilize a genset optimally by integrating an energy storage in the form of set batteries to let ship genset run at optimal load over a predefined time horizon. 
+The primary example is built around an offshore shipping example, but the general framework of the studied solution can be extrapolated to any specific setting where there are two or more energy sources.
 
 ![Screenshot](img/hyh_illustration.png)
 
+### Model synopsys
+The model developed is of Mixed Integer Linear Programming (MILP)
+type. All functions (objective and constraints) are linear, and the variables can be continuous, integer or binary. Binary variables are used to model logical decisions in the problem (i.e. a generator is used = 1 or not used =o).
+The optimal solution to the MILP problem is found by solving a sequence of many LP problems (simpler problems that are solved very fast), where the number of LP problems to solve depends on the number of binary and integer variables (more variables give a larger combinatorial solution space).
+Nonlinear functions can in many cases be approximated with piecewise linear ones, meaning that the MILP approach is quite general. Regardless of state-of-the-art of MILP solvers on the market that are highly efficient and capable of solving even very "large" MILP problems.
 
-### Model synopsys.
-
-- The model developed is of Mixed Integer Linear Programming (MILP)
-type. All functions (objective and constraints) are linear and the variables can be continuous, integer or binary. Binary variables are used to model logical decisions in the problem (i.e. a generator is used = 1 or not used =o).
-
-- The optimal solution to MILP problem is found by solving a sequence of
-many LP problems (simpler problems that are solved very fast) Binary and integer variables increases the combinatorial solution space.
-
-- 0The number of problems to solve is determined roughly by the number of binary variables. The combinatorial space can be reduced by constraints limiting impossible combinations.
-
-- Nonlinear functions can in many cases be approximated with piecewise linear ones. So the MILP approach is quite general.There are also state-of-the-art MILP solvers on the market that are highly efficient and capable of solving "large" MILP problems.
-
-### Model optimization policy. 
-
-- The optimization model is done in discrete time, i.e. the timeline is divided into smaller time steps (for example 1 minute) and in each time step everything is kept constant.
-
-- The objective is to minimize fuel consumption during a trip with pre-defined power requirements in each time step.
-
-- Logical variables are introduced, so it is possible to include any logic necessary in operating gensets and battery.
-- The model is generic and easy to adjust and also possible to scale up.
-
-
-### Problem size. 
-
-We need to know the problem size in order to see if the problem is computationaly cost effective or not, our problem size is mainly dependant on the size of the load window time frame (aka : steps ${n}$ ), the number of LP variables and the number of gensets ${m}$ (we use 1 genset in our case). 
-
-- Continuous : $\hspace{3cm}\hspace{1cm} {3} \cdot {n} \cdot {m}$    
-- Binary : $\hspace{4cm}\hspace{1cm} {2} \cdot {n} \cdot {m}$   
-
-- Number of constraints : $\hspace{1cm}\hspace{1cm} {7} \cdot {n} \cdot {m} + {3} \cdot {n}$ $\hspace{1cm}$ 
+### Model optimization policy
+The optimization model is done in discrete time, i.e. the time horizon is divided into smaller time steps and in each time step everything is kept constant.
+The objective is to minimize fuel consumption within the time horizon given through a pre-defined load schedule for each time step.
+Logical variables are introduced to facilitate the logic needed for operating the genset(s) and batterie(s).
+The model is a proof of concept and relatively easy to adjust and scale up for potential use cases.

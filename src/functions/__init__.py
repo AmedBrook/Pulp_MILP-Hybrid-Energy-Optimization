@@ -4,4 +4,3 @@ from .fuel_consumption import fuelCon
 from .load_window import lwd
 from .list_extraction import lixtr
 from .add_dict import merge_dict
-

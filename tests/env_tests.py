@@ -1,10 +1,11 @@
 
 import sys
-REQUIRED_PYTHON = "python" 
+REQUIRED_PYTHON = "python"
+
 
 def main():
-    
-############## Testing the required python version  ##############################
+
+    # Testing the required python version
 
     system_major = sys.version_info.major
     if REQUIRED_PYTHON == "python":
@@ -22,25 +23,23 @@ def main():
     else:
         print(">>> The required Python version passes all tests!")
 
-############ Testing the required Pulp version ##########################################
+    # Testing the required Pulp version
 
     import pulp
     pulp_version = pulp. VERSION
     if pulp_version != "2.7.0":
         raise TypeError(
-            "This project requires Pulp version 2.7.0" )
+            "This project requires Pulp version 2.7.0")
     else:
         print(">>> Pulp version passes test!")
-    
-############ Testing installed pulp packages ###############################################
+
+    # Testing installed pulp packages
 
     import pulp
-    if pulp.pulpTestAll() != 'OK' : 
+    if pulp.pulpTestAll() != 'OK':
         pulp.pulpTestAll()
-    else: 
+    else:
         print('Pupl has been successsfully tested')
-
-
 
     if __name__ == '__main__':
         main()
