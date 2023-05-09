@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://heo.fi/contr_guide/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Contributor guide - HEO</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Contributor guide";
+        var mkdocs_page_input_path = "contr_guide.md";
+        var mkdocs_page_url = "/contr_guide/";
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> HEO
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Project case study</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="..">Project context</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Project_overview/">Project overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Problem formulating</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../lp_vars/">Variables</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../parameters/">Parameters</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../low_up_bnds/">Upper and lower bounds</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../lp_cstrs/">Problem constraints</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../obj_func/">Objective</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../prblm_size/">Problem size</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Implementation</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../user_quick_guide/">User quick guide</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Contributor guide</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#contribution-steps">Contribution steps</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#forking-the-project">Forking the project</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#cloning-the-project">Cloning the project</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#running-tests">Running tests</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#creating-a-test-file">Creating a test file</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#linting-the-code">linting the code</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#building-the-documentation">Building the documentation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#making-a-pull-request">Making a Pull Request</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">About</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../authors/">Authors</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../chng_log/">Releases</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">HEO</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+          <li>Implementation &raquo;</li>
+      <li>Contributor guide</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="how-to-contribute-to-heo-model">How to contribute to HEO model.<a class="headerlink" href="#how-to-contribute-to-heo-model" title="Permanent link">&para;</a></h1>
+<hr />
+<p>This is a guide on how to contribute to HEO project.</p>
+<h4 id="contribution-steps">Contribution steps<a class="headerlink" href="#contribution-steps" title="Permanent link">&para;</a></h4>
+<ol>
+<li>
+<p>Fork the repo.</p>
+</li>
+<li>
+<p>Clone your forked repo.</p>
+</li>
+<li>
+<p>Install dependencies.</p>
+</li>
+<li>
+<p>Make your changes.</p>
+</li>
+<li>
+<p>Create a test for your changes if needed.</p>
+</li>
+<li>
+<p>Make sure all the tests pass.</p>
+</li>
+<li>
+<p>Lint the code.</p>
+</li>
+<li>
+<p>Ensure the docs are accurate.</p>
+</li>
+<li>
+<p>Submit a Pull Request.</p>
+</li>
+</ol>
+<p>On top of having python installed, we will be using git and the command line. Also, we assume you have a github account and know how to fork a project. We will use plain git through the command line but feel free to use the git client of your choice.</p>
+<h3 id="forking-the-project">Forking the project<a class="headerlink" href="#forking-the-project" title="Permanent link">&para;</a></h3>
+<p>You can follow the github guides to fork a project: <a href="https://docs.github.com/en/get-started/quickstart/contributing-to-projects">here</a> and also <a href="https://docs.github.com/en/get-started/quickstart/fork-a-repo">here</a>.</p>
+<p>You need a github account to fork a github project. It’s free.</p>
+<h3 id="cloning-the-project">Cloning the project<a class="headerlink" href="#cloning-the-project" title="Permanent link">&para;</a></h3>
+<p>You first need to download the HEO project from your fork. In the following command replace <code>usrn</code> with your actual username:</p>
+<pre><code>$ git clone git@github.com:usrn/Pulp_MILP-Hybrid-Energy-Optimization.git
+</code></pre>
+<p>That’s it, you will download the whole project.</p>
+<h3 id="running-tests">Running tests<a class="headerlink" href="#running-tests" title="Permanent link">&para;</a></h3>
+<p>To run the project tests you need to execute the Makefile rules:</p>
+<pre><code>$ cd Pulp_MILP-Hybrid-Energy-Optimization/Makefile
+$ make
+</code></pre>
+<p>It will test your python environment, PuLP packages, internal modules as well as installing the required external dependancies if they are not already installed.</p>
+<h3 id="creating-a-test-file">Creating a test file<a class="headerlink" href="#creating-a-test-file" title="Permanent link">&para;</a></h3>
+<p>When you fix an issue in HEO model or add a functionality, you should add a test to the repository. For this you should do the following: </p>
+<ul>
+<li>Go to src/functions/ folder and add a new method.</li>
+<li>Go to src/functions/tests folder and add an other method that tests your changes.</li>
+</ul>
+<h3 id="linting-the-code">linting the code<a class="headerlink" href="#linting-the-code" title="Permanent link">&para;</a></h3>
+<p>After writing the code nedded for the contribution you have to check for style and syntax errors, for this we use flake8, you just run the command in root directory : </p>
+<pre><code>$ make lint
+</code></pre>
+<h3 id="building-the-documentation">Building the documentation<a class="headerlink" href="#building-the-documentation" title="Permanent link">&para;</a></h3>
+<p>The documentation is based on Mkdocs and MathJax. 
+To build the documentation see the Readme file (Sections Mkdocs and Mathjax). </p>
+<h3 id="making-a-pull-request">Making a Pull Request<a class="headerlink" href="#making-a-pull-request" title="Permanent link">&para;</a></h3>
+<p>When you’re done with the changes in your machine and you’re satisfied with the result you have, you can commit it, push it to github and then create a PR. The first two are easy:</p>
+<pre><code>$ git status # this shows what's changed
+$ git add some_modified_file.py # do this for all changes you want to write
+$ git commit -m &quot;some message&quot; # include a meaningful message
+$ git push main
+</code></pre>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../user_quick_guide/" class="btn btn-neutral float-left" title="User quick guide"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../authors/" class="btn btn-neutral float-right" title="Authors">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../user_quick_guide/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../authors/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../javascripts/mathjax.js" defer></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

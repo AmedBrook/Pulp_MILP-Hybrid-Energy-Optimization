@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://heo.fi/Project_overview/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Project overview - HEO</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Project overview";
+        var mkdocs_page_input_path = "Project_overview.md";
+        var mkdocs_page_url = "/Project_overview/";
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> HEO
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Project case study</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="..">Project context</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Project overview</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#heo-model-gensets-and-bateries">HEO Model - Genset(s) and Baterie(s)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#model-synopsys">Model synopsys</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#model-optimization-policy">Model optimization policy</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Problem formulating</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../lp_vars/">Variables</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../parameters/">Parameters</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../low_up_bnds/">Upper and lower bounds</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../lp_cstrs/">Problem constraints</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../obj_func/">Objective</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../prblm_size/">Problem size</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Implementation</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../user_quick_guide/">User quick guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../contr_guide/">Contributor guide</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">About</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../authors/">Authors</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../chng_log/">Releases</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">HEO</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+          <li>Project case study &raquo;</li>
+      <li>Project overview</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="project-overview">Project overview.<a class="headerlink" href="#project-overview" title="Permanent link">&para;</a></h1>
+<h3 id="heo-model-gensets-and-bateries">HEO Model - Genset(s) and Baterie(s)<a class="headerlink" href="#heo-model-gensets-and-bateries" title="Permanent link">&para;</a></h3>
+<p>The solution introduced in this project aims to utilize a genset optimally by integrating an energy storage in the form of set batteries to let ship genset run at optimal load over a predefined time horizon. 
+The primary example is built around an offshore shipping example, but the general framework of the studied solution can be extrapolated to any specific setting where there are two or more energy sources.</p>
+<p><img alt="Screenshot" src="../img/hyh_illustration.png" /></p>
+<h3 id="model-synopsys">Model synopsys<a class="headerlink" href="#model-synopsys" title="Permanent link">&para;</a></h3>
+<p>The model developed is of Mixed Integer Linear Programming (MILP)
+type. All functions (objective and constraints) are linear, and the variables can be continuous, integer or binary. Binary variables are used to model logical decisions in the problem (i.e. a generator is used = 1 or not used =o).
+The optimal solution to the MILP problem is found by solving a sequence of many LP problems (simpler problems that are solved very fast), where the number of LP problems to solve depends on the number of binary and integer variables (more variables give a larger combinatorial solution space).
+Nonlinear functions can in many cases be approximated with piecewise linear ones, meaning that the MILP approach is quite general. Regardless of state-of-the-art of MILP solvers on the market that are highly efficient and capable of solving even very "large" MILP problems.</p>
+<h3 id="model-optimization-policy">Model optimization policy<a class="headerlink" href="#model-optimization-policy" title="Permanent link">&para;</a></h3>
+<p>The optimization model is done in discrete time, i.e. the time horizon is divided into smaller time steps and in each time step everything is kept constant.
+The objective is to minimize fuel consumption within the time horizon given through a pre-defined load schedule for each time step.
+Logical variables are introduced to facilitate the logic needed for operating the genset(s) and batterie(s).
+The model is a proof of concept and relatively easy to adjust and scale up for potential use cases.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href=".." class="btn btn-neutral float-left" title="Project context"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../lp_vars/" class="btn btn-neutral float-right" title="Variables">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../lp_vars/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../javascripts/mathjax.js" defer></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

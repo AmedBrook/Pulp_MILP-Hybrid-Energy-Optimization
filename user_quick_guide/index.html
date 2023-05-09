@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://heo.fi/user_quick_guide/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>User quick guide - HEO</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "User quick guide";
+        var mkdocs_page_input_path = "user_quick_guide.md";
+        var mkdocs_page_url = "/user_quick_guide/";
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> HEO
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Project case study</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="..">Project context</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Project_overview/">Project overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Problem formulating</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../lp_vars/">Variables</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../parameters/">Parameters</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../low_up_bnds/">Upper and lower bounds</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../lp_cstrs/">Problem constraints</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../obj_func/">Objective</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../prblm_size/">Problem size</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Implementation</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">User quick guide</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#optimization-variable">Optimization variable.</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#decision-variables">Decision variables.</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#lpvariable">LpVariable().</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#lpvariabledicts">LpVariable.dicts().</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#setting-up-the-objective-function">Setting up the objective function.</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#setting-up-problem-constraints">Setting up problem constraints.</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#solving-the-problem">Solving the problem.</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../contr_guide/">Contributor guide</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">About</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../authors/">Authors</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../chng_log/">Releases</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">HEO</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+          <li>Implementation &raquo;</li>
+      <li>User quick guide</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="user-quick-guide">User quick guide.<a class="headerlink" href="#user-quick-guide" title="Permanent link">&para;</a></h2>
+<p><span class="arithmatex">\(\newline\)</span> </p>
+<h3 id="optimization-variable">Optimization variable.<a class="headerlink" href="#optimization-variable" title="Permanent link">&para;</a></h3>
+<p>the optimization variable is the variable that will host problem solving results, it is created via the command <code>LpProblem()</code>. Inside the parenthesis we can assign a name for the optimization problem beeing solved as well as defining which type the problem is. whether is a maximization or minmization ('LpMaximize' for maximization or 'LpMinimize' for minimization problem). </p>
+<p>In our case it is Minimization problem, therfore to create our optimization problem variable we can do something like : </p>
+<pre><code class="language-python"> Optim = LpProblem('Energy_Opt',LpMinimize)
+</code></pre>
+<p><span class="arithmatex">\(\newline\)</span> </p>
+<h3 id="decision-variables">Decision variables.<a class="headerlink" href="#decision-variables" title="Permanent link">&para;</a></h3>
+<h6 id="lpvariable">LpVariable().<a class="headerlink" href="#lpvariable" title="Permanent link">&para;</a></h6>
+<p>Creating decsion variables is easy as using the command <code>LpVariable()</code>, inside the parenthesis we can give it a name, and setting the variable min and max bounds admissible for that paticular decision variable.
+note : it's important to set carfully the bounds otherwise it can easily leads to an infeasable problem within the solving process.  </p>
+<h6 id="lpvariabledicts">LpVariable.dicts().<a class="headerlink" href="#lpvariabledicts" title="Permanent link">&para;</a></h6>
+<p>In our case, each decision variable is descritisized depending to load window vector steps, they will contain as much points as the number of steps : dem(LpVaraible) = dem(V_steps). Based on this approach it's convinent to set our decision variable points as key-values pair in a dictionnary. To create a dictionary decision variable we use the command <code>LpVariable.dicts()</code>, inside the parenthesise we can define the LpVariable lower and upper bounds type using <code>LowBound</code> and <code>upBound</code>, the <code>cat</code> argument can be used to define the LpVariable type as well. </p>
+<p>Our 10 decision varaibles then are set up as following: </p>
+<pre><code>Q_bat = LpVariable.dicts(&quot;Q_bat&quot;, V_steps, lowBound=0.2*Q_max, upBound=Q_max, cat = LpContinuous)  # Battery charge at time step k.
+P_From_bat = LpVariable.dicts(&quot;P_From_bat&quot;, V_steps, lowBound=0, upBound=0.9*P_A_max, cat = LpContinuous) # Power transfered from the battery to the load.
+P = LpVariable.dicts(&quot;P_A&quot;, V_steps, lowBound=0, upBound=0.9*P_A_max, cat = LpContinuous)  # Power generated by the Genset A.
+P_load = LpVariable.dicts(&quot;P_A_load&quot;, V_steps, lowBound=0, upBound=0.9*P_A_max, cat= LpContinuous) # Power transfered from the Genset A to the load at time step k.
+Z =  LpVariable.dicts(&quot;Z&quot;, V_steps_z, lowBound=0, upBound=1, cat = LpInteger) # Aditional cost fuel oil consumption when starting Genset j.
+FOC = LpVariable.dicts(&quot;FC_A&quot;, V_steps, lowBound=0, upBound= maxFC, cat = LpContinuous) # Specific fuel oil consumption.
+P_to_bat =  LpVariable.dicts(&quot;P_A_to_bat&quot;, V_steps, lowBound=0, upBound=0.9*P_A_max, cat = LpContinuous) 
+Y_to_bat = LpVariable.dicts(&quot;Y_to_bat&quot;, V_steps, lowBound=0, upBound=1, cat = LpInteger) # Genset selecter to charge the battery at time step k. 
+Y_from_bat = LpVariable.dicts(&quot;Y_from_bat&quot;, V_steps, lowBound=0, upBound=1, cat = LpInteger) # Battery selecter to transfert to the Genset j st time step k.
+Y = LpVariable.dicts(&quot;Y&quot;, V_steps, lowBound=0, upBound=1, cat = LpInteger) # Genset selecter : work ==&gt; Y=1, Not work ==&gt; Y=0. 
+</code></pre>
+<p><span class="arithmatex">\(\newline\)</span> </p>
+<h3 id="setting-up-the-objective-function">Setting up the objective function.<a class="headerlink" href="#setting-up-the-objective-function" title="Permanent link">&para;</a></h3>
+<p>To set up the objective function of the problem, the <code>lpSum</code> function is used along side with the optimization variable created <code>Optim</code>, so it can be formulated as : <code>Optim += lpSum (Expression)</code>. the <code>+=</code> operator is used to update the Optim variable after each solving itteration. Note: the Objective function must be included first before the constraints are made, outherwise, it will just be interpreted as a constraint by the solver. </p>
+<p>In our case the, the objective is to minimize the Genset fuel oil consumption, therefore it is expressed as: </p>
+<pre><code>Optim += lpSum (FC + L_added_cost), &quot;objective function Minimization fuel oil consumption&quot; 
+</code></pre>
+<p><span class="arithmatex">\(\newline\)</span> </p>
+<h3 id="setting-up-problem-constraints">Setting up problem constraints.<a class="headerlink" href="#setting-up-problem-constraints" title="Permanent link">&para;</a></h3>
+<p>Constraints are expressed using the same command used for setting up the objective function, that's why the objective fucntion should be included first. </p>
+<p>The set of constraints for our problem are expressed as follow:</p>
+<pre><code>
+for k in V_steps:
+
+  # Fuel oil consumption constraint.
+  Optim += FOC[k] == P[k]*a_j + b_j - fc_j_offset*(1-Y[k]) 
+
+  # Load requirements constraints
+  Optim += P_load[k] + eff_from_bat*P_From_bat[k] == L[k]  
+  Optim += P_load[k] + P_to_bat[k] == P[k] 
+
+
+  # Genset logical constraints.
+  Optim += P[k]  &lt;= 0.9 * P_max * Y[k]
+  Optim += P[k]  &gt;= 0.2 * P_max * Y[k]
+
+  # Battery charging logical constraints.
+  Optim += P_to_bat[k] &lt;= 0.9 * P_max * Y_to_bat[k]
+  Optim += P_From_bat[k] &lt;= 0.9 * P_max * Y_from_bat[k]
+  Optim += Y_to_bat[k] + Y_from_bat[k]  &lt;= 1
+
+
+  # Charge balance logical constraints.
+  if k == V_steps[0] : 
+    Optim += Q_bat[k] == Q_0 + eff_to_bat*P_to_bat[k]*dt - P_From_bat[k]*dt
+
+
+  else :   
+    Optim += Q_bat[k] == Q_bat[k-1] + eff_to_bat*P_to_bat[k]*dt - P_From_bat[k]*dt
+
+
+# Additional starting costs constraint.
+for k in range(V_steps[0], V_steps[-1]): 
+  Optim += Z[k] &gt;= Y[k + 1] - Y[k] 
+
+# Charge balance at the Final time step.
+Optim += Q_bat[V_steps[-1]] == Q_final
+</code></pre>
+<p><span class="arithmatex">\(\newline\)</span> </p>
+<h3 id="solving-the-problem">Solving the problem.<a class="headerlink" href="#solving-the-problem" title="Permanent link">&para;</a></h3>
+<p>After constructing the problem with the different steps, now we can solve it using the command, and store the results in a variable. something like : </p>
+<pre><code>result = Optim.solve() 
+</code></pre>
+<p>Note that inside the parenthesis you can specify the solver you want to use, if nothing is specified then the defaut solver is used which is CBC solver. However, in our case we are using the Gurobi solver, therfore, we can call it as follow : </p>
+<pre><code>result = Optim.solve(GUROBI())
+</code></pre>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../prblm_size/" class="btn btn-neutral float-left" title="Problem size"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../contr_guide/" class="btn btn-neutral float-right" title="Contributor guide">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../prblm_size/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../contr_guide/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../javascripts/mathjax.js" defer></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

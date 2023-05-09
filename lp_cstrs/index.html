@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://heo.fi/lp_cstrs/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Problem constraints - HEO</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Problem constraints";
+        var mkdocs_page_input_path = "lp_cstrs.md";
+        var mkdocs_page_url = "/lp_cstrs/";
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> HEO
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Project case study</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="..">Project context</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Project_overview/">Project overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Problem formulating</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../lp_vars/">Variables</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../parameters/">Parameters</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../low_up_bnds/">Upper and lower bounds</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Problem constraints</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#linear-programming-constraints">Linear programming constraints</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#set-of-problem-lp-constraints">Set of problem LP constraints</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../obj_func/">Objective</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../prblm_size/">Problem size</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Implementation</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../user_quick_guide/">User quick guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../contr_guide/">Contributor guide</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">About</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../authors/">Authors</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../chng_log/">Releases</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">HEO</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+          <li>Problem formulating &raquo;</li>
+      <li>Problem constraints</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="problem-lp-constraints">Problem LP constraints<a class="headerlink" href="#problem-lp-constraints" title="Permanent link">&para;</a></h1>
+<p><img alt="Screenshot" src="../img/hyh_illustration_constraints.png" /></p>
+<h4 id="linear-programming-constraints">Linear programming constraints<a class="headerlink" href="#linear-programming-constraints" title="Permanent link">&para;</a></h4>
+<p>Linear programming constraints (LP constraints) are the rules that gouverne the problem optimization process. They are fondamentally set of equations, they might be either inequality equations ( example : <span class="arithmatex">\({a} + {b} \le {c}\,\)</span>)   or equality equations  ( example : <span class="arithmatex">\({a} + {b} = {c}\,q\)</span>) constructed based on the LP variables quantities and problem parameters. (See. Problem LP variables and Problem LP constraints). </p>
+<h4 id="set-of-problem-lp-constraints">Set of problem LP constraints<a class="headerlink" href="#set-of-problem-lp-constraints" title="Permanent link">&para;</a></h4>
+<hr />
+<ul>
+<li><span class="arithmatex">\(Load\,requirements :\)</span> </li>
+</ul>
+<div class="arithmatex">\[\begin{flalign*}
+\color{black}
+&amp; L_k =P_k^{\mathrm{load}} +\eta {\;}^{\mathrm{fromBat}} {\cdot \;P}_k^{\mathrm{fromBat}}  &amp; \forall\,\,\,\,\,\, k=1,\dots ,n
+\end{flalign*}\]</div>
+<p><br></p>
+<ul>
+<li><span class="arithmatex">\(Power \, split :\)</span> </li>
+</ul>
+<div class="arithmatex">\[\begin{flalign*}
+&amp; P_{k\;} =P_k^{\mathrm{load}} {+\;P}_k^{\mathrm{toBat}}\ &amp; \forall\,\,\,\,\,\, k=1,\dots ,n 
+\end{flalign*}\]</div>
+<p><br></p>
+<ul>
+<li><span class="arithmatex">\(Charge \,balance \,constraints :\)</span></li>
+</ul>
+<div class="arithmatex">\[\begin{flalign*}
+&amp; Q_k =Q_{k-1} +\eta^{\mathrm{toBat}} \cdot \;P_k^{\mathrm{toBat}} \Delta t-\;P_k^{\mathrm{fromBat}} \Delta t\\
+&amp; Q_0 =Q_{\mathrm{init}}\\
+&amp; Q_n =Q_{\mathrm{final}} &amp; \forall\,\,\,\,\,\, k=1,\dots ,n
+\end{flalign*}\]</div>
+<p><br></p>
+<ul>
+<li><span class="arithmatex">\(Genset\, constraints :\)</span></li>
+</ul>
+<div class="arithmatex">\[\begin{flalign*}
+&amp; P_{k\;} \le {0\ldotp 9P}_{\mathrm{max}\;} {\cdot y}_k  &amp; \forall\,\,\,\,\,\, k=1,\dots ,n\\
+&amp; P_{k\;} \le {0\ldotp 2P}_{\mathrm{max}\;} {\cdot y}_k\ &amp; \forall\,\,\,\,\,\, k=1,\dots ,n 
+\end{flalign*}\]</div>
+<p><br></p>
+<ul>
+<li><span class="arithmatex">\(Battery \,logical \,constraints :\)</span> </li>
+</ul>
+<div class="arithmatex">\[\begin{flalign*}
+&amp; y_k^{\mathrm{toBat}} +y_{k\;}^{\mathrm{fromBat}} \le 1  &amp; \forall\,\,\,\,\,\, k=1,\dots ,n\\
+&amp; P_k^{\mathrm{toBat}} \le 0\ldotp 9P_{\mathrm{max}} {\cdot y}_k^{\mathrm{toBat}} &amp; \forall\,\,\,\,\,\, k=1,\dots ,n \\
+&amp; P_k^{\mathrm{fromBat}} \le 0\ldotp 9P_{\mathrm{max}} {\cdot \;y}_k^{\mathrm{fromBat}}  &amp; \forall\,\,\,\,\,\, k=1,\dots ,n
+\end{flalign*}\]</div>
+<p><br></p>
+<ul>
+<li><span class="arithmatex">\(Fuel \,consumption :\)</span></li>
+</ul>
+<div class="arithmatex">\[\begin{flalign*}
+&amp; {FC}_{k\;} ={aP}_{k\;} +b-{fc}_{offset} \cdot \left(1-y_k \right)\  &amp; \forall\,\,\,\,\,\, k=1,\dots ,n
+\end{flalign*}\]</div>
+<p><br></p>
+<ul>
+<li><span class="arithmatex">\(Objective \,linearization :\)</span> </li>
+</ul>
+<div class="arithmatex">\[\begin{flalign*}
+&amp; z_k \ge y_k -y_{k-1} &amp; \forall\,\,\,\,\,\, k=2,\dots ,n
+\end{flalign*}\]</div>
+<p><br>
+<br></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../low_up_bnds/" class="btn btn-neutral float-left" title="Upper and lower bounds"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../obj_func/" class="btn btn-neutral float-right" title="Objective">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../low_up_bnds/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../obj_func/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../javascripts/mathjax.js" defer></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

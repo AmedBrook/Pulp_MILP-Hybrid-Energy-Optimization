@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://heo.fi/low_up_bnds/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Upper and lower bounds - HEO</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Upper and lower bounds";
+        var mkdocs_page_input_path = "low_up_bnds.md";
+        var mkdocs_page_url = "/low_up_bnds/";
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> HEO
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Project case study</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="..">Project context</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Project_overview/">Project overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Problem formulating</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../lp_vars/">Variables</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../parameters/">Parameters</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Upper and lower bounds</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#upper-and-lower-bounds">Upper and lower bounds</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../lp_cstrs/">Problem constraints</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../obj_func/">Objective</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../prblm_size/">Problem size</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Implementation</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../user_quick_guide/">User quick guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../contr_guide/">Contributor guide</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">About</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../authors/">Authors</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../chng_log/">Releases</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">HEO</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+          <li>Problem formulating &raquo;</li>
+      <li>Upper and lower bounds</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="variables-bounds">Variables bounds<a class="headerlink" href="#variables-bounds" title="Permanent link">&para;</a></h1>
+<p>Linear programing variables are the variables whose values the optimizer will solve for in each time step, those variables are bounded from both sides (lower and upper) to finite the problem region of values and hence lowering the complexity to solve it.</p>
+<p><img alt="Screenshot" src="../img/hyh_illustration_lpvariables.png" /></p>
+<h4 id="upper-and-lower-bounds">Upper and lower bounds<a class="headerlink" href="#upper-and-lower-bounds" title="Permanent link">&para;</a></h4>
+<hr />
+<table>
+<thead>
+<tr>
+<th>LPvariable</th>
+<th>Lower bound</th>
+<th>Upper bound</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(Q_{\mathrm{bat}, k}\)</span></td>
+<td><span class="arithmatex">\(0\ldotp 2.Q_{\mathrm{max}}\)</span></td>
+<td><span class="arithmatex">\(Q_{\mathrm{max}}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(P_{k}\)</span></td>
+<td><span class="arithmatex">\(P_{\mathrm{min}}\)</span></td>
+<td><span class="arithmatex">\(0.9.P_{\mathrm{max}}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(P_{\mathrm{load}, k}\)</span></td>
+<td><span class="arithmatex">\(P_{\mathrm{min}}\)</span></td>
+<td><span class="arithmatex">\(0.9.P_{\mathrm{max}}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(P_{\mathrm{to~bat}, k}\)</span></td>
+<td><span class="arithmatex">\(P_{\mathrm{min}}\)</span></td>
+<td><span class="arithmatex">\(0.9.P_{\mathrm{max}}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(P_{\mathrm{from~bat}, k}\)</span></td>
+<td><span class="arithmatex">\(P_{\mathrm{min}}\)</span></td>
+<td><span class="arithmatex">\(0.9.P_{\mathrm{max}}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(Y_k\)</span></td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(Y_{\mathrm{to~bat}}\)</span></td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(Y_{\mathrm{from~~bat}}\)</span></td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(Z\)</span></td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(FOC\)</span></td>
+<td>0</td>
+<td><span class="arithmatex">\(Max_{FC}\)</span></td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../parameters/" class="btn btn-neutral float-left" title="Parameters"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../lp_cstrs/" class="btn btn-neutral float-right" title="Problem constraints">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../parameters/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../lp_cstrs/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../javascripts/mathjax.js" defer></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

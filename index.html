@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://heo.fi/" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Project context - HEO</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Project context";
+        var mkdocs_page_input_path = "index.md";
+        var mkdocs_page_url = "/";
+      </script>
+    
+    <script src="js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="." class="icon icon-home"> HEO
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Project case study</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href=".">Project context</a>
+    <ul class="current">
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="Project_overview/">Project overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Problem formulating</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="lp_vars/">Variables</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="parameters/">Parameters</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="low_up_bnds/">Upper and lower bounds</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="lp_cstrs/">Problem constraints</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="obj_func/">Objective</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="prblm_size/">Problem size</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Implementation</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="user_quick_guide/">User quick guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="contr_guide/">Contributor guide</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">About</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="authors/">Authors</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="chng_log/">Releases</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href=".">HEO</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+          <li>Project case study &raquo;</li>
+      <li>Project context</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h3 id="heo">HEO.<a class="headerlink" href="#heo" title="Permanent link">&para;</a></h3>
+<hr />
+<p>HEO is a PuLP-MILP based Hybrid Energy Optimizer, for oil and fuel optimization with battery storage system integration. </p>
+<h2 id="project-description-and-context">Project description and context<a class="headerlink" href="#project-description-and-context" title="Permanent link">&para;</a></h2>
+<p>The project aims to explore the possibility of integrating energy storage facilities within the shipping industry market. In this application we simulate one possible solution on how to synchronize fuel based gensets with a battery storage system alongside with energy optimization to reduce energy cost throughout the trip journey. The whole project is build based on an optimization mathematical model and uses MILP (mixed integer linear programming) methods to solve optimally the problem.</p>
+<p>In the Notebook scripts associated with this project, we simulate an application used to optimize fuel consumption for vessels using one genset to produce the required energy and one battery storage system to store and realise the excess of that energy when needed in a hybrid mode.</p>
+<p>The farmwork used in this case study is PuLP, to solve a Mixed Integer Linear Programming problem together with first the built-in solver CBC and then with a commercial solver, we used Gurobi in our case.</p>
+<h2 id="project-use-case">Project use case<a class="headerlink" href="#project-use-case" title="Permanent link">&para;</a></h2>
+<p>This particular case is initially specific for the offshore shipping industry as they are the most transportation fuel consuming and needing some sort of solutions to use fuel optimally in their trips. However, this is not only exclusive to this sector, it can be easily extended to other sectors as long as the purpose is to optimize energy usage and energy hybridization.</p>
+<h2 id="project-setup-options">Project setup options<a class="headerlink" href="#project-setup-options" title="Permanent link">&para;</a></h2>
+<h3 id="standalone-setup">Standalone setup<a class="headerlink" href="#standalone-setup" title="Permanent link">&para;</a></h3>
+<h5 id="environment">Environment.<a class="headerlink" href="#environment" title="Permanent link">&para;</a></h5>
+<p>Create a new environment aside of the root, and name it somthing recognisable, we gave it a name here as HEO_model, we have used here python version 3.9.7. </p>
+<p>To do so, run the command : <code>$ conda create --HEO_model python=3.9.7</code></p>
+<h5 id="requirements-and-dependencies">Requirements and Dependencies.<a class="headerlink" href="#requirements-and-dependencies" title="Permanent link">&para;</a></h5>
+<p>Before stating the setup process you need to have <em><code>setuptools</code></em> installed, if you don't have it already do through the following commands:</p>
+<p>Python package index (Pypi) : <code>$ pip install setuptools</code></p>
+<p>Anaconda package index (Conda) : <code>$ conda install -c conda-forge setuptools</code></p>
+<p>Now that you have <em><code>setuptools</code></em> in you environment, in order to install all packages and dependencies at once run the command : </p>
+<p><code>$ python -m pip install -e .</code></p>
+<h3 id="pre-configured-setup">Pre-configured setup<a class="headerlink" href="#pre-configured-setup" title="Permanent link">&para;</a></h3>
+<p>While the manual installation can walk you through around the various commands basics for each used packages in the project, chances are you might already know those commands and you don't want to bother yourself about taping every single command, so that's why we have provided the possibility to use <code>make</code> scripting, to make life easy for you. You find in the following the commands you will need to do this. </p>
+<p>In case you have make installed in your system, for Linux based system it comes already installed in your system you don't need to install anything just skeep this part to {...}. For windows based systems there are multiple ways to get GNU make installed, like for example Cygwin, Nmake, Cmake..., however we recommand to go for <a href="https://community.chocolatey.org/packages/make">chocolatey</a>, we think it's the most straighforward way to install make for windows systems with less effort. </p>
+<h5 id="chocolatey">chocolatey<a class="headerlink" href="#chocolatey" title="Permanent link">&para;</a></h5>
+<p>First thing first, we will install chocolatey, make sure you are using the Powershell command as an admin,</p>
+<p>Then run this command first : </p>
+<pre><code class="language-bash">Get-ExecutionPolicy 
+</code></pre>
+<p>If it returns Restricted, then run : </p>
+<pre><code class="language-bash">Set-ExecutionPolicy AllSigned or Set-ExecutionPolicy Bypass -Scope Process
+</code></pre>
+<p>Now, to install <code>chocolatey</code> run the following command by coping it at once and past it in command line, then hit enter:</p>
+<pre><code class="language-bash"> Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1')) 
+
+</code></pre>
+<p>Please check <a href="https://community.chocolatey.org/packages/make">chocolatey</a> website for more guidance !</p>
+<h5 id="make">Make<a class="headerlink" href="#make" title="Permanent link">&para;</a></h5>
+<p>Now that you have <code>chocolatey</code> installed, we can install <code>make</code> by running the command : </p>
+<pre><code>$ choco install make --version=3.81
+</code></pre>
+<p>Once make installation is done, and assuming that you have downloaded the project files in your local machine it's very easy to workout everything. </p>
+<p>To create the conda environment run the command : </p>
+<pre><code>$ make create_env
+</code></pre>
+<p>To setup the project run the command : </p>
+<pre><code>$ make setup
+</code></pre>
+<h4 id="mkdocs">Mkdocs<a class="headerlink" href="#mkdocs" title="Permanent link">&para;</a></h4>
+<p>We are using Mkdocs in order to generate documentation pages for the project.</p>
+<p>to install Mkdocs, run the command : </p>
+<pre><code>$ pip install mkdocs
+</code></pre>
+<p>To create a new project with the name ´heo´, you can run: </p>
+<pre><code>$ mkdocs new heo
+</code></pre>
+<p>After creation the project, you might have something simmilar to this: </p>
+<pre><code>            mkdocs.yml
+            docs
+              |___ index.md
+                    |___./...
+</code></pre>
+<p>if you want to preview live the changes you make on the mkdocs pages, then you can serve them by running the command: </p>
+<pre><code>$ python mkdocs serve
+</code></pre>
+<h5 id="mathjax">Mathjax<a class="headerlink" href="#mathjax" title="Permanent link">&para;</a></h5>
+<p>Mathjax is a Javascript library that can display mathimatical notations in the browser using LaTex or other. 
+In order to integarate Mathjax within Mkdocs do the following: </p>
+<p>Install pymdown-extensions (Pypi): </p>
+<p><code>$ python -m pip install pymdown-extensions</code> </p>
+<p>Within your mkdocs folder create the following: </p>
+<pre><code>            mkdocs_______
+                |___ docs
+                        |___ javascripts
+                        |           |___ mathjax.js
+                        |           
+</code></pre>
+<p>Add the following script lines in the configuration file <code>mkdocs.yml</code> :</p>
+<pre><code class="language-yaml">extra_javascript:
+
+    javascripts/mathjax.js
+    https://polyfill.io/v3/polyfill.min.js?features=es6
+    https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+</code></pre>
+<p></br></p>
+<h2 id="testing-units">Testing units<a class="headerlink" href="#testing-units" title="Permanent link">&para;</a></h2>
+<h4 id="testing-the-environment">Testing the environment<a class="headerlink" href="#testing-the-environment" title="Permanent link">&para;</a></h4>
+<p>To test packages and dependencies just run the command : </p>
+<pre><code>$ make env_test
+</code></pre>
+<p>Behind the scenes, make will go over the <code>Makefile</code> located in our directory which itself will chain to all test units located in <code>/src/tests</code> directory and execute every single test module existing in that directory.</p>
+<h4 id="testing-syntax-style">Testing syntax &amp; style<a class="headerlink" href="#testing-syntax-style" title="Permanent link">&para;</a></h4>
+<p>To lint code scripts we are using flake8, just run the following command : </p>
+<pre><code>$ make lint
+</code></pre>
+<p>Under the hood, make will go over the <code>Makefile</code> located in our directory which itself will chain to all coding resources in <code>/src/functions</code> and <code>/notebooks</code> directories and will check the syntax and style of your code using flake8 to meet PEP8 standards.</p>
+<h4 id="testing-internal-modules">Testing internal modules<a class="headerlink" href="#testing-internal-modules" title="Permanent link">&para;</a></h4>
+<p>In our code we ended up using three main functions which help us to implemente the problem, the first function is called <code>FuelCon</code> it is used to calculate based on a linear model the fuel comsumption of the genset for a specific power load <code>P</code>. The second function is called <code>lwd</code>, is the abreviation of load window, which is used to constructe a load profile for a specific number of time steps out of a given sets of power loads arrays. The third one is called <code>lixtr</code> and it's the abreviation of list extraction, which could be used in the section 'Pre-processing visualization data' for extracting lists out of dictionaries. So in order to make sure those functions are behaving as is should be some testing routings are required by following the next commands. </p>
+<p>To test the <code>FuelCon</code> function, run the command: </p>
+<pre><code>$ make fuelCon_test
+</code></pre>
+<p>To test the <code>lwd</code> function, run the command: </p>
+<pre><code>$ make lwd_test
+</code></pre>
+<p>To test the <code>lixtr</code> functions, run the command: </p>
+<pre><code>$ make lixtr_test
+</code></pre>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="Project_overview/" class="btn btn-neutral float-right" title="Project overview">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+      <span><a href="Project_overview/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme_extra.js" defer></script>
+    <script src="js/theme.js" defer></script>
+      <script src="javascripts/mathjax.js" defer></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+      <script src="search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
