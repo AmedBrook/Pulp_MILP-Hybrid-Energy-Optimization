@@ -33,9 +33,9 @@ P_load = LpVariable.dicts("P_A_load", V_steps, lowBound=0, upBound=0.9*P_A_max, 
 Z = LpVariable.dicts("Z", V_steps_z, lowBound=0, upBound=1, cat=LpInteger) # Aditional cost fuel oil consumption when starting Genset j.
 FOC = LpVariable.dicts("FC_A", V_steps, lowBound=0, upBound= maxFC, cat=LpContinuous) # Specific fuel oil consumption.
 P_to_bat =  LpVariable.dicts("P_A_to_bat", V_steps, lowBound=0, upBound=0.9*P_A_max, cat=LpContinuous) 
-Y_to_bat = LpVariable.dicts("Y_to_bat", V_steps, lowBound=0, upBound=1, cat=LpInteger) # Genset selecter to charge the battery at time step k. 
-Y_from_bat = LpVariable.dicts("Y_from_bat", V_steps, lowBound=0, upBound=1, cat=LpInteger) # Battery selecter to transfert to the Genset j st time step k.
-Y = LpVariable.dicts("Y", V_steps, lowBound=0, upBound=1, cat=LpInteger) # Genset selecter : work ==> Y=1, Not work ==> Y=0. 
+Y_to_bat = LpVariable.dicts("Y_to_bat", V_steps, lowBound=0, upBound=1, cat=LpBinary) # Genset selecter to charge the battery at time step k. 
+Y_from_bat = LpVariable.dicts("Y_from_bat", V_steps, lowBound=0, upBound=1, cat=LpBinary) # Battery selecter to transfert to the Genset j st time step k.
+Y = LpVariable.dicts("Y", V_steps, lowBound=0, upBound=1, cat=LpBinary) # Genset selecter : work ==> Y=1, Not work ==> Y=0. 
 ```
 
 
