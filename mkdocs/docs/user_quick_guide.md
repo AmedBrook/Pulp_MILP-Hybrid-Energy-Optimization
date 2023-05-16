@@ -1,7 +1,6 @@
 ## User quick guide.
 ---
 
-$\newline$ 
 ### Optimization variable. 
 
 The optimization variable is the variable that will host problem solving results, it is created via the command ```LpProblem()```. Inside the parenthesis we can assign a name for the optimization problem beeing solved as well as defining which type the problem is. whether is a maximization or minmization ('LpMaximize' for maximization or 'LpMinimize' for minimization problem). 
