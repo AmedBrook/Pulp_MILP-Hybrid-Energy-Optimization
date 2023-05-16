@@ -1,5 +1,5 @@
-Variables bounds
-====================
+## Variables bounds.
+---
 Linear programing variables are the variables whose values the optimizer will solve for in each time step, those variables are bounded from both sides (lower and upper) to finite the problem region of values and hence lowering the complexity to solve it.
 
 ![Screenshot](img/hyh_illustration_lpvariables.png)

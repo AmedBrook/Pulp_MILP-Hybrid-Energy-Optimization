@@ -1,4 +1,4 @@
-# How to contribute to HEO model.
+## How to contribute to HEO model.
 ---
 
 This is a guide on how to contribute to HEO project.

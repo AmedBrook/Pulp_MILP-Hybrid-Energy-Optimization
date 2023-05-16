@@ -1,5 +1,5 @@
-Problem LP constraints
-=====================
+## Problem LP constraints.
+---
 
 ![Screenshot](img/hyh_illustration_constraints.png)
 

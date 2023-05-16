@@ -1,5 +1,5 @@
-Problem size
-=================
+## Problem size.
+---
 
 comuputation cost is the most implicaated factor when it comes to designing optimization based software solutions as it can affect the speed for processing information and hence delaying outputs. 
 

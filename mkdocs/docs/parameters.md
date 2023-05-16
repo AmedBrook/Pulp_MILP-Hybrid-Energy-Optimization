@@ -1,5 +1,5 @@
-Problem parameters
-=================
+## Problem parameters.
+---
 
 ![Screenshot](img/hyh_illustration_parameters.png)
 

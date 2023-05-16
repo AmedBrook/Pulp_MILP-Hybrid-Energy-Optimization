@@ -1,5 +1,5 @@
-Linear programming variables.
-====================
+## Linear programming variables.
+---
 Linear programing (LP) variables are the variables whose values the optimizer will solve for in each time step. 
 
 ![Screenshot](img/hyh_illustration_lpvariables.png)

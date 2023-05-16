@@ -1,5 +1,5 @@
-Optimization objective
-======================
+## Optimization objective.
+---
 
 #### Objective function
 

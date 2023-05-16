@@ -1,5 +1,5 @@
-Project overview.
-====================
+## Project overview.
+---
 
 ### HEO Model - Genset(s) and Baterie(s)
 
