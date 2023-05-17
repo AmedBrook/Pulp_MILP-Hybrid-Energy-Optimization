@@ -16,7 +16,7 @@ Linear programming constraints (LP constraints) are the rules that gouverne the 
 
 \begin{flalign*}
 \color{black}
-& L_k =P_k^{\mathrm{load}} +\eta {\;}^{\mathrm{fromBat}} {\cdot \;P}_k^{\mathrm{fromBat}}  & \forall\,\,\,\,\,\, k=1,\dots ,n
+& L_k =P_k^{\mathrm{load}} +\eta {\;}^{\mathrm{from\_Bat}} {\cdot \;P}_k^{\mathrm{from\_Bat}}  & \forall\,\,\,\,\,\, k=1,\dots ,n
 \end{flalign*}        
 
 
@@ -25,7 +25,7 @@ Linear programming constraints (LP constraints) are the rules that gouverne the 
 - $Power \, split :$ 
 
 \begin{flalign*}
-& P_{k\;} =P_k^{\mathrm{load}} {+\;P}_k^{\mathrm{toBat}}\ & \forall\,\,\,\,\,\, k=1,\dots ,n 
+& P_{k\;} =P_k^{\mathrm{load}} {+\;P}_k^{\mathrm{to\_Bat}}\ & \forall\,\,\,\,\,\, k=1,\dots ,n 
 \end{flalign*}         
 
 <br>
@@ -33,7 +33,7 @@ Linear programming constraints (LP constraints) are the rules that gouverne the 
 - $Charge \,balance \,constraints :$
 
 \begin{flalign*}
-& Q_k =Q_{k-1} +\eta^{\mathrm{toBat}} \cdot \;P_k^{\mathrm{toBat}} \Delta t-\;P_k^{\mathrm{fromBat}} \Delta t\\
+& Q_k =Q_{k-1} +\eta^{\mathrm{to\_Bat}} \cdot \;P_k^{\mathrm{to\_Bat}} \Delta t-\;P_k^{\mathrm{from\_Bat}} \Delta t\\
 & Q_0 =Q_{\mathrm{init}}\\
 & Q_n =Q_{\mathrm{final}} & \forall\,\,\,\,\,\, k=1,\dots ,n
 \end{flalign*}   
@@ -54,9 +54,9 @@ Linear programming constraints (LP constraints) are the rules that gouverne the 
 
 
 \begin{flalign*}
-& y_k^{\mathrm{toBat}} +y_{k\;}^{\mathrm{fromBat}} \le 1  & \forall\,\,\,\,\,\, k=1,\dots ,n\\
-& P_k^{\mathrm{toBat}} \le 0\ldotp 9P_{\mathrm{max}} {\cdot y}_k^{\mathrm{toBat}} & \forall\,\,\,\,\,\, k=1,\dots ,n \\
-& P_k^{\mathrm{fromBat}} \le 0\ldotp 9P_{\mathrm{max}} {\cdot \;y}_k^{\mathrm{fromBat}}  & \forall\,\,\,\,\,\, k=1,\dots ,n
+& y_k^{\mathrm{to\_Bat}} +y_{k\;}^{\mathrm{from\_Bat}} \le 1  & \forall\,\,\,\,\,\, k=1,\dots ,n\\
+& P_k^{\mathrm{to\_Bat}} \le 0\ldotp 9P_{\mathrm{max}} {\cdot y}_k^{\mathrm{to\_Bat}} & \forall\,\,\,\,\,\, k=1,\dots ,n \\
+& P_k^{\mathrm{from\_Bat}} \le 0\ldotp 9P_{\mathrm{max}} {\cdot \;y}_k^{\mathrm{from\_Bat}}  & \forall\,\,\,\,\,\, k=1,\dots ,n
 \end{flalign*}    
 
 <br>

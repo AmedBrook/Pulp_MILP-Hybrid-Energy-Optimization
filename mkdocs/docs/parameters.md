@@ -22,9 +22,9 @@ The optimization parameters are a set of paramters that have been used along wit
 | $t_{\mathrm{max}\;}$              | Max time in simulation.                                                            | h
 | $n$                               | Number of time steps in simulation.                                                | -
 | $t$                               | Time vector in simulation (dimension(t)=n).                                        | h
-| $\eta^{\mathrm{to\_Bat}}$           | Efficiency when charging the battery.                                              | -
-| $\eta^{\mathrm{from\_Bat}}$         | Efficiency when releasing from the battery.                                        | -
-| $\eta^{\mathrm{to\_Bat}}$           | Efficiency when charging the battery.                                              | -
-| $\eta^{\mathrm{to\_Bat}}$           | Efficiency when charging the battery.                                              | -
+| $\eta^{\mathrm{to\_Bat}}$         | Efficiency when charging the battery.                                              | -
+| $\eta^{\mathrm{from\_Bat}}$       | Efficiency when releasing from the battery.                                        | -
+| $\eta^{\mathrm{to\_Bat}}$         | Efficiency when charging the battery.                                              | -
+| $\eta^{\mathrm{to\_Bat}}$         | Efficiency when charging the battery.                                              | -
 | $fc_{\mathrm{offset}\;}$          | fuel oil consumption offset.                                                       | g
 | $L$                               | Vector of pre-defined load profile (must be of same length as time vector).        | kWh
