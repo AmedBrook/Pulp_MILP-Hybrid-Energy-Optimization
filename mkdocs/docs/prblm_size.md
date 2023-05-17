@@ -5,7 +5,7 @@ comuputation cost is the most implicaated factor when it comes to designing opti
 
 ![Screenshot](img/hyh_illustration_lpvariables.png)
 
-Therefore, We need to know the problem size in order to see if the problem is computationaly cost effective or not, our problem size is mainly dependant on the size of the load window time frame (aka : steps ${n}$ ), the number of LP variables, the number of gensets ${m}$ (we use 1 genset in our case) and the numbere of problem constraints. 
+Therefore, We need to know the problem size in order to see if the problem is computationaly cost effective or not, our problem size is mainly dependant on the size of the load window time frame (i.e., steps <strong>${n}$</strong> ), the number of LP variables, the number of gensets <strong>${m}$</strong> (we use 1 genset in our case) and the numbere of problem constraints. 
 
 
 
