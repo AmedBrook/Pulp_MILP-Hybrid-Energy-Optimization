@@ -12,7 +12,7 @@ Linear programming constraints (LP constraints) are the rules that gouverne the 
 
 
 
-- $Load\,requirements :$ 
+ <strong>Load requirements :</strong>
 
 \begin{flalign*}
 \color{black}
@@ -22,7 +22,7 @@ Linear programming constraints (LP constraints) are the rules that gouverne the 
 
 <br>
 
-- $Power \, split :$ 
+<strong>Power split :</strong>
 
 \begin{flalign*}
 & P_{k\;} =P_k^{\mathrm{load}} {+\;P}_k^{\mathrm{to\_Bat}}\ & \forall\,\,\,\,\,\, k=1,\dots ,n 
@@ -30,7 +30,7 @@ Linear programming constraints (LP constraints) are the rules that gouverne the 
 
 <br>
 
-- $Charge \,balance \,constraints :$
+<strong>Charge balance constraints :</strong>
 
 \begin{flalign*}
 & Q_k =Q_{k-1} +\eta^{\mathrm{to\_Bat}} \cdot \;P_k^{\mathrm{to\_Bat}} \Delta t-\;P_k^{\mathrm{from\_Bat}} \Delta t\\
@@ -40,7 +40,7 @@ Linear programming constraints (LP constraints) are the rules that gouverne the 
 
 <br>
 
-- $Genset\, constraints :$
+<strong>Genset constraints :</strong>
 
 
 \begin{flalign*}
@@ -50,7 +50,7 @@ Linear programming constraints (LP constraints) are the rules that gouverne the 
 
 <br>
 
-- $Battery \,logical \,constraints :$ 
+<strong>Battery logical constraints :</strong>
 
 
 \begin{flalign*}
@@ -61,7 +61,7 @@ Linear programming constraints (LP constraints) are the rules that gouverne the 
 
 <br>
 
-- $Fuel \,consumption :$
+<strong>Fuel consumption :</strong>
 
 \begin{flalign*}
 & {FC}_{k\;} ={aP}_{k\;} +b-{fc}_{offset} \cdot \left(1-y_k \right)\  & \forall\,\,\,\,\,\, k=1,\dots ,n
@@ -70,7 +70,7 @@ Linear programming constraints (LP constraints) are the rules that gouverne the 
 
 <br>
 
-- $Objective \,linearization :$ 
+<strong>Objective linearization :</strong>
 
 
 \begin{flalign*}
