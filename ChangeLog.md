@@ -1,7 +1,7 @@
 ## Releases.
 ---
 
-#### Version 0.2.1. [release]
+#### Version 0.2.1. [Release]
    
     Date: 31.5.2023.
    
