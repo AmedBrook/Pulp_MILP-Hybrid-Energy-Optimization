@@ -36,7 +36,7 @@ else
 	@echo ">>> New virtualenv created. Activate with:\nworkon $(PROJECT_NAME)"
 endif
 
-setup: ## Setting up the project via setup.py
+setup: ## Requirements setup
 	$(PYTHON_INTERPRETER) -m pip install setuptools
 	$(PYTHON_INTERPRETER) -m pip install -e .
 
@@ -46,7 +46,7 @@ clean: ## Delete all compiled Python files
 	find . -type d -name "__pycache__" -delete
 
 
-lint: ## Lint using flake8
+lint: ## Linting code using flake8
 	$(PYTHON_INTERPRETER) -m flake8 src/functions
 	$(PYTHON_INTERPRETER) -m flake8 notebooks
 	$(PYTHON_INTERPRETER) -m flake8 models
@@ -56,14 +56,14 @@ lint: ## Lint using flake8
 # PROJECT TEST UNITS.                                                           #
 #################################################################################
 
-env_test: fuleCon_test lwd_test ## Test python, pulp and some internal packages.
-	$(PYTHON_INTERPRETER) tests/env_tests.py
-
 fuleCon_test: ## Test if <fuelCon> function working correctly.
 	$(PYTHON_INTERPRETER) tests/fuel_consumption_tests.py
 
 lwd_test: ## Test if <lwd> function is working correctly.
 	$(PYTHON_INTERPRETER) tests/load_window_tests.py
+
+env_test: fuleCon_test lwd_test ## Test python, pulp and some internal packages.
+	$(PYTHON_INTERPRETER) tests/env_tests.py
 
 lixtr_test: ## Test if <lixtr> function is working correctly. 
 	$(PYTHON_INTERPRETER) tests/list_Extraction_tests.py
