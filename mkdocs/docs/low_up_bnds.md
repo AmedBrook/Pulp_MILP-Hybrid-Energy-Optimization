@@ -17,4 +17,4 @@ Linear programing variables are the variables whose values the optimizer will so
 | $Y_k^{\mathrm{to\_bat}}$      | 0                                                | 1
 | $Y_k^{\mathrm{from\_bat}}$    | 0                                                | 1
 | $Z$                           | 0                                                | 1
-| $FOC$                         | 0                                                | $Max_{FC}$
+| $FOC$                         | 0                                                | $FOC_{max}$
