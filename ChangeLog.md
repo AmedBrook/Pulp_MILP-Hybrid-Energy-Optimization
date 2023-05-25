@@ -23,6 +23,3 @@ $\newline$
 
 ---
    
- For more details about all releases, please check the github project.
-<br>
-:link: [Link to Github Repo](https://github.com/AmedBrook/Pulp_MILP-Hybrid-Energy-Optimization).
