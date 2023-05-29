@@ -35,7 +35,7 @@ FOC = LpVariable.dicts("FC_A", V_steps, lowBound=0, upBound= maxFC, cat=LpContin
 P_to_bat =  LpVariable.dicts("P_A_to_bat", V_steps, lowBound=0, upBound=0.9*P_A_max, cat=LpContinuous) 
 Y_to_bat = LpVariable.dicts("Y_to_bat", V_steps, lowBound=0, upBound=1, cat=LpBinary) # Genset selecter to charge the battery at time step k. 
 Y_from_bat = LpVariable.dicts("Y_from_bat", V_steps, lowBound=0, upBound=1, cat=LpBinary) # Battery selecter to transfert to the Genset j st time step k.
-Y = LpVariable.dicts("Y", V_steps, lowBound=0, upBound=1, cat=LpBinary) # Genset selecter : work ==> Y=1, Not work ==> Y=0. 
+Y = LpVariable.dicts("Y", V_steps, lowBound=0, upBound=1, cat=LpBinary) # Genset selecter : turned on : Y=1, turned off : Y=0. 
 ```
 
 
