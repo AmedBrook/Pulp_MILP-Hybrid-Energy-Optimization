@@ -104,7 +104,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="variables-bounds">Variables bounds<a class="headerlink" href="#variables-bounds" title="Permanent link">&para;</a></h1>
+                <h2 id="variables-bounds">Variables bounds.<a class="headerlink" href="#variables-bounds" title="Permanent link">&para;</a></h2>
+<hr />
 <p>Linear programing variables are the variables whose values the optimizer will solve for in each time step, those variables are bounded from both sides (lower and upper) to finite the problem region of values and hence lowering the complexity to solve it.</p>
 <p><img alt="Screenshot" src="../img/hyh_illustration_lpvariables.png" /></p>
 <h4 id="upper-and-lower-bounds">Upper and lower bounds<a class="headerlink" href="#upper-and-lower-bounds" title="Permanent link">&para;</a></h4>
@@ -119,7 +120,7 @@
 </thead>
 <tbody>
 <tr>
-<td><span class="arithmatex">\(Q_{\mathrm{bat}, k}\)</span></td>
+<td><span class="arithmatex">\(Q_k^{\mathrm{bat}}\)</span></td>
 <td><span class="arithmatex">\(0\ldotp 2.Q_{\mathrm{max}}\)</span></td>
 <td><span class="arithmatex">\(Q_{\mathrm{max}}\)</span></td>
 </tr>
@@ -129,17 +130,17 @@
 <td><span class="arithmatex">\(0.9.P_{\mathrm{max}}\)</span></td>
 </tr>
 <tr>
-<td><span class="arithmatex">\(P_{\mathrm{load}, k}\)</span></td>
+<td><span class="arithmatex">\(P_k^{\mathrm{load}}\)</span></td>
 <td><span class="arithmatex">\(P_{\mathrm{min}}\)</span></td>
 <td><span class="arithmatex">\(0.9.P_{\mathrm{max}}\)</span></td>
 </tr>
 <tr>
-<td><span class="arithmatex">\(P_{\mathrm{to~bat}, k}\)</span></td>
+<td><span class="arithmatex">\(P_k^{\mathrm{to\_bat}}\)</span></td>
 <td><span class="arithmatex">\(P_{\mathrm{min}}\)</span></td>
 <td><span class="arithmatex">\(0.9.P_{\mathrm{max}}\)</span></td>
 </tr>
 <tr>
-<td><span class="arithmatex">\(P_{\mathrm{from~bat}, k}\)</span></td>
+<td><span class="arithmatex">\(P_k^{\mathrm{from\_bat}}\)</span></td>
 <td><span class="arithmatex">\(P_{\mathrm{min}}\)</span></td>
 <td><span class="arithmatex">\(0.9.P_{\mathrm{max}}\)</span></td>
 </tr>
@@ -149,12 +150,12 @@
 <td>1</td>
 </tr>
 <tr>
-<td><span class="arithmatex">\(Y_{\mathrm{to~bat}}\)</span></td>
+<td><span class="arithmatex">\(Y_k^{\mathrm{to\_bat}}\)</span></td>
 <td>0</td>
 <td>1</td>
 </tr>
 <tr>
-<td><span class="arithmatex">\(Y_{\mathrm{from~~bat}}\)</span></td>
+<td><span class="arithmatex">\(Y_k^{\mathrm{from\_bat}}\)</span></td>
 <td>0</td>
 <td>1</td>
 </tr>
@@ -166,7 +167,7 @@
 <tr>
 <td><span class="arithmatex">\(FOC\)</span></td>
 <td>0</td>
-<td><span class="arithmatex">\(Max_{FC}\)</span></td>
+<td><span class="arithmatex">\(FOC_{max}\)</span></td>
 </tr>
 </tbody>
 </table>

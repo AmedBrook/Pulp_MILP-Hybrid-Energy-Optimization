@@ -106,63 +106,50 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="problem-lp-constraints">Problem LP constraints<a class="headerlink" href="#problem-lp-constraints" title="Permanent link">&para;</a></h1>
+                <h2 id="problem-lp-constraints">Problem LP constraints.<a class="headerlink" href="#problem-lp-constraints" title="Permanent link">&para;</a></h2>
+<hr />
 <p><img alt="Screenshot" src="../img/hyh_illustration_constraints.png" /></p>
 <h4 id="linear-programming-constraints">Linear programming constraints<a class="headerlink" href="#linear-programming-constraints" title="Permanent link">&para;</a></h4>
 <p>Linear programming constraints (LP constraints) are the rules that gouverne the problem optimization process. They are fondamentally set of equations, they might be either inequality equations ( example : <span class="arithmatex">\({a} + {b} \le {c}\,\)</span>)   or equality equations  ( example : <span class="arithmatex">\({a} + {b} = {c}\,q\)</span>) constructed based on the LP variables quantities and problem parameters. (See. Problem LP variables and Problem LP constraints). </p>
 <h4 id="set-of-problem-lp-constraints">Set of problem LP constraints<a class="headerlink" href="#set-of-problem-lp-constraints" title="Permanent link">&para;</a></h4>
 <hr />
-<ul>
-<li><span class="arithmatex">\(Load\,requirements :\)</span> </li>
-</ul>
+<p><strong>Load requirements :</strong></p>
 <div class="arithmatex">\[\begin{flalign*}
 \color{black}
-&amp; L_k =P_k^{\mathrm{load}} +\eta {\;}^{\mathrm{fromBat}} {\cdot \;P}_k^{\mathrm{fromBat}}  &amp; \forall\,\,\,\,\,\, k=1,\dots ,n
+&amp; L_k =P_k^{\mathrm{load}} +\eta {\;}^{\mathrm{from\_Bat}} {\cdot \;P}_k^{\mathrm{from\_Bat}}  &amp; \forall\,\,\,\,\,\, k=1,\dots ,n
 \end{flalign*}\]</div>
 <p><br></p>
-<ul>
-<li><span class="arithmatex">\(Power \, split :\)</span> </li>
-</ul>
+<p><strong>Power split :</strong></p>
 <div class="arithmatex">\[\begin{flalign*}
-&amp; P_{k\;} =P_k^{\mathrm{load}} {+\;P}_k^{\mathrm{toBat}}\ &amp; \forall\,\,\,\,\,\, k=1,\dots ,n 
+&amp; P_{k\;} =P_k^{\mathrm{load}} {+\;P}_k^{\mathrm{to\_Bat}}\ &amp; \forall\,\,\,\,\,\, k=1,\dots ,n 
 \end{flalign*}\]</div>
 <p><br></p>
-<ul>
-<li><span class="arithmatex">\(Charge \,balance \,constraints :\)</span></li>
-</ul>
+<p><strong>Charge balance constraints :</strong></p>
 <div class="arithmatex">\[\begin{flalign*}
-&amp; Q_k =Q_{k-1} +\eta^{\mathrm{toBat}} \cdot \;P_k^{\mathrm{toBat}} \Delta t-\;P_k^{\mathrm{fromBat}} \Delta t\\
+&amp; Q_k =Q_{k-1} +\eta^{\mathrm{to\_Bat}} \cdot \;P_k^{\mathrm{to\_Bat}} \Delta t-\;P_k^{\mathrm{from\_Bat}} \Delta t\\
 &amp; Q_0 =Q_{\mathrm{init}}\\
 &amp; Q_n =Q_{\mathrm{final}} &amp; \forall\,\,\,\,\,\, k=1,\dots ,n
 \end{flalign*}\]</div>
 <p><br></p>
-<ul>
-<li><span class="arithmatex">\(Genset\, constraints :\)</span></li>
-</ul>
+<p><strong>Genset constraints :</strong></p>
 <div class="arithmatex">\[\begin{flalign*}
 &amp; P_{k\;} \le {0\ldotp 9P}_{\mathrm{max}\;} {\cdot y}_k  &amp; \forall\,\,\,\,\,\, k=1,\dots ,n\\
 &amp; P_{k\;} \le {0\ldotp 2P}_{\mathrm{max}\;} {\cdot y}_k\ &amp; \forall\,\,\,\,\,\, k=1,\dots ,n 
 \end{flalign*}\]</div>
 <p><br></p>
-<ul>
-<li><span class="arithmatex">\(Battery \,logical \,constraints :\)</span> </li>
-</ul>
+<p><strong>Battery logical constraints :</strong></p>
 <div class="arithmatex">\[\begin{flalign*}
-&amp; y_k^{\mathrm{toBat}} +y_{k\;}^{\mathrm{fromBat}} \le 1  &amp; \forall\,\,\,\,\,\, k=1,\dots ,n\\
-&amp; P_k^{\mathrm{toBat}} \le 0\ldotp 9P_{\mathrm{max}} {\cdot y}_k^{\mathrm{toBat}} &amp; \forall\,\,\,\,\,\, k=1,\dots ,n \\
-&amp; P_k^{\mathrm{fromBat}} \le 0\ldotp 9P_{\mathrm{max}} {\cdot \;y}_k^{\mathrm{fromBat}}  &amp; \forall\,\,\,\,\,\, k=1,\dots ,n
+&amp; y_k^{\mathrm{to\_Bat}} +y_{k\;}^{\mathrm{from\_Bat}} \le 1  &amp; \forall\,\,\,\,\,\, k=1,\dots ,n\\
+&amp; P_k^{\mathrm{to\_Bat}} \le 0\ldotp 9P_{\mathrm{max}} {\cdot y}_k^{\mathrm{to\_Bat}} &amp; \forall\,\,\,\,\,\, k=1,\dots ,n \\
+&amp; P_k^{\mathrm{from\_Bat}} \le 0\ldotp 9P_{\mathrm{max}} {\cdot \;y}_k^{\mathrm{from\_Bat}}  &amp; \forall\,\,\,\,\,\, k=1,\dots ,n
 \end{flalign*}\]</div>
 <p><br></p>
-<ul>
-<li><span class="arithmatex">\(Fuel \,consumption :\)</span></li>
-</ul>
+<p><strong>Fuel consumption :</strong></p>
 <div class="arithmatex">\[\begin{flalign*}
 &amp; {FC}_{k\;} ={aP}_{k\;} +b-{fc}_{offset} \cdot \left(1-y_k \right)\  &amp; \forall\,\,\,\,\,\, k=1,\dots ,n
 \end{flalign*}\]</div>
 <p><br></p>
-<ul>
-<li><span class="arithmatex">\(Objective \,linearization :\)</span> </li>
-</ul>
+<p><strong>Objective linearization :</strong></p>
 <div class="arithmatex">\[\begin{flalign*}
 &amp; z_k \ge y_k -y_{k-1} &amp; \forall\,\,\,\,\,\, k=2,\dots ,n
 \end{flalign*}\]</div>
