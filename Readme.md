@@ -2,7 +2,7 @@
 
 ---
 
-HEO is a PuLP-MILP based Hybrid Energy Optimizer, for engine oil and fuel consumption through battery storage system integration. 
+HEO is a PuLP-MILP based Hybrid Energy Optimizer, for oil&fuel engine's consumption through battery storage system integration. 
 
 ## Project description and context
 
