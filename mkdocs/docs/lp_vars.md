@@ -16,8 +16,8 @@ Linear programing (LP) variables are the variables whose values the optimizer wi
 | $P_{\mathrm{from\_bat}, k}$    | Power from the battery to the load.                                                | kW               | Continuous
 | $Y_k$                         | Logical variable indicating the state of genset.                                   | -                | Binary
 | $Y_{\mathrm{to\_bat}, k}$       | Logical charging variable for the battery.                                         | -                | Binary
-| $Y_{\mathrm{from\_bat}, k}$     | Logical discarging variable for the battery.                                       | -                | Binary
-| $Z$                           | Aditional cost fuel oil consumption when starting Genset.                          | -                | Binary
+| $Y_{\mathrm{from\_bat}, k}$     | Logical discharging variable for the battery.                                       | -                | Binary
+| $Z$                           | Aditional cost for fuel oil consumption when starting Genset.                          | -                | Binary
 | $FOC$                         | Genset fuel oil consumption.                                                       | g                | Continuous
 
 The index $k$ is in all cases used to the denote a particular time step.
